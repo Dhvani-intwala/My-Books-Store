@@ -1,23 +1,27 @@
-{% extends "base.html" %} {% load static %} {% block page_header %}
+{% extends "base.html" %}
+{% load static %}
+  
+{% block page_header %}
 <div class="container header-container">
   <div class="row">
     <div class="col"></div>
   </div>
 </div>
 
-{% endblock %} {% block content %}
+{% endblock %}
+{% block content %}
 <div class="container h-100">
   <div class="row h-100">
-    <div class="col-7 col-md-6 my-auto">
-      <h1 class="display-4 logo-font text-black">Books Store</h1>
-      <h4>All favorite books on in one</h4>
-
-      <div>
-        <button class="button purple-btn wiggle-btn mx-auto">
-          Shop our products
-        </button>
-      </div>
-    </div>
+        <div class="col-7 col-md-6 my-auto">
+            <h1 class="display-4 logo-font text-black">Books Store</h1>
+            <h3 class="text-black">HAPPINESS IS</h3>
+            <h5 class="text-black"> Losing yourself in a good book.</h5>
+            <div class="my-5">
+                <h4>
+                <a href="" class="shop-button btn btn-lg rounded-pill text-uppercase py-3 ">Shop our products</a>
+                </h4>
+            </div>
+        </div>
   </div>
 </div>
 {% endblock %}
