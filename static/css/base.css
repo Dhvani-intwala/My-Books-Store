@@ -3,10 +3,7 @@ html {
 }
 
 body {
-    background: url('/media/main-img.jpg') no-repeat center center fixed;
-    background-size: cover;
-    object-fit: cover;
-    height: calc(100vh - 164px);
+    height: 100vh - 164px;
     color: #0000;
     font-family: 'Alice', serif;
     scroll-behavior: smooth;
@@ -55,6 +52,51 @@ body {
 
 .border-black {
     border: 1px solid black !important;
+}
+
+.home-cover {
+    background: url('../../media/main-img.jpg') no-repeat center center fixed;
+    background-size: cover;
+    background-position: right;
+    height: 80vh;
+    width: 100%;
+    flex: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+/* info container  */
+
+.bg-shop-info {
+    background-color: #121313;
+}
+
+.decorated {
+    overflow: hidden;
+    text-align: center;
+}
+
+.decorated>span {
+    position: relative;
+    display: inline-block;
+}
+
+.decorated>span:before,
+.decorated>span:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    border-bottom: 2px solid;
+    width: 591px;
+    margin: 0 20px;
+}
+
+.decorated>span:before {
+    right: 100%;
+}
+
+.decorated>span:after {
+    left: 100%;
 }
 
 /* -------------------------------- Media Queries */
