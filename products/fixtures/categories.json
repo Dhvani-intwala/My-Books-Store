@@ -1,0 +1,82 @@
+[
+    {
+        "pk": 1,
+        "model": "products.category",
+        "fields": {
+            "name": "Action and Adventure",
+            "friendly_name": "Action and Adventure"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "products.category",
+        "fields": {
+            "name": "Classics",
+            "friendly_name": "Classics"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "products.category",
+        "fields": {
+            "name": "Comic Book or Graphic Novel",
+            "friendly_name": "Comic Book or Graphic Novel"
+        }
+    },
+    {
+        "pk": 4,
+        "model": "products.category",
+        "fields": {
+            "name": "Detective and Mystery",
+            "friendly_name": "Detective and Mystery"
+        }
+    },
+    {
+        "pk": 5,
+        "model": "products.category",
+        "fields": {
+            "name": "Fantasy",
+            "friendly_name": "Fantasy"
+        }
+    },
+    {
+        "pk": 6,
+        "model": "products.category",
+        "fields": {
+            "name": "Historical Fiction",
+            "friendly_name": "Historical Fiction"
+        }
+    },
+    {
+        "pk": 7,
+        "model": "products.category",
+        "fields": {
+            "name": "Horror",
+            "friendly_name": "Horror"
+        }
+    },
+    {
+        "pk": 8,
+        "model": "products.category",
+        "fields": {
+            "name": "Literary Fiction",
+            "friendly_name": "Literary Fiction"
+        }
+    },
+    {
+        "pk": 9,
+        "model": "products.category",
+        "fields": {
+            "name": "Romance",
+            "friendly_name": "Romance"
+        }
+    },
+    {
+        "pk": 10,
+        "model": "products.category",
+        "fields": {
+            "name": "Suspense and Thrillers",
+            "friendly_name": "Suspense and Thrillers"
+        }
+    }
+]
