@@ -15,7 +15,7 @@ class ProductAdmin(admin.ModelAdmin):
         'rating',
         'image',
     )
-    ordering =('sku',)
+    ordering = ('sku',)
 
 
 class CategoryAdmin(admin.ModelAdmin):
