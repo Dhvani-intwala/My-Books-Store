@@ -71,6 +71,10 @@ body {
     background-color: #121313;
 }
 
+.bg-lights {
+    background-color: #a5daea;
+}
+
 .decorated {
     overflow: hidden;
     text-align: center;
@@ -97,6 +101,18 @@ body {
 
 .decorated>span:after {
     left: 100%;
+}
+
+/* products page  */
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background: white;
+    z-index: -1;
 }
 
 /* -------------------------------- Media Queries */

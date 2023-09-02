@@ -112,9 +112,10 @@
                 </nav>
             </div>
             <div id="delivery-banner" class="row text-center">
-                <div class="col bg-white text-black">
+                <div class="col bg-lights text-black">
                     <h4 class="logo-font my-1">Free delivery on orders over ${{ free_shipping_threshold }}!</h4>                
-                </div>            
+                </div>
+                           
             </div>
         </header>
       
@@ -122,8 +123,6 @@
         {% if messages %}
             <div class="message-container"></div>
         {% endif %}
-
-    
 
         {% block page_header %}
         {% endblock %}
@@ -133,5 +132,33 @@
 
         {% block postloadjs %}
         {% endblock %}
+
+         <!-- footer -->
+        <div class="text-center footer bg-white">
+            <footer class="bg-black text-white">
+                <div class="col-10 pt-4 pt-md-0 col-md-6 mx-auto">
+                    <div class="d-lg-flex justify-content-between col-md-10 p-0 mx-auto">
+                        <div class="d-flex flex-column mb-3 mb-lg-0 text-center">
+                            <a class="hover-underline text-white mb-3" href="{% url 'products' %}">All Products</a>
+                            <a class="hover-underline text-white mb-3" rel="noopener nofollow" href="" target="_blank">Privacy And Policy</a>
+                            <a class="hover-underline text-white mb-3" rel="noopener nofollow" href="" target="_blank">Terms & Conditions</a>
+                        </div>
+                        <div class="text-center">
+                            <p class="mb-2">Follow us on social media: </p>
+                            <div class="d-flex justify-content-between text-center mb-2">
+                                <a href="https://www.facebook.com" target="_blank" rel="" aria-label="Link to facebook page"><i class="fab fa-facebook-square ms-3 "></i></a>
+                                <a href="https://www.twitter.com" target="_blank" rel="" aria-label="Link to twitter page"><i class="fab fa-twitter-square ms-3"></i></a>
+                                <a href="https://www.instagram.com" target="_blank" rel="" aria-label="Link to instagram page"><i class="fab fa-instagram-square ms-3"></i></a>
+                                <a href="https://www.youtube.com" target="_blank" rel="" aria-label="Link to youtube page"><i class="fab fa-youtube-square ms-3"></i></a>
+                            </div>
+                            <p class="mb-0">Copyright &copy;My Books Store 2023</p>
+                        </div>
+                        <div class="col-">
+                            <h5 class="mb-4">Subscribe To Our Newsletter</h5>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
   </body>
 </html>
