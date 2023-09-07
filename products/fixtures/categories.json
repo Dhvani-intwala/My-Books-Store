@@ -78,5 +78,13 @@
             "name": "Suspense and Thrillers",
             "friendly_name": "Suspense and Thrillers"
         }
+    },
+    {
+        "pk": 11,
+        "model": "products.category",
+        "fields": {
+            "name": "New Arrivals",
+            "friendly_name": "New Arrivals"
+        }
     }
 ]

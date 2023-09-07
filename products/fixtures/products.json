@@ -638,5 +638,85 @@
             "image": "Romance4.jpg",
             "stock": 10000
         }
+    },
+    {
+        "pk": 41,
+        "model": "products.product",
+        "fields": {
+            "category": 11,
+            "sku": "bneh0123",
+            "name": "Homecoming",
+            "auth_name": "Kate Morton",
+            "books_type": " Mystery, Historical Fiction",
+            "description": "Adelaide Hills, Christmas Eve, 1959: At the end of a scorching hot day, beside a creek in the grounds of a grand country house, a local man makes a terrible discovery....",
+            "year": "2023",
+            "price": 18.90,
+            "image": "new-arrivals.jpg",
+            "stock": 10000
+        }
+    },
+    {
+        "pk": 42,
+        "model": "products.product",
+        "fields": {
+            "category": 11,
+            "sku": "bnei0223",
+            "name": "The Invocations",
+            "auth_name": " Krystal Sutherland",
+            "books_type": "Suspense and Thrillers",
+            "description": "From the author of New York Times bestseller House of Hollow comes a darkly seductive witchy thriller where, though both men and demons lurk in shadows, girls refuse to go quietly into the night.Three ...",
+            "year": "2023",
+            "price": 18.90,
+            "image": "new-arrivals2.jpg",
+            "stock": 10000
+        }
+    },
+    {
+        "pk": 43,
+        "model": "products.product",
+        "fields": {
+            "category": 11,
+            "sku": "bnes0323",
+            "name": "How to Sell a Haunted House",
+            "auth_name": "Grady Hendrix",
+            "books_type": "Horror",
+            "description": "New York Times bestselling author Grady Hendrix takes on the haunted house in a thrilling new novel that explores the way your past—and your family—can...",
+            "year": "2023",
+            "price": 18.90,
+            "image": "new-arrivals3.jpg",
+            "stock": 10000
+        }
+    },
+    {
+        "pk": 44,
+        "model": "products.product",
+        "fields": {
+            "category": 11,
+            "sku": "bneso0423",
+            "name": "The Soulmate",
+            "auth_name": "Sally Hepworth",
+            "books_type": "Romance",
+            "description": "Listeners will be captivated as the narrators create tension and drop hints about the real problem in this “ideal” family. —Booklist on The Younger WifeNarrators Barrie Kreinik and Jessica Douglas-Henry enhance the air of anxiety by weaving an engaging web of emotion.... ",
+            "year": "2023",
+            "price": 18.90,
+            "image": "new-arrivals4.jpg",
+            "stock": 10000
+        }
+    },
+    {
+        "pk": 45,
+        "model": "products.product",
+        "fields": {
+            "category": 11,
+            "sku": "bnesb0523",
+            "name": "Silver in the Bone",
+            "auth_name": "Alexandra Bracken",
+            "books_type": "Fantasy",
+            "description": "From the critically acclaimed author of Lore comes a stunning new Arthurian fantasy—the tale of a teenage girl who seeks her destiny in the cursed ruins of Avalon, driven by love, revenge, and pure adrenaline!Simmering with magic, peril, romance, and heartbreak.",
+            "year": "2023",
+            "price": 18.90,
+            "image": "new-arrivals5.jpg",
+            "stock": 10000
+        }
     }
 ]

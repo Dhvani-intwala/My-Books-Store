@@ -115,6 +115,12 @@ body {
     z-index: -1;
 }
 
+.product-img {
+    width: 80%;
+    height: 90%;
+    object-fit: cover;
+}
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
