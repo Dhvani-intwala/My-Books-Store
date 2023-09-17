@@ -6,5 +6,8 @@
     "python.terminal.activateEnvironment": false,
     "[html]": {
         "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
+    },
+    "[markdown]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
     }
 }
