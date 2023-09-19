@@ -1,5 +1,7 @@
 <h1>My Books Store - Online Book shop</h1>
 
+## TABLE OF CONTENTS
+
 -   [**Strategy**](#strategy)
 -   [**Colour Scheme**](#colour-scheme)
 -   [**User Experience UX**](#user-experience-ux)
@@ -7,14 +9,13 @@
     -   [Design](#design)
     -   [Ecommerce type](#Ecommerce)
 -   [**Features**](#features)
-    -   [**Home**](#navigation-menu)
-        -   [Home](#home)
-        -   [Navigation Menu](#navigation-menu)
-        -   [Log In](#log-in)
-        -   [Contact](#contact)
-        -   [Footer](#footer)
-    -   [**Future Features**](#future-features)
-        -   [Testimonials](#testimonials)
+    -   [Home](#home)
+    -   [Navigation Menu](#navigation-menu)
+    -   [Log In](#log-in)
+    -   [Contact](#contact)
+    -   [Footer](#footer)
+-   [**Future Features**](#future-features)
+    -   [Testimonials](#testimonials)
 -   [**Technologies Used**](#technologies-used)
 -   [**Manual and Automated Testing**](<#manaual and automated testing>)
 -   [**Deployment**](#deployment)

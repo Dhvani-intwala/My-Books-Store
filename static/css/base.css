@@ -4,7 +4,7 @@ html {
 
 body {
     height: 100vh - 164px;
-    color: #0000;
+    color: black;
     font-family: 'Alice', serif;
     scroll-behavior: smooth;
 }
@@ -147,6 +147,7 @@ a.category-badge>span.badge:hover {
     top: 72px;
     right: 15px;
     z-index: 99999999999;
+    color: #000;
 }
 
 .custom-toast {
