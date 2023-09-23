@@ -1,5 +1,12 @@
 <h1>My Books Store - Online Book shop</h1>
 
+## Introduction
+
+My Books Store is a e-commerce store that is  designed and implemented
+   with Django python web framework, HTML, CSS and Javascript. 
+   It specialises in selling books to consumers online. 
+   However, it has to be noted that this site is for educational use only.
+
 ## TABLE OF CONTENTS
 
 -   [**Strategy**](#strategy)
@@ -23,3 +30,5 @@
     -   [**Content**](#content)
     -   [**Media**](#media)
 -   [**Acknowledgments**](#acknowledgements)
+
+
