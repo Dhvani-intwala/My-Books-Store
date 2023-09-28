@@ -31,6 +31,15 @@ However, it has to be noted that this site is for educational use only.
     -   [**Media**](#media)
 -   [**Acknowledgments**](#acknowledgements)
 
+*   ### Strategy
+
+        My books store is a e-commerce business. Due to pressure of life from work and family,people have opted for online shopping.
+
+*   ### Colour Scheme
+
+        The colour scheme eventually chosen is one based on a yellow, black and white.
+        This colour scheme gives off a earthly, warm and happy feeling to the website.
+
 ## Deployment
 
 ### Deploy on Heroku
