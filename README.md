@@ -33,7 +33,8 @@ However, it has to be noted that this site is for educational use only.
 
 *   ### Strategy
 
-        My books store is a e-commerce business. Due to pressure of life from work and family,people have opted for online shopping.
+        My books store is a e-commerce business. Due to pressure of life from work and family,
+        people have opted for online shopping.
 
 *   ### Colour Scheme
 
