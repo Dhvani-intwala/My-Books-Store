@@ -1,45 +1,32 @@
-<h1>My Books Store - Online Book shop</h1>
+# My Books Store - Online Book shop
 
 ## Introduction
 
-My Books Store is a e-commerce store that is designed and implemented
-with Django python web framework, HTML, CSS and Javascript.
-It specialises in selling books to consumers online.
-However, it has to be noted that this site is for educational use only.
+My Books Store is a e-commerce store that is designed and implemented with Django python web framework, HTML, CSS and Javascript.
+It specialises in selling books to consumers online. However, it has to be noted that this site is for educational use only.
 
 ## TABLE OF CONTENTS
 
--   [**Strategy**](#strategy)
--   [**Colour Scheme**](#colour-scheme)
--   [**User Experience UX**](#user-experience-ux)
-    -   [Database](#database)
-    -   [Design](#design)
-    -   [Ecommerce type](#Ecommerce)
--   [**Features**](#features)
-    -   [Home](#home)
-    -   [Navigation Menu](#navigation-menu)
-    -   [Log In](#log-in)
-    -   [Contact](#contact)
-    -   [Footer](#footer)
--   [**Future Features**](#future-features)
-    -   [Testimonials](#testimonials)
--   [**Technologies Used**](#technologies-used)
--   [**Manual and Automated Testing**](<#manaual and automated testing>)
--   [**Deployment**](#deployment)
--   [**Credits**](#credits)
-    -   [**Content**](#content)
-    -   [**Media**](#media)
--   [**Acknowledgments**](#acknowledgements)
+1. [Strategy](#strategy)
+2. [Colour Scheme](#colour-scheme)
+3. [User Experience UX](#user-experience-ux)
+4. [Features](#features)
+5. [Future Features](#future-features)
+6. [Technologies Used](#technologies-used)
+7. [Manual and Automated Testing](#manaual-and-automated-testing)
+8. [Deployment](#deployment)
+9. [Credits](#credits)
+10. [Acknowledgments](#acknowledgements)
 
-*   ### Strategy
+### Strategy
 
-        My books store is a e-commerce business. Due to pressure of life from work and family,
-        people have opted for online shopping.
+    My books store is a e-commerce business. Due to pressure of life from work and family,
+    people have opted for online shopping.
 
-*   ### Colour Scheme
+### Colour Scheme
 
-        The colour scheme eventually chosen is one based on a yellow, black and white.
-        This colour scheme gives off a earthly, warm and happy feeling to the website.
+    The colour scheme eventually chosen is one based on a yellow, black and white.
+    This colour scheme gives off a earthly, warm and happy feeling to the website.
 
 ## Deployment
 
