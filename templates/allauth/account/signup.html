@@ -5,17 +5,45 @@
 {% block head_title %}{% trans "Signup" %}{% endblock %}
 
 {% block content %}
-<h1>{% trans "Sign Up" %}</h1>
+<hr>
+<h1 class="text-center">{% trans "Registrations" %}</h1>
+<hr>
 
-<p>{% blocktrans %}Already have an account? Then please <a href="{{ login_url }}">sign in</a>.{% endblocktrans %}</p>
+<div class="col mx-auto pt-3 pb-3 mt-2 mt-lg-4 mb-4 bg-white">
+    <div class="d-md-flex pt-lg-3">
+        
+        <div class="col-12 col-md-6 mb-4 mb-lg-0">
+            <div class="col-md-10 p-0 mx-auto">
+                <h5 class="text-center font-weight-bold mb-3">New Customer</h5>
 
-<form class="signup" id="signup_form" method="post" action="{% url 'account_signup' %}">
-  {% csrf_token %}
-  {{ form.as_p }}
-  {% if redirect_field_value %}
-  <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
-  {% endif %}
-  <button type="submit">{% trans "Sign Up" %} &raquo;</button>
-</form>
+                <p>{% blocktrans %}Already have an account? Then please <a href="{{ login_url }}">sign in</a>.{% endblocktrans %}</p>
+
+                <form class="signup" id="signup_form" method="post" action="{% url 'account_signup' %}">
+                {% csrf_token %}
+                {{ form.as_p }}
+                {% if redirect_field_value %}
+                <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
+                {% endif %}
+                <a class="btn btn-outline-black rounded-0" type="submit">{% trans "Sign Up" %} &raquo;</a>
+                </form>
+            </div>
+        </div>
+        <div class="col col-md-6 text-left">
+            <div class="col-md-10 p-0 mx-auto">
+            <h5 class="text-center font-weight-bold mb-3">New Customer</h5>
+            <p>{% blocktrans %}Are you a new customer? <br class="d-lg-none">
+                Then please <a class="auth-link pulse" href="{{ signup_url }}">register</a> first.{% endblocktrans %}
+            </p>
+            <p>Our website offers a better experience for users. The main benefits are:</p>
+            <ul>
+                <li><b>Order history</b>;</li>
+                <li><b>Faster checkout</b> by adding your delivery details to your profile;</li>
+                <li><b>Wishlist</b> with all of your favourite products;</li>
+            </ul>
+            </div>
+        
+        </div>
+    </div>
+</div>
 
 {% endblock %}
