@@ -21,6 +21,7 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Alice&display=swap"
       rel="stylesheet" />
+    
     <link rel="stylesheet" href="{% static 'css/base.css' %}" />
 
     <link rel="icon" href="{{ MEDIA_URL }}favicon.png" type="image/x-icon" />
@@ -83,7 +84,7 @@
                         </div>
                     </li>
                         <li class="list-inline-item">
-                            <a class="text-black nav-link" href="#" >
+                            <a href="{% url 'wishlist' %}" class="text-black nav-link">
                                 <div class="text-center">
                                     <i class="fas fa-heart fa-lg"></i>
                                     <p class="my-0">Wishlist</p>
@@ -154,6 +155,8 @@
         <script type="text/javascript">
             $('.toast').toast('show');
         </script>
+
+        
         {% endblock %}
 
         {% block info %}

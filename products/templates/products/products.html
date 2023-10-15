@@ -20,7 +20,7 @@
                         <span class="p-2 mt-2 badge badge-white text-black rounded-0 border border-dark">{{ c.friendly_name }}</span>
                     </a>
                 {% endfor %}
-                <hr class="w-50 mb-1">
+                <!-- <hr class="w-50 mb-1"> -->
             </div>
         </div>
         <div class="row">
@@ -50,14 +50,31 @@
                         </p>
                     </div>
                 </div>
+                <!-- Add filter container -->
+                <hr class="d-none d-lg-block mb-1 mt-0">
+                <div class="navbar navbar-expand-lg navbar-light pl-0">
+                    <button class="d-lg-none button rounded-0 purple-btn small-btn" type="button" data-toggle="collapse" data-target="#navbarTogglerFilters" aria-controls="navbarTogglerFilters" aria-expanded="false" aria-label="Toggle navigation">
+                      Filter
+                    </button>
+                    <div class="collapse navbar-collapse d-lg-flex flex-row align-items-start" id="navbarTogglerFilters">
+                        <h6 class="col-md-2 col-xl-1 p-0 mb-0 d-none d-lg-block mr-xl-4 text-uppercase font-weight-bold">Filter By</h6>
+                    </div>
+                </div>
                 <div class="row">
                     {% for product in products %}
                         <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                            
                             <div class="card h-100 border-0">
                                 {% if product.image %}
                                     <a href="{% url 'product_detail' product.id %}">
                                         <img class="card-img-top product-img" src="{{ product.image.url }}" alt="{{ product.name }}">
                                     </a>
+                                    <div class="d-flex">
+                                        <p class="rounded-0 border text-center p-2 pl-5 pr-5"><i class="far fa-heart mr-2"></i>Wishlist
+                                        </p>
+                                    
+                                    </div>
+                                    
                                 {% else %}
                                     <a href="{% url 'product_detail' product.id %}">
                                         <img class="card-img-top product-img" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
