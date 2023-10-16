@@ -70,7 +70,7 @@
                                         <img class="card-img-top product-img" src="{{ product.image.url }}" alt="{{ product.name }}">
                                     </a>
                                     <div class="d-flex">
-                                        <p class="rounded-0 border text-center p-2 pl-5 pr-5"><i class="far fa-heart mr-2"></i>Wishlist
+                                        <p class="rounded-0 border text-center p-2 pl-5 pr-5" id="wishlist_id" onclick="Add_Products_wL()"><i class="far fa-heart mr-2"></i>Wishlist
                                         </p>
                                     
                                     </div>
@@ -172,4 +172,14 @@
             }
         })
     </script>
+    
+    <!-- Add to wishlist product function -->
+
+    <script>
+        function Add_Products_wL() {
+          document.getElementById("wishlist_id").style.color = "red";
+
+        }
+    </script>
+        
 {% endblock %}
