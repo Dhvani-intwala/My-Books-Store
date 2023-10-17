@@ -46,7 +46,7 @@
                             {% if search_term or current_categories or current_sorting != 'None_None' %}
                                 <span class="small"><a href="{% url 'products' %}">Products Home</a> | </span>
                             {% endif %}
-                            {{ products|length }} Products{% if search_term %} found for <strong>"{{ search_term }}"</strong>{% endif %}
+                            {{ products|length }} Products {% if search_term %} found for <strong>"{{ search_term }}"</strong>{% endif %}
                         </p>
                     </div>
                 </div>
@@ -58,6 +58,56 @@
                     </button>
                     <div class="collapse navbar-collapse d-lg-flex flex-row align-items-start" id="navbarTogglerFilters">
                         <h6 class="col-md-2 col-xl-1 p-0 mb-0 d-none d-lg-block mr-xl-4 text-uppercase font-weight-bold">Filter By</h6>
+                        <ul class="col-xl-10 navbar-nav mt-2 mt-lg-0 d-lg-flex flex-wrap">
+                            <!-- add category filter if not active -->
+                            {% if not current_category and not filters_list.category %}
+                            <li class="col-md-3 col-xl-2 p-0 nav-item mt-2 mt-lg-0 mr-4 mb-2">
+                                <div class="dropdown">
+                                    <button class="dropdown-btn w-100 text-muted d-flex justify-content-between text-uppercase border-0" data-toggle="dropdown" aria-expanded="false">
+                                        <span>Category</span>
+                                        <span class="dropdown-toggle"></span>
+                                    </button>
+                                    <div class="dropdown-menu dropdown-menu-lg-start">
+                                        {% for category in categories %}
+                                        <a class="dropdown-item" href="{{current_url}}category={{ product.category.name }}">{{category.get_friendly_name}}</a>
+                                        {% endfor %}
+                                    </div>
+                                </div>
+                            </li>
+                            {% endif %}
+                            <!-- add year filter if not active -->
+                            {% if not filters_list.year %}
+                            <li class="col-md-3 col-xl-2 p-0 nav-item mt-2 mt-lg-0 mr-4 mb-2">
+                                <div class="dropdown">
+                                    <button class="dropdown-btn w-100 text-muted d-flex justify-content-between text-uppercase border-0" data-toggle="dropdown" aria-expanded="false">
+                                        <span>Year</span>
+                                        <span class="dropdown-toggle"></span>
+                                    </button>                                
+                                    <div class="dropdown-menu dropdown-menu-lg-start">
+                                        {% for year in years_list %}
+                                            <a class="dropdown-item" href="{{current_url}}year={{year|urlencode}}">{{year}}</a>
+                                        {% endfor %}
+                                    </div>
+                                </div>
+                            </li>
+                            {% endif %}
+                            <!-- add auth filter if not active -->
+                            {% if not filters_list.auth %}
+                            <li class="col-md-3 col-xl-2 p-0 nav-item mt-2 mt-lg-0 mr-4 mb-2">
+                                <div class="dropdown">
+                                    <button class="dropdown-btn w-100 text-muted d-flex justify-content-between text-uppercase border-0" data-toggle="dropdown" aria-expanded="false">
+                                        <span>Author</span>
+                                        <span class="dropdown-toggle"></span>
+                                    </button>                                
+                                    <div class="dropdown-menu dropdown-menu-lg-start">
+                                        {% for auth in auth_list %}
+                                            <a class="dropdown-item" href="{{current_url}}auth_name={{auth_name}}">{{auth_name}}</a>
+                                        {% endfor %}
+                                    </div>
+                                </div>
+                            </li>
+                            {% endif %}
+                        </ul>
                     </div>
                 </div>
                 <div class="row">
@@ -69,12 +119,21 @@
                                     <a href="{% url 'product_detail' product.id %}">
                                         <img class="card-img-top product-img" src="{{ product.image.url }}" alt="{{ product.name }}">
                                     </a>
-                                    <div class="d-flex">
-                                        <p class="rounded-0 border text-center p-2 pl-5 pr-5" id="wishlist_id" onclick="Add_Products_wL()"><i class="far fa-heart mr-2"></i>Wishlist
+                                    <!-- <div class="d-flex">
+                                        <p class="rounded-0 border text-center p-2 pl-5 pr-5" id="add-to-wishlist"><i class="far fa-heart mr-2"></i>Wishlist
                                         </p>
                                     
-                                    </div>
-                                    
+                                    </div> -->
+                                    {% if user.is_authenticated %}
+                                        <!-- add to wishlist form -->
+                                        <div class="w-75 d-flex d-flex align-items-center justify-content-center">
+                                            <form action="{% url 'addtowishlist' product.id %}" method="POST">
+                                                {% csrf_token %}
+                                                <button type="submit" class="d-flex rounded-0 align-items-center border text-black"><i class="far fa-heart mr-1"></i><span>Add to wishlist </span></button> 
+                                            </form>
+                                        </div>
+                                    {% endif %}
+
                                 {% else %}
                                     <a href="{% url 'product_detail' product.id %}">
                                         <img class="card-img-top product-img" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
@@ -173,13 +232,6 @@
         })
     </script>
     
-    <!-- Add to wishlist product function -->
-
-    <script>
-        function Add_Products_wL() {
-          document.getElementById("wishlist_id").style.color = "red";
-
-        }
-    </script>
-        
+    <script src="{% static 'wishlist/js/wishlist.js' %}"></script>
+  
 {% endblock %}
