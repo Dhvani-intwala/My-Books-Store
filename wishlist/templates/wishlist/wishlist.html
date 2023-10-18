@@ -9,6 +9,10 @@
     </div>
 {% endblock %}
 
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'static/css/base.css' %}">
+{% endblock %}
+
 {% block content %}
     <div class="overlay"></div>
     <div class="container-fluid">
@@ -18,20 +22,18 @@
 
             <div class="row">
                 {% for product in wishlist %}
-                    <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                    <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 ">
                         
-                        <div class="card h-100 border-0">
-                            {% if product.image %}
-                                <a href="{% url 'product_detail' product.id %}">
-                                    <img class="card-img-top product-img" src="{{ product.image.url }}" alt="{{ product.name }}">
-                                </a>
-
-
-                            {% else %}
-                                <a href="{% url 'product_detail' product.id %}">
-                                    <img class="card-img-top product-img" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
-                                </a>
-                            {% endif %}
+                        <div class="card h-100 border-0 position-relative">
+                                {% if product.image %}
+                                    <a href="{% url 'product_detail' product.id %}">
+                                        <img class="card-img-top img-fluid product-img" src="{{ product.image.url }}" alt="{{ product.name }}">
+                                    </a>
+                                {% else %}
+                                    <a href="{% url 'product_detail' product.id %}">
+                                        <img class="card-img-top img-fluid product-img" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
+                                    </a>
+                                {% endif %}
                             <div class="card-body pb-0">
                                 <p class="mb-0 text-black">{{ product.name }}</p>
                             </div>
@@ -52,11 +54,11 @@
                                             <small class="text-muted">No Rating</small>
                                         {% endif %}
                                         {% if user.is_authenticated %}
-                                        <!-- add to wishlist form -->
-                                        <div class="w-75 d-flex d-flex align-items-center justify-content-center">
+                                        <!-- remove wishlist form -->
+                                        <div class="align-items-center justify-content-center position-absolute ">
                                             <form action="{% url 'removefromwishlist' product.id %}" method="POST">
                                                 {% csrf_token %}
-                                                <button type="submit" class="text-black"><i class="far fa-heart mr-1"></i><span>remove to wishlist </span></button> 
+                                                <button type="submit" class="btn bg-white p-2 d-flex rounded-circle justify-content-center align-items-center border text-black"><i class="far fa-heart mr-1"></i></button> 
                                             </form>
                                         </div>
                                         {% endif %} 

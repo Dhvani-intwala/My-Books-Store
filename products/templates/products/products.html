@@ -114,22 +114,17 @@
                     {% for product in products %}
                         <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
                             
-                            <div class="card h-100 border-0">
+                            <div class="card h-100 border-0 position-relative">
                                 {% if product.image %}
                                     <a href="{% url 'product_detail' product.id %}">
-                                        <img class="card-img-top product-img" src="{{ product.image.url }}" alt="{{ product.name }}">
+                                        <img class="card-img-top product-img " src="{{ product.image.url }}" alt="{{ product.name }}">
                                     </a>
-                                    <!-- <div class="d-flex">
-                                        <p class="rounded-0 border text-center p-2 pl-5 pr-5" id="add-to-wishlist"><i class="far fa-heart mr-2"></i>Wishlist
-                                        </p>
-                                    
-                                    </div> -->
                                     {% if user.is_authenticated %}
                                         <!-- add to wishlist form -->
-                                        <div class="w-75 d-flex d-flex align-items-center justify-content-center">
+                                        <div class=" align-items-center justify-content-center position-absolute">
                                             <form action="{% url 'addtowishlist' product.id %}" method="POST">
                                                 {% csrf_token %}
-                                                <button type="submit" class="d-flex rounded-0 align-items-center border text-black"><i class="far fa-heart mr-1"></i><span>Add to wishlist </span></button> 
+                                                <button type="submit" class="btn bg-white p-2 d-flex rounded-circle justify-content-center align-items-center border text-black"><i class="far fa-heart mr-1"></i></button> 
                                             </form>
                                         </div>
                                     {% endif %}
