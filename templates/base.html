@@ -109,8 +109,8 @@
                 </div>
             </div>
             <div class="row bg-black">
-                <nav class="navbar navbar-expand-lg navbar-light w-100">
-                    <button class="navbar-toggler btn-outline-light" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <nav class="navbar navbar-expand-lg w-100">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     {% include 'includes/main-nav.html' %}
@@ -169,19 +169,20 @@
                             <div class="col-12 pb-4 pb-md-0 col-md-6 text-center">
                                 <div class="col-10 pt-4 p-0 pt-md-0 mx-auto">
                                     <h5 class="mb-4">Subscribe To Our Newsletter</h5>
-                                    <form action="POST">
+                                    <form method="post">
                                         {% csrf_token %}
                                         {{ form|crispy }}
                                         <div class="messages mb-2"> 
-                                              {% for message in messages %}
-                                                  {{message}}
-                                                  <div class="success-message">
-                                                    {{message}}
-                                                  </div>
-                                              {% endfor %}
+                                            {% for message in messages %}
+                                                {{ message }}
+                                                <div class="success-message">
+                                                    {{ message }}
+                                                </div>
+                                            {% endfor %}
                                         </div>
-                                        <button type="submit" class="button small-btn rounded-0">Subscribe</button> 
+                                        <button type="submit" class="button small-btn rounded-0">Subscribe</button>
                                     </form>
+                                    
                                 </div>
                             </div>
                             <div class="col-10 pt-4 pt-md-0 col-md-6 mx-auto">
@@ -190,6 +191,7 @@
                                         <a class="hover-underline text-white mb-3" href="{% url 'products' %}">All Products</a>
                                         <a class="hover-underline text-white mb-3" rel="noopener nofollow" href="https://www.privacypolicygenerator.info/live.php?token=rlJmAGo5kIcZEoDAtB1KmHiffKujAXJT" target="_blank">Privacy And Policy</a>
                                         <a class="hover-underline text-white mb-3" rel="noopener nofollow" href="https://www.termsandcondiitionssample.com/live.php?token=Nu5YeuMRMCdqYwgoauI8TksgZJtiJS4T" target="_blank">Terms & Conditions</a>
+                                        <a class="hover-underline text-white mb-3" href="{% url 'faqsview' %}">FAQ's</a>
                                     </div>
                                     <div class="text-center">
                                         <p class="mb-2">Follow us on social media: </p>
