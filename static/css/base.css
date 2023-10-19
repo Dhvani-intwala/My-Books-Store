@@ -26,7 +26,7 @@ body {
 } */
 
 .shop-button {
-    background: white;
+    background: black;
     min-width: 260px;
 }
 
@@ -38,8 +38,8 @@ body {
 .shop-button:hover,
 .shop-button:active,
 .shop-button:focus{
-    background: rgb(243, 237, 237);
-    color: black;
+    background: rgb(53, 53, 53);
+    color: white;
 }
 
 .btn-black:hover,
@@ -58,15 +58,17 @@ body {
 }
 
 .home-cover {
-    background: black;
+    background-image:url('/media/img3.jpg');
     background-size: cover;
-    background-position: right;
     height: 75vh;
     width: 100vw;
-    flex: auto;
-    position: relative;
     overflow: hidden;
     object-fit: cover;
+}
+
+.booksstore-title{
+    margin-top: 8%;
+    margin-left: 5%;
 }
 
 .main-img{
@@ -82,7 +84,7 @@ body {
 }
 
 .bg-lights {
-    background-color: #79dee8;
+    background-color: rgb(198, 192, 196);
 }
 
 .decorated {
@@ -418,7 +420,6 @@ input[name='q']::placeholder {
 
     .display-4.logo-font.text-black {
         font-size: 2rem;
-        text-align: center;
     }
 
     .nav-link {
@@ -474,6 +475,9 @@ input[name='q']::placeholder {
         min-width: 100px;
         padding: 5px;
         font-size: 1rem;
+    }
+    .booksstore-title{
+        margin-left: auto;
     }
 
 
