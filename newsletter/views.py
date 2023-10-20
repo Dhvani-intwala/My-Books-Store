@@ -7,13 +7,13 @@ def SubscribeToNewsletter(request):
     """A view that provides a form for users to subscribe for newsletter"""
   
     if request.method == 'POST':
-        form = SubscribersForm(request.POST)
-        if form.is_valid():
-            form.save()
+        newsletterform = SubscribersForm(request.POST)
+        if newsletterform.is_valid():
+            newsletterform.save()
             messages.success(request, 'Thank you for your subscription!')
             return redirect('base')
     else:
-        form = SubscribersForm()
+        newsletterform = SubscribersForm()
     template_name = "base.html"
     context = {
         'newsletterform': newsletterform,

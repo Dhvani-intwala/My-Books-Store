@@ -119,7 +119,8 @@
                                     <a href="{% url 'product_detail' product.id %}">
                                         <img class="card-img-top product-img " src="{{ product.image.url }}" alt="{{ product.name }}">
                                     </a>
-                                    {% if user.is_authenticated %}
+                                    {% if user.is_authenticated and not user.is_superuser %}
+                                    
                                         <!-- add to wishlist form -->
                                         <div class=" align-items-center justify-content-center position-absolute">
                                             <form action="{% url 'addtowishlist' product.id %}" method="POST">

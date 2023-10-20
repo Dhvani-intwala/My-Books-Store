@@ -5,11 +5,6 @@ from .models import FAQ
 
 
 def FAQViews(request):
-
     template_name = 'faqs/faqs.html'
-    context = {
-        'faq': 'faqs',
-         
-    }
-    return render(request, template_name, context)
-
+    instances = FAQ.objects.all()
+    return render(request, template_name, {'faq': instances})

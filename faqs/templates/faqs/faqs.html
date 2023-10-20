@@ -20,7 +20,7 @@
             <h2 class="logo-font text-black">FAQ's</h2>
             <hr class="w-50 mb-1">
             <div class="faqs-list">
-                {% for faq in faqs %}
+                {% for faqs in faq %}
                 <h2>{{ faq.question }}</h2>
                 <p>{{ faq.answer }}</p>
                 {% endfor %}
