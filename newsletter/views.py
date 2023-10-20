@@ -16,7 +16,7 @@ def SubscribeToNewsletter(request):
         form = SubscribersForm()
     template_name = "base.html"
     context = {
-        'form': form,
+        'newsletterform': newsletterform,
     }
 
     return render(request, template_name, context)

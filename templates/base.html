@@ -76,7 +76,7 @@
                                     <a href="{% url 'add_product' %}" class="dropdown-item">Product Management</a>
                                 {% endif %}
                                 <a href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
-                                <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
+                                <a href="{% url 'account_logout' %}" data-toggle="modal" data-target="#logoutModal" class="dropdown-item">Logout</a>
                             {% else %}
                                 <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
                                 <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
@@ -171,15 +171,7 @@
                                     <h5 class="mb-4">Subscribe To Our Newsletter</h5>
                                     <form method="post">
                                         {% csrf_token %}
-                                        {{ form|crispy }}
-                                        <div class="messages mb-2"> 
-                                            {% for message in messages %}
-                                                {{ message }}
-                                                <div class="success-message">
-                                                    {{ message }}
-                                                </div>
-                                            {% endfor %}
-                                        </div>
+                                        {{ newsletterform|crispy }}
                                         <button type="submit" class="button small-btn rounded-0">Subscribe</button>
                                     </form>
                                     
@@ -210,6 +202,28 @@
                     </div>
                 </div>
             </footer> 
+        </div>
+        <!-- Logout Modal -->
+        <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="logoutModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content bg-color-model">
+                    <!-- <div class="modal-header">
+                        <h4 class="modal-title" id="logoutModalLabel">Sign Out</h4>
+                    </div> -->
+                    <div class="modal-body">
+                        <h5>Are you sure you want to sign out?</h5>
+                    </div>
+                    <div class="modal-footer">
+                        <form method="post" action="{% url 'account_logout' %}">
+                            {% csrf_token %} {% if redirect_field_value %}
+                            <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
+                            {% endif %}
+                            <button type="button" class="btns-red" id="btn-cancel" data-bs-dismiss="modal">No</button>
+                            <button type="submit" class="btns-green" id="btn-submit">Yes</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </div>
   </body>
 </html>

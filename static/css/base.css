@@ -7,6 +7,7 @@ body {
     color: black;
     font-family: 'Alice', serif;
     scroll-behavior: smooth;
+    min-height: 100vh;
 }
 
 .icon {
@@ -75,6 +76,21 @@ body {
     width:50vw;
     height: 80vh;
     margin-left: 100px;
+}
+
+
+/* logout model  */
+
+.btns-red{
+    background-color:rgb(219, 34, 34);
+}
+
+.btns-green{
+    background-color: rgb(17, 148, 17);
+}
+
+.bg-color-model{
+    background-color: rgb(198, 192, 196);
 }
 
 
@@ -362,6 +378,14 @@ input[name='q']::placeholder {
     color: #adb5bd;
     border-color: #adb5bd;
 }
+
+/* FOOTER SECTION */
+
+.footer {
+    position: sticky;
+    top: 100%;
+}
+
 
 /* Product Form */
 

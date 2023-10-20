@@ -8,7 +8,7 @@ def FAQViews(request):
 
     template_name = 'faqs/faqs.html'
     context = {
-        'faq': '',
+        'faq': 'faqs',
          
     }
     return render(request, template_name, context)
