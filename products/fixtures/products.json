@@ -11,8 +11,9 @@
             "description": "Pi Patel finds a way to survive in a lifeboat that is adrift in the middle of nowhere. His fight against the odds is heightened by the company of a hyena and a male Bengal tiger.",
             "year": " 2002",
             "price": 15.99,
+            "rating": 4.4,
             "image": "Action-and-Adventure1.jpg",
-            "stock": 10000
+            "stock": 10
         }
     },
     {
@@ -27,8 +28,9 @@
             "description": "The Three Musketeers is a French historical adventure novel written in 1844 by French author Alexandre Dumas. As with some of his other works, he wrote it in collaboration with ghostwriter Auguste Maquet. It is in the swashbuckler genre, which has heroic, chivalrous swordsmen who fight for justice.",
             "year": "1844",
             "price": 15.70,
+            "rating": 2.4,
             "image": "Action-and-Adventure2.jpg",
-            "stock": 10000
+            "stock": 10
         }
     },
     {
@@ -43,8 +45,9 @@
             "description": "The Call of the Wild is a short adventure novel by Jack London, published in 1903 and set in Yukon, Canada, during the 1890s Klondike Gold Rush, when strong sled dogs were in high demand. The central character of the novel is a dog named Buck.",
             "year": "1903",
             "price": 15.90,
+            "rating": 4.5,
             "image": "Action-and-Adventure3.jpg",
-            "stock": 10000
+            "stock": 10
         }
     },
     {
@@ -59,8 +62,9 @@
             "description": "To Kill a Mockingbird is a novel by the American author Harper Lee. It was published in 1960 and was instantly successful. In the United States, it is widely read in high schools and middle schools.",
             "year": "1960",
             "price": 15.00,
+            "rating": 4.4,
             "image": "Classics1.jpg",
-            "stock": 10000
+            "stock": 10
         }
     },
     {
@@ -75,8 +79,9 @@
             "description": "Little Women is a coming-of-age novel written by American novelist Louisa May Alcott, originally published in two volumes in 1868 and 1869 at the request of her publisher. The story follows the lives of the four March sisters—Meg, Jo, Beth, and Amy—and details their passage from childhood to womanhood.",
             "year": "1869",
             "price": 15.00,
+            "rating": 4.5,
             "image": "Classics2.jpg",
-            "stock": 10000
+            "stock": 10
         }
     },
     {
@@ -91,8 +96,9 @@
             "description": "Beloved is a 1987 novel by American novelist Toni Morrison. Set in the period after the American Civil War, the novel tells the story of a dysfunctional family of formerly enslaved people whose Cincinnati home is haunted by a malevolent spirit.",
             "year": "1987",
             "price": 15.50,
+            "rating": 4.5,
             "image": "Classics3.jpg",
-            "stock": 10000
+            "stock": 10
         }
     },
     {
@@ -107,8 +113,9 @@
             "description": "Watchmen is a comic book maxiseries by the British creative team of writer Alan Moore, artist Dave Gibbons and colorist John Higgins.",
             "year": "1986",
             "price": 15.50,
+            "rating": 1.4,
             "image": "Comic-Book-or-Graphic-Novel1.jpg",
-            "stock": 10000
+            "stock": 10
         }
     },
     {
@@ -123,8 +130,9 @@
             "description": "Rick Grimes, a sheriff's deputy from Cynthiana, Kentucky, is wounded in the line of duty and emerges from a coma to find the world overrun with the undead.",
             "year": "2019",
             "price": 15.50,
+            "rating": 4.4,
             "image": "Comic-Book-or-Graphic-Novel2.jpg",
-            "stock": 10000
+            "stock": 10
         }
     },
     {
@@ -139,8 +147,9 @@
             "description": "The Boy, the Mole, the Fox and the Horse is a 2019 illustrated book by Charlie Mackesy. It follows the developing friendship between the four protagonists of the title.",
             "year": "2019",
             "price": 16.50,
+            "rating": 4.4,
             "image": "Comic-Book-or-Graphic-Novel3.jpg",
-            "stock": 10000
+            "stock": 10
         }
     },
     {
@@ -155,8 +164,9 @@
             "description": "Harry Bosch and LAPD Detective Renee Ballard come together again on the murder case that obsessed Bosch's mentor, the man who trained him - new from #1 New York Times bestselling author Michael Connelly.... ",
             "year": "2019",
             "price": 16.50,
+            "rating": 2.4,
             "image": "Detective-and-Mystery1.jpg",
-            "stock": 10000
+            "stock": 10
         }
     },
     {
@@ -171,8 +181,9 @@
             "description": "The Adventures of Sherlock Holmes is a collection of twelve short stories by British writer Arthur Conan Doyle, first published on 14 October 1892.",
             "year": "1892",
             "price": 16.50,
+            "rating": 2.4,
             "image": "Detective-and-Mystery2.jpg",
-            "stock": 10000
+            "stock": 10
         }
     },
     {
@@ -187,8 +198,9 @@
             "description": "Seven guests, a newly hired secretary and two staff are gathered at a manor house on an isolated island by an unknown absentee host and are killed off one-by-one.",
             "year": "1939",
             "price": 16.50,
+            "rating": 4.5,
             "image": "Detective-and-Mystery3.jpg",
-            "stock": 10000
+            "stock": 10
         }
     },
     {
@@ -203,8 +215,9 @@
             "description": "The Water Dancer is the debut novel by Ta-Nehisi Coates, published on September 24, 2019, by Random House under its One World imprint.",
             "year": "2019",
             "price": 16.50,
+            "rating": 4.5,
             "image": "Fantasy1.jpg",
-            "stock": 10000
+            "stock": 10
         }
     },
     {
@@ -219,8 +232,9 @@
             "description": "Circe is a 2018 novel by American writer Madeline Miller. Set during the Greek Heroic Age, it is an adaptation of various Greek myths, most notably the Odyssey, as told from the perspective of the witch Circe.",
             "year": "2018",
             "price": 16.50,
+            "rating": 3.4,
             "image": "Fantasy2.jpg",
-            "stock": 10000
+            "stock": 10
         }
     },
     {
@@ -235,8 +249,9 @@
             "description": "Ninth House is a dark fantasy novel by American author Leigh Bardugo, published by Flatiron Books in October 2019. The first in a series, Ninth House was followed by a sequel titled Hell Bent, which was published in January 2023.",
             "year": "2019",
             "price": 16.50,
+            "rating": 4.1,
             "image": "Fantasy3.jpg",
-            "stock": 10000
+            "stock": 10
         }
     },
     {
@@ -251,8 +266,9 @@
             "description": "The Help is a historical fiction novel by American author Kathryn Stockett and published by Penguin Books in 2009. The story is about African Americans working in white households in Jackson, Mississippi, during the early 1960s. A USA Today article called it one of the summer sleeper hits.",
             "year": "2009",
             "price": 16.50,
+            "rating": 4.0,
             "image": "Historical-Fiction1.jpg",
-            "stock": 10000
+            "stock": 10
         }
     },
     {
@@ -267,8 +283,9 @@
             "description": "One Hundred Years of Solitude is a 1967 novel by Colombian author Gabriel García Márquez that tells the multi-generational story of the Buendía family, whose patriarch, José Arcadio Buendía, founded the fictitious town of Macondo. The novel is often cited as one of the supreme achievements in world literature.",
             "year": "1967",
             "price": 16.50,
+            "rating": 4.1,
             "image": "Historical-Fiction2.jpg",
-            "stock": 10000
+            "stock": 10
         }
     },
     {
@@ -283,8 +300,9 @@
             "description": "Memoirs of a Geisha is a historical fiction novel by American author Arthur Golden, published in 1997. The novel, told in first person perspective, tells the story of Nitta Sayuri and the many trials she faces on the path to becoming and working as a geisha in Kyoto, Japan, before, during and after World War II.",
             "year": "1997",
             "price": 16.50,
+            "rating": 4.0,
             "image": "Historical-Fiction3.jpg",
-            "stock": 10000
+            "stock": 10
         }
     },
     {
@@ -299,8 +317,9 @@
             "description": "Bullied and tormented teenager Carrie White learns that she has telekinetic powers. So, when her bullies prank her at prom, she unravels a world of terror.",
             "year": "1974",
             "price": 16.50,
+            "rating": 4.4,
             "image": "Horror1.jpg",
-            "stock": 10000
+            "stock": 10
         }
     },
     {
@@ -315,8 +334,9 @@
             "description": "This modern reimagining of the Shirley Jackson novel follows siblings who, as children, grew up in what would go on to become the most famous haunted house in the country.. Now adults, they are forced back together in the face of tragedy and must finally confront the ghosts of their past. Some of th…",
             "year": "1959",
             "price": 16.50,
+            "rating": 4.0,
             "image": "Horror2.jpg",
-            "stock": 10000
+            "stock": 10
         }
     },
     {
@@ -331,8 +351,9 @@
             "description": "When a mysterious force decimates the population, only one thing is certain -- if you see it, you die. The survivors must now avoid coming face to face with an entity that takes the form of their worst fears. Searching for hope and a new beginning, a woman and her children embark on a dangerous jour…",
             "year": "2014",
             "price": 16.50,
+            "rating": 4.1,
             "image": "Horror3.jpg",
-            "stock": 10000
+            "stock": 10
         }
     },
     {
@@ -347,8 +368,9 @@
             "description": "Abandoned by her family at a tender age, a solitary Catherine attempts to fend for herself, much to society's dismay. Soon, she finds herself framed for her former boyfriend's death. ",
             "year": "2018",
             "price": 16.70,
+            "rating": 3.4,
             "image": "Literary-Fiction1.jpg",
-            "stock": 10000
+            "stock": 10
         }
     },
     {
@@ -363,8 +385,9 @@
             "description": "Olive, Again is a novel by the American author Elizabeth Strout. The book was published by Random House on October 15, 2019. It is a sequel to Olive Kitteridge, which won the 2009 Pulitzer Prize for Fiction. In November 2019, the novel was selected for the revival of Oprah's Book Club.",
             "year": "2019",
             "price": 16.70,
+            "rating": 5.0,
             "image": "Literary-Fiction2.jpg",
-            "stock": 10000
+            "stock": 10
         }
     },
     {
@@ -379,8 +402,9 @@
             "description": "The Dutch House is a 2019 novel by Ann Patchett. It was published by Harper on September 24, 2019. It tells the story of a brother and sister, Danny and Maeve Conroy, who grow up in a mansion known as the Dutch House, and their lives over five decades. The novel was a finalist for the 2020 Pulitzer Prize for Fiction.",
             "year": "2019",
             "price": 16.70,
+            "rating": 4.4,
             "image": "Literary-Fiction3.jpg",
-            "stock": 10000
+            "stock": 10
         }
     },
     {
@@ -395,8 +419,9 @@
             "description": "New York Times Bestselling Author Sarah MacLean returns with the next book in the Bareknuckle Bastards series about three brothers bound by a secret that they cannot escape—and the women who bring...",
             "year": "2019",
             "price": 16.90,
+            "rating": 5.0,
             "image": "Romance1.jpg",
-            "stock": 10000
+            "stock": 10
         }
     },
     {
@@ -411,8 +436,9 @@
             "description": "Royal Holiday Club is a vacation club membership operator and resort developer based in Mexico offering points-based vacation ownership.",
             "year": "2019",
             "price": 16.90,
+            "rating": 4.5,
             "image": "Romance2.jpg",
-            "stock": 10000
+            "stock": 10
         }
     },
     {
@@ -427,8 +453,9 @@
             "description": "The Savior is about Murhder, a vampire and ex-member of the Black Dagger Brotherhood turned recluse due to insanity.",
             "year": "2019",
             "price": 16.90,
+            "rating": 4.5,
             "image": "Romance3.jpg",
-            "stock": 10000
+            "stock": 10
         }
     },
     {
@@ -443,8 +470,9 @@
             "description": "Gone Girl is a 2012 crime thriller novel by American writer Gillian Flynn. It was published by Crown Publishing Group in June 2012. The novel was popular and made the New York Times Best Seller list. The sense of suspense in the novel comes from whether Nick Dunne is responsible for the disappearance of his wife Amy.",
             "year": "2012",
             "price": 17.90,
+            "rating": 4.2,
             "image": "SuspenseandThrillers1.jpg",
-            "stock": 10000
+            "stock": 10
         }
     },
     {
@@ -459,8 +487,9 @@
             "description": "19th Christmas is the nineteenth novel in the Women's Murder Club novel series by James Patterson and Maxine Paetro. ",
             "year": "2019",
             "price": 17.90,
+            "rating": 4.4,
             "image": "SuspenseandThrillers2.jpg",
-            "stock": 10000
+            "stock": 10
         }
     },
     {
@@ -475,8 +504,9 @@
             "description": "After her husband's death, a young widow with a faithful Great Dane must decide between two men -- but as new love blossoms, jealousy turns deadly in this ...",
             "year": "1821",
             "price": 17.90,
+            "rating": 4.4,
             "image": "SuspenseandThrillers3.jpg",
-            "stock": 10000
+            "stock": 10
         }
     },
     {
@@ -491,8 +521,9 @@
             "description": "The Hobbit, or There and Back Again is a children's fantasy novel by English author J. R. R. Tolkien. It was published in 1937 to wide critical acclaim, being nominated for the Carnegie Medal and awarded a prize from the New York Herald Tribune for best juvenile fiction.",
             "year": "1937",
             "price": 17.90,
+            "rating": 5.0,
             "image": "Action-and-Adventure4.jpg",
-            "stock": 10000
+            "stock": 10
         }
     },
     {
@@ -507,8 +538,9 @@
             "description": "The Swiss Family Robinson is a novel by Johann David Wyss, first published in 1812, about a Swiss family of immigrants whose ship en route to Port Jackson, Australia, goes off course and is shipwrecked in the East Indies. The ship's crew is lost, but the family and several domestic animals survive.",
             "year": "1960",
             "price": 17.90,
+            "rating": 4.5,
             "image": "Action-and-Adventure5.jpg",
-            "stock": 10000
+            "stock": 10
         }
     },
     {
@@ -523,8 +555,9 @@
             "description": "Animal Farm is a beast fable, in the form of a satirical allegorical novella, by George Orwell, first published in England on 17 August 1945. It tells the story of a group of anthropomorphic farm animals who rebel against their human farmer, hoping to create a society where the animals can be equal, free, and happy.",
             "year": "1945",
             "price": 15.90,
+            "rating": 4.5,
             "image": "Classics4.jpg",
-            "stock": 10000
+            "stock": 10
         }
     },
     {
@@ -539,8 +572,9 @@
             "description": "Wuthering Heights is an 1847 novel by Emily Brontë, initially published under her pen name Ellis Bell. It concerns two families of the landed gentry living on the West Yorkshire moors, the Earnshaws and the Lintons, and their turbulent relationships with the Earnshaws' foster son, Heathcliff.",
             "year": "1847",
             "price": 25.90,
+            "rating": 4.5,
             "image": "Classics5.jpg",
-            "stock": 10000
+            "stock": 10
         }
     },
     {
@@ -555,8 +589,9 @@
             "description": "The Silence of the Lambs is a 1988 psychological horror novel by Thomas Harris. Published August 29, 1988, it is the sequel to Harris's 1981 novel Red Dragon. Both novels feature the cannibalistic serial killer Dr. Hannibal Lecter, this time pitted against FBI Special Agent Clarice Starling.",
             "year": "1988",
             "price": 15.90,
+            "rating": 5.0,
             "image": "Detective-and-Mystery4.jpg",
-            "stock": 10000
+            "stock": 10
         }
     },
     {
@@ -571,8 +606,9 @@
             "description": "The Eye of the World is a high fantasy novel by American writer Robert Jordan, the first book of The Wheel of Time series. It was published by Tor Books and released on 15 January 1990.",
             "year": "1990",
             "price": 15.90,
+            "rating": 4.3,
             "image": "Fantasy4.jpg",
-            "stock": 10000
+            "stock": 10
         }
     },
     {
@@ -587,8 +623,9 @@
             "description": "The Shining is a 1977 horror novel by American author Stephen King. It is King's third published novel and first hardback bestseller; its success firmly established King as a preeminent author in the horror genre.",
             "year": "1977",
             "price": 15.90,
+            "rating": 4.0,
             "image": "Horror4.jpg",
-            "stock": 10000
+            "stock": 10
         }
     },
     {
@@ -603,8 +640,9 @@
             "description": "The Secret History is the first novel by the American author Donna Tartt, published by Alfred A. Knopf in September 1992.",
             "year": "1992",
             "price": 17.90,
+            "rating": 4.5,
             "image": "Literary-Fiction4.jpg",
-            "stock": 10000
+            "stock": 10
         }
     },
     {
@@ -619,8 +657,9 @@
             "description": "The Wife Between Us is a 2018 thriller novel written by Greer Hendricks and Sarah Pekkanen.",
             "year": "2018",
             "price": 17.90,
+            "rating": 4.2,
             "image": "SuspenseandThrillers4.jpg",
-            "stock": 10000
+            "stock": 10
         }
     },
     {
@@ -635,8 +674,9 @@
             "description": "It Ends with Us is a romance novel by Colleen Hoover, published by Atria Books on August 2, 2016. Based on the relationship between her mother and father, Hoover described it as the hardest book I've ever written.",
             "year": "2016",
             "price": 17.90,
+            "rating": 4.0,
             "image": "Romance4.jpg",
-            "stock": 10000
+            "stock": 10
         }
     },
     {
@@ -651,8 +691,9 @@
             "description": "Adelaide Hills, Christmas Eve, 1959: At the end of a scorching hot day, beside a creek in the grounds of a grand country house, a local man makes a terrible discovery....",
             "year": "2023",
             "price": 18.90,
+            "rating": 4.4,
             "image": "new-arrivals.jpg",
-            "stock": 10000
+            "stock": 10
         }
     },
     {
@@ -667,8 +708,9 @@
             "description": "From the author of New York Times bestseller House of Hollow comes a darkly seductive witchy thriller where, though both men and demons lurk in shadows, girls refuse to go quietly into the night.Three ...",
             "year": "2023",
             "price": 18.90,
+            "rating": 4.4,
             "image": "new-arrivals2.jpg",
-            "stock": 10000
+            "stock": 10
         }
     },
     {
@@ -683,8 +725,9 @@
             "description": "New York Times bestselling author Grady Hendrix takes on the haunted house in a thrilling new novel that explores the way your past—and your family—can...",
             "year": "2023",
             "price": 18.90,
+            "rating": 4.5,
             "image": "new-arrivals3.jpg",
-            "stock": 10000
+            "stock": 10
         }
     },
     {
@@ -699,8 +742,9 @@
             "description": "Listeners will be captivated as the narrators create tension and drop hints about the real problem in this “ideal” family. —Booklist on The Younger WifeNarrators Barrie Kreinik and Jessica Douglas-Henry enhance the air of anxiety by weaving an engaging web of emotion.... ",
             "year": "2023",
             "price": 18.90,
+            "rating": 4.4,
             "image": "new-arrivals4.jpg",
-            "stock": 10000
+            "stock": 10
         }
     },
     {
@@ -715,8 +759,9 @@
             "description": "From the critically acclaimed author of Lore comes a stunning new Arthurian fantasy—the tale of a teenage girl who seeks her destiny in the cursed ruins of Avalon, driven by love, revenge, and pure adrenaline!Simmering with magic, peril, romance, and heartbreak.",
             "year": "2023",
             "price": 18.90,
+            "rating": 4.4,
             "image": "new-arrivals5.jpg",
-            "stock": 10000
+            "stock": 10
         }
     }
 ]

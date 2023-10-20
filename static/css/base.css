@@ -256,6 +256,12 @@ input[name='q']::placeholder {
     background: black;
     color: white !important;
 }
+/* wishlist products*/
+
+.wishlist-img{
+    width: 70%;
+    height: 80%;
+}
 
 /* Allauth form formatting */
 
