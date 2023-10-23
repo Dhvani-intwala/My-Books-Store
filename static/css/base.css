@@ -267,7 +267,6 @@ input[name='q']::placeholder {
 /* faqs page  */
 
 .faqs-list{
-    width:60%;
     text-align: center;
     margin: auto;
     padding: 5% 5%;
@@ -291,7 +290,7 @@ input[name='q']::placeholder {
 }
 
 .faqsbody{
-    padding: 0 50px;
+    padding: 0 15px;
     display: none;
     background-color: white;
     overflow: hidden;
@@ -545,6 +544,9 @@ input[name='q']::placeholder {
     }
     .booksstore-title{
         margin-left: auto;
+    }
+    .faqs-questions{
+        width: 100%;
     }
 
 

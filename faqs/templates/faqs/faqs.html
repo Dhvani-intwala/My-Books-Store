@@ -15,11 +15,11 @@
 
 {% block content %}
     <div class="overlay"></div>
-    <div class="container-fluid faq-container">
-        <div class="col text-center mt-3">
-            <h2 class="logo-font text-black">FAQ's</h2>
+    <div class="container-fluid">
+        <div class="col mt-3">
+            <h2 class="logo-font text-black text-center">FAQ's</h2>
             <hr class="w-50 mb-1">
-            <div class="faqs-list text-black">
+            <div class="col-lg-6 faqs-list text-black ">
                 {% for faq in faqs %}
                 <button class="faqs-questions">{{ faq.question }}</button>
                 <div class="faqsbody"><p class="faqsanswer mt-2 text-left">{{ faq.answer }}</p></div>
