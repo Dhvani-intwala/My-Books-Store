@@ -10,14 +10,14 @@ def SubscribeToNewsletter(request):
         newsletterform = SubscribersForm(request.POST)
         if newsletterform.is_valid():
             newsletterform.save()
-            messages.success(request, 'Thank you for your subscription!')
-            return redirect('base')
+            # messages.success(request, 'Thank you for your subscription!')
+            return redirect('')
     else:
         newsletterform = SubscribersForm()
-    template_name = "base.html"
+    template_name = "newsletter/newsletter.html"
     context = {
         'newsletterform': newsletterform,
     }
-
+    print(newsletterform)
     return render(request, template_name, context)
 

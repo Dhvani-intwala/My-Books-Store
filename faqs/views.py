@@ -7,4 +7,4 @@ from .models import FAQ
 def FAQViews(request):
     template_name = 'faqs/faqs.html'
     instances = FAQ.objects.all()
-    return render(request, template_name, {'faq': instances})
+    return render(request, template_name, {'faqs': instances})

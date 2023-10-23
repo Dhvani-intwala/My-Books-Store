@@ -15,16 +15,41 @@
 
 {% block content %}
     <div class="overlay"></div>
-    <div class="container-fluid">
+    <div class="container-fluid faq-container">
         <div class="col text-center mt-3">
             <h2 class="logo-font text-black">FAQ's</h2>
             <hr class="w-50 mb-1">
-            <div class="faqs-list">
-                {% for faqs in faq %}
-                <h2>{{ faq.question }}</h2>
-                <p>{{ faq.answer }}</p>
+            <div class="faqs-list text-black">
+                {% for faq in faqs %}
+                <button class="faqs-questions">{{ faq.question }}</button>
+                <div class="faqsbody"><p class="faqsanswer mt-2 text-left">{{ faq.answer }}</p></div>
+                <hr class="hr-line">
                 {% endfor %}
             </div>
         </div>
     </div>
+{% endblock%}
+
+{% block postloadjs %}
+<script>
+
+    var que = document.getElementsByClassName("faqs-questions");
+    var i;
+
+    for (i = 0; i < que.length; i++) {
+    que[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var faqsbody = this.nextElementSibling;
+        if (faqsbody.style.display === "block") {
+            faqsbody.style.display = "none";
+        } else {
+            faqsbody.style.display = "block";
+        }
+    });
+    }
+
+</script>
+
+
+
 {% endblock%}
