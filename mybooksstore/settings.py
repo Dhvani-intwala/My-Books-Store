@@ -53,6 +53,7 @@ INSTALLED_APPS = [
     'wishlist',
     'newsletter',
     'faqs',
+    'contactus',
 
     # Other
     'crispy_forms',
