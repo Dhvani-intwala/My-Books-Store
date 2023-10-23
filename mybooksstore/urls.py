@@ -29,5 +29,6 @@ urlpatterns = [
     path('wishlist/', include('wishlist.urls')),
     path('subscribe/', include('newsletter.urls')),
     path('faqsview/', include('faqs.urls')),
+    path('contactus/', include('contactus.urls')),
 
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
