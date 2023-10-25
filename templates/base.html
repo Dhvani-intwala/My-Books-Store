@@ -45,6 +45,8 @@
       integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
       crossorigin="anonymous"></script>
 
+    <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/c3cf86c60f9e1553fb26f5c7d/b0ca293c9b4f655b0ca1c30da.js");</script>
+
     <!-- Stripe -->
         <script src="https://js.stripe.com/v3/"></script>
         
@@ -158,6 +160,7 @@
         </script>
 
         
+        
         {% endblock %}
 
         {% block info %}
@@ -171,13 +174,8 @@
                             <div class="col-12 pb-4 pb-md-0 col-md-6 text-center">
                                 <div class="col-10 pt-4 p-0 pt-md-0 mx-auto">
                                     <h5 class="mb-4">Subscribe To Our Newsletter</h5>
-                                    <form method="post">
-                                        {% csrf_token %}
-                                        {% include "newsletter/newsletter.html" %}
-                                        {{ newsletterform|crispy }}
-                                        <button type="submit" class="button small-btn rounded-0">Subscribe</button>
-                                    </form>
-                                    
+                                    {% include "newsletter/newsletter.html" %}
+                                    {% block form-content %}{% endblock %}
                                 </div>
                             </div>
                             <div class="col-10 pt-4 pt-md-0 col-md-6 mx-auto">

@@ -53,7 +53,7 @@
                 </div>
                 <!-- Add filter container -->
                 <hr class="d-none d-lg-block mb-1 mt-0">
-                <div class="navbar navbar-expand-lg navbar-light pl-0">
+                <div class="navbar navbar-expand-lg navbar-light pl-0 mb-5">
                     <button class="d-lg-none button rounded-0 purple-btn small-btn" type="button" data-toggle="collapse" data-target="#navbarTogglerFilters" aria-controls="navbarTogglerFilters" aria-expanded="false" aria-label="Toggle navigation">
                       Filter
                     </button>
@@ -114,31 +114,78 @@
                 <div class="row">
                     {% for product in products %}
                         <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
-                            
-                            <div class="card h-100 border-0 position-relative">
+                            <!-- Add products cover depends on stock value-->
+                            {% if product.stock == 0 %}
+                            <div class="col-sm-6">
                                 {% if product.image %}
                                     <a href="{% url 'product_detail' product.id %}">
                                         <img class="card-img-top product-img " src="{{ product.image.url }}" alt="{{ product.name }}">
                                     </a>
-                                    {% if user.is_authenticated and not user.is_superuser %}
-                                    
-                                        <!-- add to wishlist form -->
-                                        <div class=" align-items-center justify-content-center position-absolute">
-                                            <form action="{% url 'addtowishlist' product.id %}" method="POST">
-                                                {% csrf_token %}
-                                                <button type="submit" class="btn bg-white p-2 d-flex rounded-circle justify-content-center align-items-center border text-black"><i class="far fa-heart mr-1"></i></button> 
-                                            </form>
-                                        </div>
-                                    {% endif %}
-
                                 {% else %}
                                     <a href="{% url 'product_detail' product.id %}">
                                         <img class="card-img-top product-img" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
                                     </a>
                                 {% endif %}
-                                <div class="card-body pb-0">
-                                    <p class="mb-0 text-black">{{ product.name }}</p>
+                                <div class="product-banner col-10">
+                                    <img class="img-fluid" src="{{ MEDIA_URL }}product-banner.png" alt="Item out of stock">
+                                    <div class="banner-text text-center text-red">
+                                        <span class="d-none d-lg-block font-size-smaller">Out of stock</span>
+                                        <span class="d-lg-none">Out of stock</span>
+                                    </div>
                                 </div>
+                            </div>
+                            {% elif product.stock == 1 %}
+                            <div class="col-12">
+                                {% if product.image %}
+                                <a href="{% url 'product_detail' product.id %}">
+                                    <img class="card-img-top product-img " src="{{ product.image.url }}" alt="{{ product.name }}">
+                                </a>
+                                {% else %}
+                                    <a href="{% url 'product_detail' product.id %}">
+                                        <img class="card-img-top product-img" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
+                                    </a>
+                                {% endif %}
+                                <div class="product-banner col-10">
+                                    <img class="img-fluid" src="{{ MEDIA_URL }}product-banner.png" alt="Last item">
+                                    <div class="banner-text text-center text-yellow">
+                                        <span class="d-none d-lg-block font-size-smaller">Last item</span>
+                                        <span class="d-lg-none">Last item</span>
+                                    </div>
+                                </div>
+                            </div>
+                            {% elif product.stock <= 5 %}
+                            <div class="col-12">
+                                {% if product.image %}
+                                <a href="{% url 'product_detail' product.id %}">
+                                    <img class="card-img-top product-img " src="{{ product.image.url }}" alt="{{ product.name }}">
+                                </a>
+                                {% else %}
+                                    <a href="{% url 'product_detail' product.id %}">
+                                        <img class="card-img-top product-img" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
+                                    </a>
+                                {% endif %}
+                                <div class="product-banner col-10 ">
+                                    <img class="img-fluid" src="{{ MEDIA_URL }}product-banner.png" alt="Last {{product.stock}} items">
+                                    <div class="banner-text text-center text-yellow">
+                                        <span class="d-none d-lg-block font-size-smaller text-white ">Last {{product.stock}} items</span>
+                                        <span class="d-lg-none">Last {{product.stock}} items</span>
+                                    </div>
+                                </div>
+                            </div>   
+                            {% else %}
+                            <div class="card h-100 border-0 mt-2">
+                                <!-- ADD PRODUCT COVER -->
+                                {% if product.image %}
+                                <a href="{% url 'product_detail' product.id %}">
+                                    <img class="card-img-top product-img " src="{{ product.image.url }}" alt="{{ product.name }}">
+                                </a>
+                                {% else %}
+                                    <a href="{% url 'product_detail' product.id %}">
+                                        <img class="card-img-top product-img" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
+                                    </a>
+                                {% endif %}
+                            {% endif %}
+                                <h6 class="mb-0 mb-lg-1 mb-0 text-left ml-3 font-weight-bold text-black">{{product.name}}</h6>
                                 <div class="card-footer bg-white pt-0 border-0 text-left">
                                     <div class="row">
                                         <div class="col">

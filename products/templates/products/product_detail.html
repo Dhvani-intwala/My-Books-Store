@@ -79,14 +79,19 @@
                                     </div>
                                 </div>
                             </div>
-                            {% if user.is_authenticated %}
-                            <!-- add to wishlist form -->
-                            <div class="w-75">
-                                <form action="{% url 'addtowishlist' product.id %}" method="POST">
+                            {% if user.is_authenticated and not user.is_superuser %}
+                                <!-- add to wishlist form -->
+                                <div class="">
+                                    <form action="{% url 'addtowishlist' product.id %}" method="POST">
+                                        {% csrf_token %}
+                                        <button type="submit" class="text-black border-0"><i class="far fa-heart mr-1"><span>Add to wishlist</span></i></button> 
+                                    </form>
+                                </div>
+                                <!-- REMOVE FROM WISHLIST FORM -->
+                                <form method="POST" action="{% url 'removefromwishlist' product.id %}">
                                     {% csrf_token %}
-                                    <button type="submit" class="text-black border-0"><i class="far fa-heart mr-1"><span>Add to wishlist</span></i></button> 
+                                    <button type="submit" class="text-black border-0"><i class="far fa-heart mr-1"><span>Remove from wishlist</span></i></button>  
                                 </form>
-                            </div>
                             {% endif %}
                             <div class="col-12">
                                 <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 mt-5">

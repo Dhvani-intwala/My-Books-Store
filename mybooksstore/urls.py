@@ -1,4 +1,4 @@
-"""mybooksstore URL Configuration
+"""mybooksstore URLnewsletter/ Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/3.2/topics/http/urls/
@@ -27,7 +27,7 @@ urlpatterns = [
     path('products/', include('products.urls')),
     path('profile/', include('profiles.urls')),
     path('wishlist/', include('wishlist.urls')),
-    path('subscribe/', include('newsletter.urls')),
+    path('newsletter/', include('newsletter.urls')),
     path('faqsview/', include('faqs.urls')),
     path('contactus/', include('contactus.urls')),
 

@@ -14,7 +14,7 @@ def SubscribeToNewsletter(request):
             return redirect('')
     else:
         newsletterform = SubscribersForm()
-    template_name = "newsletter/newsletter.html"
+    template_name = "base.html"
     context = {
         'newsletterform': newsletterform,
     }
