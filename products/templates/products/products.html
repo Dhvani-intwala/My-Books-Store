@@ -154,6 +154,7 @@
                                 </div>
                             </div>
                             {% elif product.stock <= 5 %}
+                            {% elif product.stock <= 5 %}
                             <div class="col-12">
                                 {% if product.image %}
                                 <a href="{% url 'product_detail' product.id %}">

@@ -98,11 +98,14 @@ body {
 /* info container  */
 
 .bg-black {
-    background-color: #1f2020;
+    background-color: #444646;
 }
 
 .bg-lights {
     background-color: rgb(198, 192, 196);
+}
+.bg-dark-black{
+    background-color: rgb(15, 14, 14);
 }
 
 .decorated {
@@ -285,6 +288,11 @@ input[name='q']::placeholder {
     height: 100px;
     overflow-x: hidden;
     overflow-y: auto;
+}
+
+/* newsletter  */
+#mc_embed_signup{ 
+    width: 600px;
 }
 
 /* products details page  */
