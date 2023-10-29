@@ -51,66 +51,6 @@
                         </p>
                     </div>
                 </div>
-                <!-- Add filter container -->
-                <hr class="d-none d-lg-block mb-1 mt-0">
-                <div class="navbar navbar-expand-lg navbar-light pl-0 mb-5">
-                    <button class="d-lg-none button rounded-0 purple-btn small-btn" type="button" data-toggle="collapse" data-target="#navbarTogglerFilters" aria-controls="navbarTogglerFilters" aria-expanded="false" aria-label="Toggle navigation">
-                      Filter
-                    </button>
-                    <div class="collapse navbar-collapse d-lg-flex flex-row align-items-start" id="navbarTogglerFilters">
-                        <h6 class="col-md-2 col-xl-1 p-0 mb-0 d-none d-lg-block mr-xl-4 text-uppercase font-weight-bold">Filter By</h6>
-                        <ul class="col-xl-10 navbar-nav mt-2 mt-lg-0 d-lg-flex flex-wrap">
-                            <!-- add category filter if not active -->
-                            {% if not current_category and not filters_list.category %}
-                            <li class="col-md-3 col-xl-2 p-0 nav-item mt-2 mt-lg-0 mr-4 mb-2">
-                                <div class="dropdown">
-                                    <button class="dropdown-btn w-100 text-muted d-flex justify-content-between text-uppercase border-0" data-toggle="dropdown" aria-expanded="false">
-                                        <span>Category</span>
-                                        <span class="dropdown-toggle"></span>
-                                    </button>
-                                    <div class="dropdown-menu dropdown-menu-lg-start">
-                                        {% for category in categories %}
-                                        <a class="dropdown-item" href="{{current_url}}category={{ product.category.name }}">{{category.get_friendly_name}}</a>
-                                        {% endfor %}
-                                    </div>
-                                </div>
-                            </li>
-                            {% endif %}
-                            <!-- add year filter if not active -->
-                            {% if not filters_list.year %}
-                            <li class="col-md-3 col-xl-2 p-0 nav-item mt-2 mt-lg-0 mr-4 mb-2">
-                                <div class="dropdown">
-                                    <button class="dropdown-btn w-100 text-muted d-flex justify-content-between text-uppercase border-0" data-toggle="dropdown" aria-expanded="false">
-                                        <span>Year</span>
-                                        <span class="dropdown-toggle"></span>
-                                    </button>                                
-                                    <div class="dropdown-menu dropdown-menu-lg-start">
-                                        {% for year in years_list %}
-                                            <a class="dropdown-item" href="{{current_url}}year={{year|urlencode}}">{{year}}</a>
-                                        {% endfor %}
-                                    </div>
-                                </div>
-                            </li>
-                            {% endif %}
-                            <!-- add auth filter if not active -->
-                            {% if not filters_list.auth %}
-                            <li class="col-md-3 col-xl-2 p-0 nav-item mt-2 mt-lg-0 mr-4 mb-2">
-                                <div class="dropdown">
-                                    <button class="dropdown-btn w-100 text-muted d-flex justify-content-between text-uppercase border-0" data-toggle="dropdown" aria-expanded="false">
-                                        <span>Author</span>
-                                        <span class="dropdown-toggle"></span>
-                                    </button>                                
-                                    <div class="dropdown-menu dropdown-menu-lg-start">
-                                        {% for auth in auth_list %}
-                                            <a class="dropdown-item" href="{{current_url}}auth_name={{auth_name}}">{{auth_name}}</a>
-                                        {% endfor %}
-                                    </div>
-                                </div>
-                            </li>
-                            {% endif %}
-                        </ul>
-                    </div>
-                </div>
                 <div class="row">
                     {% for product in products %}
                         <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">

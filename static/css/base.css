@@ -579,11 +579,14 @@ input[name='q']::placeholder {
 @media (max-width: 380px) {
 
     .home-cover {
-        height: 50vh;
+        height: 40vh;
         object-fit: contain;
     }
     .logo-font{
         font-size:x-large;
+    }
+    .booksstore-title{
+        padding: 0;
     }
     
     h3,h5{
@@ -599,6 +602,9 @@ input[name='q']::placeholder {
     }
     .faqs-questions{
         width: 100%;
+    }
+    .Copyright{
+        font-size: small;
     }
 
 

@@ -6,4 +6,4 @@ class SubscribersForm(forms.ModelForm):
     """Form for adding email to newsletter subscribers"""
     class Meta:
         model = Subscribers
-        fields = ['email',]
+        fields = ['email', ]

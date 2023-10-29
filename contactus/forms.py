@@ -9,7 +9,6 @@ class ContactForm(forms.ModelForm):
         model = ContactMessage
         fields = ('name', 'email', 'phone', 'subject', 'message',)
 
-    
     def __init__(self, *args, **kwargs):
         """
         Add placeholders and classes, remove auto-generated
