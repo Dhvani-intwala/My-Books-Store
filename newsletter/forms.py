@@ -10,3 +10,15 @@ class SubscribersForm(forms.ModelForm):
     class Meta:
         model = Subscribers
         fields = ['email', ]
+
+
+class MailMessageForm(forms.ModelForm):
+
+    title = forms.CharField(widget=forms.TextInput(
+        attrs={'id': 'title_email', }), label="Title")
+    # message = forms.TextField(widget=forms.TextInput(
+    #     attrs={'id': 'message', }), label="Message")
+
+    class Meta:
+        model = MailMessage
+        fields = '__all__'

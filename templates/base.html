@@ -76,7 +76,9 @@
                             {% if request.user.is_authenticated %}
                                 {% if request.user.is_superuser %}
                                     <a href="{% url 'add_product' %}" class="dropdown-item">Product Management</a>
+                                    <a href="{% url 'mail-letter' %}" class="dropdown-item">Newsletter</a>
                                 {% endif %}
+
                                 <a href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
                                 <a href="{% url 'account_logout' %}" data-toggle="modal" data-target="#logoutModal" class="dropdown-item">Logout</a>
                             {% else %}
@@ -99,9 +101,9 @@
                                     <div><i class="fas fa-shopping-bag fa-lg"></i></div>
                                     <p class="my-0">
                                         {% if grand_total %}
-                                            ${{ grand_total|floatformat:2 }}
+                                            €{{ grand_total|floatformat:2 }}
                                         {% else %}
-                                            $0.00
+                                            €0.00
                                         {% endif %}
                                     </p>
                                 </div>
@@ -182,8 +184,6 @@
                                     <form method="POST" action="{% url 'newsletter' %}">
                                         {% csrf_token %}
                                         {{ add_subscriber_form.as_p }}
-                                        <!-- <label for="email">Email:</label>
-                                        <input type="email" id="email" name="email"> -->
                                 
                                         <button class="btn btn-info btn-block w-25 subscribe" type="submit">Subscribe</button>
                         

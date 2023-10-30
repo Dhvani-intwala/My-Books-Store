@@ -1,9 +1,12 @@
 from django.views.generic import CreateView
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from newsletter.forms import SubscribersForm
+from . forms import MailMessageForm
 from django.contrib import messages
 from django.http import HttpResponseRedirect
 from newsletter.models import Subscribers
+from django.core.mail import send_mail
+from django_pandas.io import read_frame
 
 
 class SubscribeToNewsletter(CreateView):
@@ -41,3 +44,29 @@ class SubscribeToNewsletter(CreateView):
         subscribe_form = SubscribersForm()
         return render(request, 'base.html',
                       {'add_subscriber_form': subscribe_form, })
+
+
+def mail_letter(request):
+    emails = Subscribers.objects.all()
+    df = read_frame(emails, fieldnames=['email'])
+    mail_list = df['email'].values.tolist()
+    print(mail_list)
+    if request.method == 'POST':
+        mailMessage_form = MailMessageForm(request.POST)
+        if mailMessage_form.is_valid():
+            mailMessage_form.save()
+            title = mailMessage_form.cleaned_data.get('title')
+            message = mailMessage_form.cleaned_data.get('message')
+            send_mail(
+                title,
+                message,
+                '',
+                mail_list,
+                fail_silently=False,
+            )
+            messages.success(request, 'Message has been sent to the Mail List')
+            return redirect('mail-letter')
+    else:
+        mailMessage_form = MailMessageForm()
+    return render(request, 'newsletter/mailmessage.html',
+                            {'add_mailmeassage': mailMessage_form, })

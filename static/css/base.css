@@ -301,6 +301,10 @@ input[name='q']::placeholder {
     border-radius: 2px;
 }
 
+#title_email{
+    width:70%;
+}
+
 
 /* products details page  */
 

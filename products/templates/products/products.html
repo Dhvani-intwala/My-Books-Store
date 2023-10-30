@@ -94,7 +94,6 @@
                                 </div>
                             </div>
                             {% elif product.stock <= 5 %}
-                            {% elif product.stock <= 5 %}
                             <div class="col-12">
                                 {% if product.image %}
                                 <a href="{% url 'product_detail' product.id %}">
@@ -130,7 +129,7 @@
                                 <div class="card-footer bg-white pt-0 border-0 text-left">
                                     <div class="row">
                                         <div class="col">
-                                            <p class="lead mb-0 text-left font-weight-bold text-black">${{ product.price }}</p>
+                                            <p class="lead mb-0 text-left font-weight-bold text-black">€{{ product.price }}</p>
                                             {% if product.category %}
                                             <p class="small mt-1 mb-0">
                                                 <a class="text-muted" href="{% url 'products' %}?category={{ product.category.name }}">
