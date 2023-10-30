@@ -291,9 +291,16 @@ input[name='q']::placeholder {
 }
 
 /* newsletter  */
-#mc_embed_signup{ 
-    width: 600px;
+.subscribe{
+    display: block;
+    margin: auto;
 }
+
+#newsletter_email{
+    width: 70%;
+    border-radius: 2px;
+}
+
 
 /* products details page  */
 

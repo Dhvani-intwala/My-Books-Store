@@ -19,7 +19,6 @@ class SubscribeToNewsletter(CreateView):
 
     def post(self, request, *args, **kwargs):
         """Override post method"""
-        path = self.kwargs.get('path')
         if request.method == 'POST':
 
             subscribe_form = SubscribersForm(request.POST, request.FILES)
@@ -41,4 +40,4 @@ class SubscribeToNewsletter(CreateView):
 
         subscribe_form = SubscribersForm()
         return render(request, 'base.html',
-                      {'add_subscriber_forms': subscribe_form, })
+                      {'add_subscriber_form': subscribe_form, })
