@@ -12,15 +12,14 @@
 {% block content %}
     <div class="overlay"></div>
     <div class="container">
-        <div class="row">
-            <div class="col-12 col-md-6">
-                <hr>
+        <div class="row pt-5">
+            <div class="col-12 col-md-6 offset-md-3">
                 <h2 class="logo-font mb-4">Newsletter</h2>
                 <h5 class="text-muted"></h5>
                 <hr>
 
-                <div class="card-body">
-                    <form method="POST" action="{% url 'mail-letter' %}">
+                <div class="card-body ">
+                    <form method="POST" action="{% url 'mail-letter' %}" class="d-block">
                         {% csrf_token %}
                         {{ add_mailmeassage }}
                         <input class="btn btn-info btn-block w-25" type="submit" value="Send Message">

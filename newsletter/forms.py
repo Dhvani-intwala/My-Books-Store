@@ -13,11 +13,11 @@ class SubscribersForm(forms.ModelForm):
 
 
 class MailMessageForm(forms.ModelForm):
-
+    """Form for adding email to newsletter subscribers"""
     title = forms.CharField(widget=forms.TextInput(
         attrs={'id': 'title_email', }), label="Title")
-    # message = forms.TextField(widget=forms.TextInput(
-    #     attrs={'id': 'message', }), label="Message")
+    message = forms.CharField(widget=forms.Textarea(
+        attrs={'id': 'message_mail', }), label="Message")
 
     class Meta:
         model = MailMessage

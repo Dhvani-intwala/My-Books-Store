@@ -80,18 +80,27 @@
                                 </div>
                             </div>
                             {% if user.is_authenticated and not user.is_superuser %}
-                                <!-- add to wishlist form -->
-                                <div class="">
+                                {% if not wishList %}
+                                    <!-- add to wishlist form --> 
                                     <form action="{% url 'addtowishlist' product.id %}" method="POST">
                                         {% csrf_token %}
+                                        <input name="current_url" type="hidden" value="{{ request.path }}">
                                         <button type="submit" class="text-black border-0"><i class="far fa-heart mr-1"><span>Add to wishlist</span></i></button> 
                                     </form>
+                                    
+                                {% else %}
+                                    <!-- REMOVE FROM WISHLIST FORM -->
+                                    <form method="POST" action="{% url 'removefromwishlist' product.id %}">
+                                        {% csrf_token %}
+                                        <input name="current_url" type="hidden" value="{{ request.path }}">
+                                        <button type="submit" class="text-black border-0"><i class="far fa-heart mr-1"><span>Remove from wishlist</span></i></button>  
+                                    </form>
+                                {% endif %}
+                            {% elif not user.is_authenticated %}
+                                <div class="d-flex align-items-center mt-4 ">
+                                  <i class="far fa-heart mr-1 text-muted"></i>
+                                  <span class="text-muted">Authenticate to add product to wishlist</span>
                                 </div>
-                                <!-- REMOVE FROM WISHLIST FORM -->
-                                <form method="POST" action="{% url 'removefromwishlist' product.id %}">
-                                    {% csrf_token %}
-                                    <button type="submit" class="text-black border-0"><i class="far fa-heart mr-1"><span>Remove from wishlist</span></i></button>  
-                                </form>
                             {% endif %}
                             <div class="col-12">
                                 <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 mt-5">

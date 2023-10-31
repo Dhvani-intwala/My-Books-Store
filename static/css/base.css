@@ -302,7 +302,10 @@ input[name='q']::placeholder {
 }
 
 #title_email{
-    width:70%;
+    width:100%;
+}
+#message_mail{
+    width:100%;
 }
 
 
@@ -585,6 +588,13 @@ input[name='q']::placeholder {
     }
 }
 
+@media (min-width: 768px) {
+    .home-cover {
+        height: 50vh;
+        object-fit: contain;
+    }
+}
+
 /* --------------------------------- EXTRA SMALL DEVICES STYLINYG ------------------------------- */
 
 @media (max-width: 380px) {
@@ -594,10 +604,10 @@ input[name='q']::placeholder {
         object-fit: contain;
     }
     .logo-font{
-        font-size:x-large;
+        font-size:small;
     }
     .booksstore-title{
-        padding: 0;
+        padding-left: 0rem !important;
     }
     
     h3,h5{
