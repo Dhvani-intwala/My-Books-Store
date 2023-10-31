@@ -1,22 +1,27 @@
 # My Books Store - Online Book shop
 
-## Introduction
 
-My Books Store is a e-commerce store that is designed and implemented with Django python web framework, HTML, CSS and Javascript.
-It specialises in selling books to consumers online. However, it has to be noted that this site is for educational use only.
+
 
 ## TABLE OF CONTENTS
 
-1. [Strategy](#strategy)
-2. [Colour Scheme](#colour-scheme)
-3. [User Experience UX](#user-experience-ux)
-4. [Features](#features)
-5. [Future Features](#future-features)
-6. [Technologies Used](#technologies-used)
-7. [Manual and Automated Testing](#manaual-and-automated-testing)
-8. [Deployment](#deployment)
-9. [Credits](#credits)
-10. [Acknowledgments](#acknowledgements)
+- [Overview](#overview)
+- [Strategy](#strategy)
+- [Colour Scheme](#colour-scheme)
+- [User Experience UX](#user-experience-ux)
+- [Features](#features)
+- [Future Features](#future-features)
+- [Technologies Used](#technologies-used)
+- [Manual and Automated Testing](#manaual-and-automated-testing)
+- [Deployment](#deployment)
+- [Credits](#credits)
+- [Acknowledgments](#acknowledgements)
+
+# Overview
+
+My Books Store is an E-commerce website created for a fictive books shop located in Schelklingen, Germany. The main purpose of the project was to implement a fully functional online store that will make the process of selecting and purchasing books products much easier for customers.
+The users are given the possibility to see every product's detail, create a Wishlist, add items to the shopping bag, purchase with online payment method and access order history. 
+The website was developed using Python (Django), HTML, CSS and JavaScript. The data was stored in a PostgreSQL database using ElephantSql for manipulation.
 
 ### Strategy
 

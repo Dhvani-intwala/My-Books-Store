@@ -294,6 +294,7 @@ input[name='q']::placeholder {
 .subscribe{
     display: block;
     margin: auto;
+    width: 25%;
 }
 
 #newsletter_email{
@@ -530,6 +531,7 @@ input[name='q']::placeholder {
     .container {
         max-width: 80%;
     }
+    
 }
 
 /* fixed top navbar only on medium and up */
@@ -541,6 +543,7 @@ input[name='q']::placeholder {
         left: 0;
         z-index: 1030;
     }
+   
 }
 
 
@@ -588,7 +591,7 @@ input[name='q']::placeholder {
     }
 }
 
-@media (min-width: 768px) {
+@media (max-width: 820px) {
     .home-cover {
         height: 50vh;
         object-fit: contain;
