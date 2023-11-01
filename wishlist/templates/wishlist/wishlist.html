@@ -43,7 +43,7 @@
                                     <span class="small"><a href="{% url 'products' %}">Products Home</a> | </span>
                                 {% endif %}
                                 <i class="fas fa-th-large font-size-smaller"></i>
-                                {{ products|length }} Products {% if search_term %} found for <strong>"{{ search_term }}"</strong>{% endif %}
+                                {{ wishlist|length }} Products {% if search_term %} found for <strong>"{{ search_term }}"</strong>{% endif %}
                             </p>
                         </div>
                     </div>
@@ -51,6 +51,7 @@
                     <hr class="d-none d-lg-block mb-1 mt-0">
                     <div class="row">
                         {% for product in wishlist %}
+                        
                             <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
                                 
                                 <div class="card border-0 position-relative">
@@ -58,16 +59,14 @@
                                         <a href="{% url 'product_detail' product.id %}">
                                             <img class="card-img-top product-img" src="{{ product.image.url }}" alt="{{ product.name }}">
                                         </a>
-                                        <!-- {% if user.is_authenticated and not user.is_superuser %}
-                                        
-                                           
+                                        {% if user.is_authenticated and not user.is_superuser %}
                                            <div class="align-items-center justify-content-center position-absolute">
                                                 <form action="{% url 'removefromwishlist' product.id %}" method="POST">
                                                     {% csrf_token %}
-                                                    <button type="submit" class="btn bg-white p-2 d-flex rounded-circle justify-content-center align-items-center border text-black"><i class="far fa-heart mr-1"></i></button> 
+                                                    <button type="submit" class="btn bg-white ml-4 p-2 d-flex border-0 justify-content-center align-items-center border text-black"><i class="fa fa-heart"></i></button> 
                                                 </form>
                                             </div>
-                                        {% endif %}  -->
+                                        {% endif %} 
     
                                     {% else %}
                                         <a href="{% url 'product_detail' product.id %}">
@@ -133,8 +132,35 @@
     </div>
 {% endblock %}
 
-{% block extra_js %} 
-<script src="{% static 'wishlist/js/wishlist.js' %}"></script>
+
+{% block postloadjs %}
+    {{ block.super }}
+    
+    <script type="text/javascript">
+        $('#sort-selector').change(function() {
+            var selector = $(this);
+            var currentUrl = new URL(window.location);
+
+            var selectedVal = selector.val();
+            if(selectedVal != "reset"){
+                var sort = selectedVal.split("_")[0];
+                var direction = selectedVal.split("_")[1];
+
+                currentUrl.searchParams.set("sort", sort);
+                currentUrl.searchParams.set("direction", direction);
+
+                window.location.replace(currentUrl);
+            } else {
+                currentUrl.searchParams.delete("sort");
+                currentUrl.searchParams.delete("direction");
+
+                window.location.replace(currentUrl);
+            }
+        })
+    </script>
+    
+    <script src="{% static 'wishlist/js/wishlist.js' %}"></script>
+  
 {% endblock %}
 
                                      

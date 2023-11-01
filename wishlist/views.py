@@ -1,7 +1,9 @@
-from django.shortcuts import render, redirect, get_object_or_404
-from products.models import Product
+from django.shortcuts import render, redirect, get_object_or_404, reverse
+from products.models import Product, Category
 from wishlist.models import wishList
 from django.contrib import messages
+from django.db.models import Q
+from django.db.models.functions import Lower
 
 # Create your views here.
 
@@ -9,12 +11,50 @@ from django.contrib import messages
 def wishlist(request):
     """ A view that provides the wishlist of products """
     my_wishlist = wishList.objects.filter(user=request.user)
+    # print(type(my_wishlist))
+    # my_wishlist = my_wishlist.product.all()
     my_wishlist_products = []
     for val in my_wishlist:
         my_wishlist_products.append(val.product)
+    my_wishlist = my_wishlist_products
+    query = None
+    categories = None
+    sort = None
+    direction = None
+
+    if request.GET:
+        if 'sort' in request.GET:
+            sortkey = request.GET['sort']
+            sort = sortkey
+            if sortkey == 'name':
+                sortkey = 'lower_name'
+                my_wishlist = my_wishlist.annotate(lower_name=Lower('name'))
+            if sortkey == 'category':
+                sortkey = 'category__name'
+            if 'direction' in request.GET:
+                direction = request.GET['direction']
+                if direction == 'desc':
+                    sortkey = f'-{sortkey}'
+            my_wishlist = my_wishlist.order_by(sortkey)        
+        if 'category' in request.GET:
+            categories = request.GET['category'].split(',')
+            my_wishlist = my_wishlist.filter(category__name__in=categories)
+            categories = Category.objects.filter(name__in=categories)
+
+        if 'q' in request.GET:
+            query = request.GET['q']
+            if not query:
+                messages.error(request, "You didn't enter any search criteria!")
+                return redirect(reverse('wishlist'))            
+            queries = Q(name__icontains=query) | Q(description__icontains=query)
+            my_wishlist = my_wishlist.filter(queries)
+    
+    current_sorting = f'{sort}_{direction}'
     context = {
-         'wishlist': my_wishlist_products,
-         
+        'wishlist': my_wishlist_products,
+        'search_term': query,
+        'current_categories': categories,
+        'current_sorting': current_sorting,
     }
     return render(request, 'wishlist/wishlist.html', context)
 

@@ -1,29 +1,10 @@
-// $(document).ready(function() {
-//     // Add a click event listener to the subscribe button
-//     $('#subscriber').click(function() {
-//         // Change the URL to 'example.com/newsletter'
-//         console.log("click")
-       
-
-//         // Trigger the modal to open (you might need to use a delay to ensure the URL change happens first)
-//         setTimeout(function() {
-//             $('#exampleModal').modal('show');
-//         }, 100);
-//     });
-// });
-document.addEventListener("DOMContentLoaded", function() {
-    // Find the element by ID
-    var button = document.getElementById("subscriber");
-    var modal = new bootstrap.Modal(document.getElementById("exampleModal"));
-    // Check if the element exists
-    if (button) {
-        // Attach a click event handler
-        button.addEventListener("click", function() {
-            // Perform your operation here
-            // window.location.href = '/newsletter';
-            history.pushState({}, null, "/newsletter");
-            modal.show();
-
-        });
-    }
-});
+ // ----------------------------- ADD ACTIVE CLASS TO THE CURRENT LINK ---------------------------
+ var header = document.getElementById("main-nav");
+ var btns = header.getElementsByClassName("nav-link");
+ for (var i = 0; i < btns.length; i++) {
+     btns[i].addEventListener("click", function() {
+         var current = document.getElementsByClassName("active");
+         current[0].className = current[0].className.replace(" active", "");
+         this.className += " active";
+     });
+ }
