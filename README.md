@@ -1,7 +1,6 @@
 # My Books Store - Online Book shop
 
-
-
+![Home page](media/multi-device.png)
 
 ## TABLE OF CONTENTS
 
@@ -9,13 +8,6 @@
 - [Strategy](#strategy)
 - [Colour Scheme](#colour-scheme)
 - [User Experience UX](#user-experience-ux)
-- [Features](#features)
-- [Future Features](#future-features)
-- [Technologies Used](#technologies-used)
-- [Manual and Automated Testing](#manaual-and-automated-testing)
-- [Deployment](#deployment)
-- [Credits](#credits)
-- [Acknowledgments](#acknowledgements)
 
 # Overview
 

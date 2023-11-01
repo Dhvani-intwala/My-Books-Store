@@ -15,11 +15,6 @@ class SubscribeToNewsletter(CreateView):
     form_class = SubscribersForm
     template_name = "base.html"
 
-    def get_form_kwargs(self):
-        kwargs = super().get_form_kwargs()
-        kwargs['path'] = self.kwargs.get('path')
-        return kwargs
-
     def post(self, request, *args, **kwargs):
         """Override post method"""
         if request.method == 'POST':
@@ -33,13 +28,11 @@ class SubscribeToNewsletter(CreateView):
                 messages.success(
                     request, 'Thank you for your subscription!',
                     extra_tags="form_success")
-                return HttpResponseRedirect(request.POST.get(
-                    'newsletter_submit_btn', '') + '#newsletter')
+                return HttpResponseRedirect('/')
             else:
                 messages.error(request, subscribe_form.errors['email'],
                                extra_tags="form_errors")
-                return HttpResponseRedirect(request.POST.get(
-                    'newsletter_submit_btn', '') + '#newsletter')
+                return HttpResponseRedirect('/')
 
         subscribe_form = SubscribersForm()
         return render(request, 'base.html',
@@ -57,6 +50,7 @@ def mail_letter(request):
             mailMessage_form.save()
             title = mailMessage_form.cleaned_data.get('title')
             message = mailMessage_form.cleaned_data.get('message')
+            print(title, message)
             send_mail(
                 title,
                 message,
