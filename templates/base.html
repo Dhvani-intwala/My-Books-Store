@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="{% static 'css/base.css' %}" />
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="icon" href="{{ MEDIA_URL }}favicon.png" type="image/x-icon" />
     
     {% endblock %}
@@ -163,6 +163,13 @@
 
         <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
 
+        <script>
+            setTimeout(function () {
+                let toast = document.getElementById("toast-msg");
+               
+                toast.style.display = "none";
+            }, 3000);
+        </script>
         
         
         {% endblock %}
@@ -184,7 +191,7 @@
                                     <form method="POST" action="{% url 'newsletter' %}">
                                         {% csrf_token %}
                                         {{ add_subscriber_form.as_p }}
-                                
+                                        <span id="text"></span>
                                         <button class="btn btn-info btn-block  subscribe " type="submit">Subscribe</button>
                         
                                     </form>
@@ -200,11 +207,11 @@
                                     </div>
                                     <div class="text-center">
                                         <p class="mb-2">Follow us on social media: </p>
-                                        <div class="d-flex justify-content-between text-center mb-2">
-                                            <a href="https://www.facebook.com/profile.php?id=61552702647225" target="_blank" rel="" aria-label="Link to facebook page"><i class="fab fa-facebook-square ms-3 text-white h3"></i></a>
-                                            <a href="https://www.twitter.com" target="_blank" rel="" aria-label="Link to twitter page"><i class="fab fa-twitter-square ms-3 text-white h3"></i></a>
-                                            <a href="https://www.instagram.com" target="_blank" rel="" aria-label="Link to instagram page"><i class="fab fa-instagram-square ms-3 text-white h3"></i></a>
-                                            <a href="https://www.youtube.com" target="_blank" rel="" aria-label="Link to youtube page"><i class="fab fa-youtube-square ms-3 text-white h3"></i></a>
+                                        <div class="d-flex justify-content-between text-center mb-2 wrap">
+                                            <a href="https://www.facebook.com/profile.php?id=61552702647225" target="_blank" rel="" aria-label="Link to facebook page" class="hover-fx"><i class="fab fa-facebook-square ms-3 h3 text-light"></i></a>
+                                            <a href="https://www.twitter.com" target="_blank" rel="" aria-label="Link to twitter page" class="hover-fx"><i class="fab fa-twitter-square ms-3 h3 text-light"></i></a>
+                                            <a href="https://www.instagram.com" target="_blank" rel="" aria-label="Link to instagram page" class="hover-fx"><i class="fab fa-instagram-square ms-3 h3 text-light"></i></a>
+                                            <a href="https://www.youtube.com" target="_blank" rel="" aria-label="Link to youtube page" class="hover-fx"><i class="fab fa-youtube-square ms-3 h3 text-light"></i></a>
                                         </div>
                                         <p class="mb-0 Copyright">Copyright &copy;My Books Store 2023</p>
                                     </div>

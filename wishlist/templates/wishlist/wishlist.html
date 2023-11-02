@@ -60,10 +60,10 @@
                                             <img class="card-img-top product-img" src="{{ product.image.url }}" alt="{{ product.name }}">
                                         </a>
                                         {% if user.is_authenticated and not user.is_superuser %}
-                                           <div class="align-items-center justify-content-center position-absolute">
+                                           <div class="align-items-center justify-content-center position-absolute bg-opacity-10">
                                                 <form action="{% url 'removefromwishlist' product.id %}" method="POST">
                                                     {% csrf_token %}
-                                                    <button type="submit" class="btn bg-white ml-4 p-2 d-flex border-0 justify-content-center align-items-center border text-black"><i class="fa fa-heart"></i></button> 
+                                                    <button type="submit" class="btn bg-white bg-opacity-10 ml-4 p-2 d-flex border-0 justify-content-center align-items-center border text-black "><i class="fa fa-heart"></i></button> 
                                                 </form>
                                             </div>
                                         {% endif %} 

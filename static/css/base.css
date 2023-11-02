@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Alice&family=Yesteryear&display=swap');
+
 html {
     height: 100%;
 }
@@ -23,19 +25,74 @@ body {
     text-transform: uppercase;
 }
 
-/* .main-logo-link {
-    width: fit-content;
-} */
+.navbar-link.active {
+    background: none;
+    color:#444;
+    border-bottom: 3px solid rgb(86, 85, 85);
+}
+.navbar-link:hover{
+    -ms-transform: scale(1.0); 
+    -webkit-transform: scale(1.0);
+    transform: scale(1.1); 
+    border-bottom: 3px solid rgb(86, 85, 85);
+}
 
 .shop-button {
     background: black;
     min-width: 260px;
+    animation: wiggle 2s linear infinite;
+    cursor: pointer;
+}
+
+/* Keyframes */
+@keyframes wiggle {
+    0%, 7% {
+      transform: rotateZ(0);
+    }
+    15% {
+      transform: rotateZ(-15deg);
+    }
+    20% {
+      transform: rotateZ(10deg);
+    }
+    25% {
+      transform: rotateZ(-10deg);
+    }
+    30% {
+      transform: rotateZ(6deg);
+    }
+    35% {
+      transform: rotateZ(-4deg);
+    }
+    40%, 100% {
+      transform: rotateZ(0);
+    }
+}
+  
+  
+.shop-button {
+    position: absolute;
+    left: calc(7% - 3em);
+    top: calc(100% - 2em);
+    
+    height: 3em;
+    width: 15em;
+    
+    background: #444;
+    background: linear-gradient(top, #555, #333);
+    border: none;
+    border-top: 3px solid rgb(231, 229, 226);
+    border-radius: 0 0 0.2em 0.2em;
+    color: #fff;
+    transform-origin: 50% 5em;
 }
 
 .btn-black {
     background: black;
     color: white;
 }
+
+
 
 .shop-button:hover,
 .shop-button:active,
@@ -153,6 +210,12 @@ body {
     height: 90%;
     object-fit: cover;
 }
+.card-img-top{
+    width: 80%;
+    height: 90%;
+    object-fit: cover;
+}
+
 
 a.category-badge>span.badge:hover {
     background: #212529 !important;
@@ -184,10 +247,10 @@ input[name='q']::placeholder {
 .banner-text {
     position: absolute;
     z-index: 5;
-    top: 48%;
-    right: 16%;
+    top: 8px;
+    right: 16px;
     text-transform: uppercase;
-    width: 63%;
+    width: 50%;
     opacity: 1;
 }
 
@@ -493,6 +556,11 @@ input[name='q']::placeholder {
 .footer {
     position: sticky;
     top: 100%;
+}
+.hover-fx:hover{
+    -ms-transform: scale(1.0); 
+    -webkit-transform: scale(1.0);
+    transform: scale(1.1); 
 }
 
 

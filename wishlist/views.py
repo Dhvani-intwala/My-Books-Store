@@ -14,9 +14,13 @@ def wishlist(request):
     # print(type(my_wishlist))
     # my_wishlist = my_wishlist.product.all()
     my_wishlist_products = []
+    queryset = Product.objects.none()
     for val in my_wishlist:
         my_wishlist_products.append(val.product)
-    my_wishlist = my_wishlist_products
+        queryset |= Product.objects.filter(sku=val.product.sku)
+    # my_wishlist = my_wishlist_products
+    my_wishlist = queryset
+
     query = None
     categories = None
     sort = None
@@ -35,7 +39,8 @@ def wishlist(request):
                 direction = request.GET['direction']
                 if direction == 'desc':
                     sortkey = f'-{sortkey}'
-            my_wishlist = my_wishlist.order_by(sortkey)        
+            my_wishlist = my_wishlist.order_by(sortkey)
+            print(my_wishlist)    
         if 'category' in request.GET:
             categories = request.GET['category'].split(',')
             my_wishlist = my_wishlist.filter(category__name__in=categories)
@@ -51,7 +56,7 @@ def wishlist(request):
     
     current_sorting = f'{sort}_{direction}'
     context = {
-        'wishlist': my_wishlist_products,
+        'wishlist': my_wishlist,
         'search_term': query,
         'current_categories': categories,
         'current_sorting': current_sorting,
