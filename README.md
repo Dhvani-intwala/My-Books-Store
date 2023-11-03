@@ -2,6 +2,8 @@
 
 ![Home page](media/multi-device.png) 
 
+<h3>Developer: Dhvani Intwala</h3>
+
 ## [TABLE OF CONTENTS](#table-of-contents)<!-- omit in toc -->
 
 - [Overview](#overview)
@@ -156,7 +158,24 @@ The project uses the relational database PostgreSQL to store the data. Two diagr
 #### Surface
 <hr>
 
-<h4>Color Scheme</h4>
+<h4>Design</h4>
+The website was designed with a minimalistic style to align with the site's objectives. The simple design allows users to easily navigate through the site and find what they are looking for.
+
+<h4>Colour Scheme</h4>
+
+The design is quite simple. The colour scheme is used to ensure that there is a good contrast with the text and to create a clean and visually appealing look across the site. The scheme establishes a strong contrast between the background colors and text and, at the same time, ensures that the site meets accessibility requirements.
+
+
+| Color         |Hex    |
+| ---------- | ------ |
+| Blue | ![#444646](/media/#0f0e0e.png) #444646 |
+| Green | ![#c6c0c4](media/#018031.png) #018031|
+| Red | ![#FF0000](media/#ff0000.png) #FF0000 |
+| White | ![#ffffff](media/#ffffff.png) #ffffff |
+| Dark gray | ![#0f0e0e](media/#0f0e0e.png) #0f0e0e |
+| dark | ![#2c313c](media/#2c313c.png) #2c313c|
+| Light gray | ![#dadadf](media/#dadadf.png) #dadadf |
+
 
 ## Agile Methodology
 

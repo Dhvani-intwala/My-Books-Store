@@ -148,7 +148,7 @@ body {
 }
 
 .bg-color-model{
-    background-color: rgb(198, 192, 196);
+    background-color: #c6c0c4;
 }
 
 
@@ -159,10 +159,10 @@ body {
 }
 
 .bg-lights {
-    background-color: rgb(198, 192, 196);
+    background-color: #c6c0c4;
 }
 .bg-dark-black{
-    background-color: rgb(15, 14, 14);
+    background-color: #0f0e0e;
 }
 
 .decorated {
