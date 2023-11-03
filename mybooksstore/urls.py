@@ -30,5 +30,7 @@ urlpatterns = [
     path('newsletter/', include('newsletter.urls')),
     path('faqsview/', include('faqs.urls')),
     path('contactus/', include('contactus.urls')),
+    path('discount/', include('discount.urls')),
+
 
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
