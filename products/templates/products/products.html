@@ -55,37 +55,21 @@
                         {% for product in products %}
                             <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
                                 <div class="card h-100 border-0 mt-2">
-                                     <!-- Add products cover depends on stock value-->
-                                    {% if product.stock == 0 %}
-                                    <div class="col-12 position-relative">
+                                    <!-- ADD PRODUCT COVER -->
                                         {% if product.image %}
-                                            <a href="{% url 'product_detail' product.id %}">
-                                                <img class="card-img-top product-img" src="{{ product.image.url }}" alt="{{ product.name }}">
-                                            </a>
+                                        <a href="{% url 'product_detail' product.id %}">
+                                            <img class="card-img-top product-img " src="{{ product.image.url }}" alt="{{ product.name }}">
+                                        </a>
                                         {% else %}
                                             <a href="{% url 'product_detail' product.id %}">
                                                 <img class="card-img-top product-img" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
                                             </a>
                                         {% endif %}
-                                        <div class="product-banner col-12 position-absolute top-0 end-0">
-                                            <!-- <img class="img-fluid" src="{{ MEDIA_URL }}product-banner.png" alt="Item out of stock"> -->
-                                            <div class="banner-text text-center text-red">
-                                                <span class="font-size-smaller text-white">Out of stock</span>
-                                            </div>
+                                        {% if product.stock == 0 %}
+                                        <div class="banner-text text-center text-red">
+                                            <span class="font-size-smaller text-white">Out of stock</span>
                                         </div>
-                                    </div>
-                                    {% else %}
-                                    <!-- ADD PRODUCT COVER -->
-                                    {% if product.image %}
-                                    <a href="{% url 'product_detail' product.id %}">
-                                        <img class="card-img-top product-img " src="{{ product.image.url }}" alt="{{ product.name }}">
-                                    </a>
-                                    {% else %}
-                                        <a href="{% url 'product_detail' product.id %}">
-                                            <img class="card-img-top product-img" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
-                                        </a>
-                                    {% endif %}
-                                    {% endif %}
+                                        {% endif %}
                                     <h6 class="mb-0 mb-lg-1 mb-0 text-left ml-3 font-weight-bold text-black">{{product.name}}</h6>
                                     <div class="card-footer bg-white pt-0 border-0 text-left">
                                         <div class="row">
