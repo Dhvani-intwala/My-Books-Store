@@ -12,15 +12,15 @@
 - [User Stories](#user-stories)
     - [Strategy](#strategy)
     - [Scope](#scope)
-    - [Simple and intuitive User Experience](#simple-and-intuitive-user-experience)
-    - [Relevant content](#relevant-content)
-    - [Features for upgraded experience](#features-for-upgraded-experience)
-    - [Different client and staff member Accounts](#different-client-and-staff-member-accounts)
-    - [Responsiveness](#responsiveness)
     - [Structure](#structure)
     - [Skeleton](#skeleton)
     - [Surface](#surface)
 - [Agile Methodology](#agile-methodology)
+- [Testing](#testing)
+- [Deployment](#deployment)
+  - [Deploy on Heroku](#deploy-on-heroku)
+  - [Fork the repository](#fork-the-repository)
+  - [Clone the repository](#clone-the-repository)
 
 
 ## Overview
@@ -79,19 +79,19 @@ The website was developed using Python (Django), HTML, CSS and JavaScript. The d
 #### Scope
 <hr>
 
-#### Simple and intuitive User Experience
+<h4> Simple and intuitive User Experience</h4>
 - Ensure the navigation menu is visible and functional at every step;
 - Ensure every page has a suggestive name that fits its content;
 - Ensure the users will get visual feedback when navigating through pages;
 - Create a design that matches the requirements of an e-commerce website.
 
-#### Relevant content
+<h4> Relevant content</h4>
 - Add a representative cover image;
 - Add the website title and details about its purpose;
 - Add a section that includes information about the shop's name, description, location and contact data;
 - Make a clear and beautiful designed presentation of the menu elements;
 
-#### Features for upgraded experience
+<h4> Features for upgraded experience</h4>
 - Create a list with all the products and group them by category;
 - Create a Bag feature that allows the user to add, update and remove products from the shopping bag;
 - Create a Wishlist feature that gives the user the possibility to add and remove items from the wishlist;
@@ -101,7 +101,7 @@ The website was developed using Python (Django), HTML, CSS and JavaScript. The d
 - Create a page for the staff members to manage all the orders for all the users;
 - Create a feature for the staff members to add/edit products on the website;
 
-#### Different client and staff member Accounts
+<h4> Different client and staff member Accounts</h4>
 - Allow the clients to add/edit reviews and the staff members only the option to read them;
 - Give the client permission to add/remove products from wishlist and remove the feature for staff members;
 - Only guest and client users to access the shopping bag and its features;
@@ -111,7 +111,7 @@ The website was developed using Python (Django), HTML, CSS and JavaScript. The d
 - Allow access to Wishlist page only for clients users;
 - Allow access to Orders page only for staff member users;
 
-#### Responsiveness
+<h4> Responsiveness</h4>
 - Create a responsive design for desktop, tablet and mobile devices.<br><br>
 
 #### Structure
@@ -153,9 +153,51 @@ The project uses the relational database PostgreSQL to store the data. Two diagr
 #### Surface
 <hr>
 
-Color Scheme
+<h4>Color Scheme</h4>
 
 ## Agile Methodology
 
 This project was developed using the agile methodology. All progress in implementing Epics and User Stories was captured using Trello. Necessary goals and priorities were well defined throughout the project. In addition, labels were used to define the priority of each user story on the Kanban board. As user stories were completed, they were moved from the To Do, Progress, and Done lists in the Trello board.
 
+## Testing
+The testing documentation can be found at [TESTING.MD](TESTING.MD)
+
+## Deployment
+
+### Deploy on Heroku
+ 1. Create Pipfile 
+ 
+ In the terminal enter the command ` pip3 freeze > requirements.txt`, and a file with all the requirements will be created. 
+ 
+ 2. Setting up Heroku
+
+    * Go to the Heroku website (https://www.heroku.com/) 
+    * Login to Heroku and choose *Create App* 
+    * Click *New* and *Create a new app*
+    * Choose a name and select your location
+    * Go to the *Resources* tab 
+    * From the Resources list select *Heroku Postgres*
+    * Navigate to the *Deploy* tab
+    * Click on *Connect to Github* and search for your repository
+    * Navigate to the *Settings* tab
+    * Reveal Config Vars and add your Cloudinary, Database URL (from Heroku-Postgres) and Secret key.    
+
+3. Deployment on Heroku
+
+    * Go to the Deploy tab.
+    * Choose the main branch for deploying and enable automatic deployment 
+    * Select manual deploy for building the App 
+    
+### Fork the repository
+For creating a copy of the repository on your account and change it without affecting the original project, use<b>Fork</b> directly from GitHub:
+- On [My Repository Page](https://github.com/useriasminna/italianissimo-booking-website), press <i>Fork</i> in the top right of the page
+- A forked version of my project will appear in your repository<br></br>
+
+### Clone the repository
+For creating a clone of the repository on your local machine, use<b>Clone</b>:
+- On [My Repository Page](https://github.com/useriasminna/italianissimo-booking-website), click the <i>Code</i> green button, right above the code window
+- Chose from <i>HTTPS, SSH and GitClub CLI</i> format and copy (preferably <i>HTTPS</i>)
+- In your <i>IDE</i> open <i>Git Bash</i>
+- Enter the command <code>git clone</code> followed by the copied URL
+- Your clone was created
+<hr>
