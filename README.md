@@ -168,13 +168,13 @@ The design is quite simple. The colour scheme is used to ensure that there is a 
 
 | Color         |Hex    |
 | ---------- | ------ |
-| Blue | ![#444646](/media/#0f0e0e.png) #444646 |
-| Green | ![#c6c0c4](media/#018031.png) #018031|
-| Red | ![#FF0000](media/#ff0000.png) #FF0000 |
-| White | ![#ffffff](media/#ffffff.png) #ffffff |
-| Dark gray | ![#0f0e0e](media/#0f0e0e.png) #0f0e0e |
-| dark | ![#2c313c](media/#2c313c.png) #2c313c|
-| Light gray | ![#dadadf](media/#dadadf.png) #dadadf |
+| Blue | ![#444646](/media/0f0e0e.png) #444646 |
+| Green | ![#c6c0c4](media/018031.png) #018031|
+| Red | ![#FF0000](media/ff0000.png) #FF0000 |
+| White | ![#ffffff](media/ffffff.png) #ffffff |
+| Dark gray | ![#0f0e0e](media/0f0e0e.png) #0f0e0e |
+| dark | ![#2c313c](media/2c313c.png) #2c313c|
+| Light gray | ![#dadadf](media/dadadf.png) #dadadf |
 
 
 ## Agile Methodology
