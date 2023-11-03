@@ -2,8 +2,7 @@
 
 ![Home page](media/multi-device.png) 
 
-<h1>TABLE OF CONTENTS </h1>
-<!-- omit in toc -->
+## [TABLE OF CONTENTS](#table-of-contents)<!-- omit in toc -->
 
 - [Overview](#overview)
 - [User Experience (UX)](#user-experience-ux)
@@ -21,6 +20,10 @@
   - [Deploy on Heroku](#deploy-on-heroku)
   - [Fork the repository](#fork-the-repository)
   - [Clone the repository](#clone-the-repository)
+- [Credits](#credits)
+  - [Code](#code)
+  - [Media](#media)
+  - [Acknowledgements](#acknowledgements)
 
 
 ## Overview
@@ -201,3 +204,29 @@ For creating a clone of the repository on your local machine, use<b>Clone</b>:
 - Enter the command <code>git clone</code> followed by the copied URL
 - Your clone was created
 <hr>
+
+## Credits
+
+- The texts and images that are used for testimonials were taken from google.
+
+### Code
+
+- [Django Documenation](https://www.djangoproject.com/) was used to provide examples of code solutions and Django functionality.
+- [Bootstrap Documenation](https://getbootstrap.com/) was used to provide examples of Bootstrap functionality and building blocks.
+- [Code Institute walkthrough](https://codeinstitute.net/) as inspiration and code examples, the code institute walkthroughs "Hello Django" and "I Think Therefore I Blog" was used.
+- [newsletter reference](https://www.youtube.com/watch?v=hWtlskOaFNI)
+- The wiggle animation was taken and adapted from [codepen](https://codepen.io/beben-koben/pen/PZYjwX)
+
+### Media
+
+- Most of the pictures for the project was taken from [Pexels] (https://www.pexels.com/) and [Pixabay] (https://pixabay.com)
+- All products images used on the site were taken from [Google](https://www.google.com/)
+
+
+### Acknowledgements
+
+- The tutor support team at Code Institute for their support.
+- My Code Institute Mentor for feedback and suggestions.
+- The Code Institute Slack community.
+
+[Back to top](#table-of-contents)
