@@ -1,20 +1,20 @@
-<h1>My Books Store - Online Book shop</h1>
+<h1> My Books Store - Online Book shop</h1>
 
-![Home page](media/multi-device.png) 
+![Home page](media/multi-device.png)
 
-<h3>Developer: Dhvani Intwala</h3>
+<h3> Developer: Dhvani Intwala</h3>
 
 ## [TABLE OF CONTENTS](#table-of-contents)<!-- omit in toc -->
 
 - [Overview](#overview)
 - [User Experience (UX)](#user-experience-ux)
   - [Project goals](#project-goals)
-  - [Project Objectives:](#project-objectives)
+  - [Project Objectives](#project-objectives)
 - [User Stories](#user-stories)
-    - [Strategy](#strategy)
-    - [Scope](#scope)
-    - [Structure](#structure)
-    - [Skeleton](#skeleton)
+  - [Strategy](#strategy)
+  - [Scope](#scope)
+  - [Structure](#structure)
+  - [Skeleton](#skeleton)
 - [Agile Methodology](#agile-methodology)
 - [Features](#features)
   - [Home Page](#home-page)
@@ -67,21 +67,19 @@ The website is developed using Python (Django), HTML, CSS and JavaScript. Data w
 
 - To create an e-commerce application - My Books Store that is used for ordering Books by customers.
 
-### Project Objectives:
+### Project Objectives
 
 - To create a website with a simple and intuitive User Experience;
 - To add content that is relevant and helps create a better image of the bookstore.
 - To differentiate between client and staff member accounts.
-- To implements fully functional features that make it easy for customers and upgrade client experience with bookstore service. 
+- To implements fully functional features that make it easy for customers and upgrade client experience with bookstore service.
 - To make the website available and functional on every device.
 
 ## User Stories
 
-#### Strategy
+### Strategy
 
-<hr>
-
-- As a website user, I can:
+<h4> As a website user, I can</h4>
 
 1. Navigate around the site and easily view the desired content.
 2. View a list of products and choose accordingly.
@@ -89,17 +87,16 @@ The website is developed using Python (Django), HTML, CSS and JavaScript. Data w
 4. Click on a product to read and view the details.
 5. Register for an account.
 
-
-- As a logged in website user, I can:
+<h4> As a logged in website user, I can</h4>
 
 1. Make wishlist products page in which I can edit or/and buy books at any time
 2. Subscribe to a newsletter, so I can always be up to date with the latest promotions
 3. Save my data under my personal profile.
 4. Manage my profile by updating my details.
-6. Logout of the website.
-7. Using my personal profile, buy a product by using the website checkout system.
+5. Logout of the website.
+6. Using my personal profile, buy a product by using the website checkout system.
 
-- As a website Superuser, I can:
+<h4> As a website Superuser, I can</h4>
 
 1. Create and publish a new product.
 2. Create a new user, products, and categories.
@@ -107,10 +104,7 @@ The website is developed using Python (Django), HTML, CSS and JavaScript. Data w
 4. Change a users permissions on the website
 5. Upload new banners to be displayed on the website.
 
-
-#### Scope
-
-<hr>
+### Scope
 
 <h4> Simple and intuitive User Experience</h4>
 
@@ -150,7 +144,7 @@ The website is developed using Python (Django), HTML, CSS and JavaScript. Data w
 
 Create a responsive design for desktop, tablet and mobile devices.
 
-#### Structure
+### Structure
 
 The site structure is divided into several pages, displaying content according to the authentication of the client/Staff member user.
 
@@ -171,11 +165,11 @@ The site structure is divided into several pages, displaying content according t
 - In **Change Password** page, users will get a link to reset their password and after clicking on the link it will redirect the user to this page where they can set a new password.
 - In **Page 404 - Page Not Found** user will see this feature when the page that the user is looking for, does not exist or for any typing URL error.
 
+### Skeleton
+
 <h4> Flowchart</h4>
 
-The Flowchart for my program was created using <b>Draw.io</b> and it visually represents how the system works.
-
-#### Skeleton
+The Flowchart for my program was created using Draw.io and it visually represents how the system works.
 
 <h4> Wireframes </h4>
 
@@ -187,7 +181,7 @@ The project uses the relational database PostgreSQL to store the data. Two diagr
 
 <details>
 
-  <summary>Final Schema</summary>
+  <summary> Final Schema</summary>
   
 </details>  
   
@@ -291,7 +285,7 @@ The admin account was created as a superuser account from the terminal and also 
 
 ## Responsive Layout and Design
 
-The project design has been adapted to all types of devices using Bootstrap predefined breakpoints. For intermediate devices where the design didn't fit accordingly, custom breakpoints were used.
+- The project design has been adapted to all types of devices using Bootstrap predefined breakpoints. For intermediate devices where the design didn't fit accordingly, custom breakpoints were used.
 
 **Breakpoints:**
 
@@ -370,17 +364,14 @@ The deployed site uses AWS S3 Buckets to store the webpages static and media fil
 
 ### IAM Set Up
 
-- earch for IAM within the AWS navigation bar and select it.
-
-- lick "User Groups" that can be seen in the side bar and then click "Create group" and name the group 'manage-your-project-name'.
-
-- lick "Policies" and then "Create policy".
-- avigate to the JSON tab and click "Import Managed 
-  Policy", within here search "S3" and select "AmazonS3FullAccess" followed by "Import".
-
+- Search for IAM within the AWS navigation bar and select it.
+- Click "User Groups" that can be seen in the side bar and then click "Create group" and name the group 'manage-your-project-name'.
+- Click "Policies" and then "Create policy".
+- Navigate to the JSON tab and click "Import Managed Policy", within here search "S3" and select "AmazonS3FullAccess" followed by "Import".
 - Navigate back to the recently created S3 bucket and copy your "ARN Number". Go back to "This Policy" and update the "Resource Key" to include your ARN Number, and another line with your ARN followed by a "/*".
-   
-- Below is an example of what this should look like:```
+- Below is an example of what this should look like:
+  
+```
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -395,61 +386,56 @@ The deployed site uses AWS S3 Buckets to store the webpages static and media fil
                 "YOUR-ARN-NO-HERE/*"
             ]
         }
-   
+    ]
 }
 
-that on ```
+```
 
-6. Ensure the policy has been given a name and a short description, then click "Create Policy".
-- Click "User groups", and then the group you created earlier. Under permissions click "Add Pe
+- Ensure that the policy has been given a name and a short description,then click on "Create Policy"
+- Click "User groups", and then the group you created earlier. Under permissions click "Add Permission" and from the dropdown click "Attach Policies".
 - Select "Users" from the sidebar and click "Add User".
-9. Provide a username and check "Programmatic Access", then click 'Next: Permissions'.
+- Provide a username and check "Programmatic Access", then click 'Next: Permissions'.
+- Ensure your policy is selected and navigate through until you click "Add User".
+- Download the "CSV file", which contains the user's access key and seret access key.
 
-- 10. Ensure your policy is selected and navigate throu
-- ntil you click "Add User".
-11. Download the "CSV file", which contains the user's 
-- ss key and secret access key.
+### Connecting AWS to the Project
 
-
-- ### Connecting AWS to the Project
-
-- Within your terminal install the following packages by typing 
+- Within your terminal install the following packages by typing
 
 ```
   pip3 install boto3
   pip3 install django-storages 
 ```  
-- - Freeze the requirements by typing:
+
+
+- Freeze the requirements by typing:
 
 ```
 pip3 freeze > requirements.txt
 ```
 
-3. Add "storages" to your installed apps within your settings.py file.
-4. At the bottom of the settings.py file add the following code:
+- Add "storages" to your installed apps within your settings.py file.
+- At the bottom of the settings.py file add the following code:
 
-
-- 
-1. 'USE_AWS' in os.environ:
-
-- 2.  AWS_STORAGE_BUCKET_NAME = 'insert-bucket-name-here'
-
-- 3.  AWS_S3_REGION_NAME = 'insert-your-region-here'
-
--     AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
+```
+if 'USE_AWS' in os.environ:
+    AWS_STORAGE_BUCKET_NAME = 'insert-bucket-name-here'
+    AWS_S3_REGION_NAME = 'insert-your-region-here'
+    AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
     AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
 ```
-5. 
-Add the following keys within Heroku: "AWS_ACCESS_KEY_ID" and "AWS_SECRET_ACCESS_KEY". These can be found in your CSV file.
-- Add the key "USE_AWS", and set the value to True within Heroku.
 
-- 6. Remove the "DISABLE_COLLECTSTAIC" variable from Heroku.
-7. Within your settings.py file inside the code just written add: 
+- Add the following keys within Heroku: "AWS_ACCESS_KEY_ID" and "AWS_SECRET_ACCESS_KEY". These can be found in your CSV file.
+- Add the key "USE_AWS", and set the value to True within Heroku.
+- Remove the "DISABLE_COLLECTSTAIC" variable from Heroku.
+- Within your settings.py file inside the code just written add:
 
 ```
   AWS_S3_CUSTOM_DOMAIN = f"{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com"
 ```
-8. Inside the settings.py file inside the bucket config if statement add the following lines of code:
+
+- Inside the settings.py file inside the bucket config if statement add the following lines of code:
+
 ```
 STATICFILES_STORAGE = 'custom_storages.StaticStorage'
 STATICFILES_LOCATION = 'static'
@@ -458,28 +444,28 @@ MEDIAFILES_LOCATION = 'media'
 
 STATIC_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{STATICFILES_LOCATION}/'
 MEDIA_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{MEDIAFILES_LOCATION}/'
-- AWS_S3_OBJECT_PARAMETERS = {
+
+AWS_S3_OBJECT_PARAMETERS = {
     'Expires': 'Thu, 31 Dec 2099 20:00:00 GMT',
     'CacheControl': 'max-age=94608000',
 }
 ```
 
-9. In the root directory of your project create a file called "custom_storages.py". Import the following at the top of this file and add the classes below:
+- In the root directory of your project create a file called "custom_storages.py". Import the following at the top of this file and add the classes below:
 
 ```
   from django.conf import settings
   from storages.backends.s3boto3 import S3Boto3Storage
 
-- ass StaticStorage(S3Boto3Storage):
-1.  location = settings.STATICFILES_LOCATION
+  class StaticStorage(S3Boto3Storage):
+    location = settings.STATICFILES_LOCATION
 
-- 
   class MediaStorage(S3Boto3Storage):
     location = settings.MEDIAFILES_LOCATION
 ```
 
-10. Navigate back to you AWS S3 Bucket and click on "Create Folder" name this folder "media", within the media file click "Upload > Add Files" and select the images for your site.
-11. Under "Permissions" select the option "Grant public-read access" and click "Upload".
+- Navigate back to you AWS S3 Bucket and click on "Create Folder" name this folder "media", within the media file click "Upload > Add Files" and select the images for your site.
+- Under "Permissions" select the option "Grant public-read access" and click "Upload".
 
 ## Stripe Payments
 
@@ -492,34 +478,36 @@ You will need a stripe account which you can sign up for [here](https://stripe.c
 
 ### Webhooks
 
-1. To set up a webhook, sign into your stripe account and click 'Developers' located in the top right of the navbar.
-2. Then in the side-nav under the Developers title, click on "Webhooks", then "Add endpoint".
-3. On the next page you will need to input the link to your heroku app followed by /checkout/wh/. It should look something like this:
-   
-    ```
-    https://your-app-name.herokuapp.com/checkout/wh/
-    ```
+- To set up a webhook, sign into your stripe account and click 'Developers' located in the top right of the navbar.
+- Then in the side-nav under the Developers title, click on "Webhooks", then "Add endpoint".
+- On the next page you will need to input the link to your heroku app followed by /checkout/wh/. It should look something like this:
 
-4. Then click "+ Select events" and check the "Select all events" checkbox at the top before clicking "Add events" at the bottom. Once this is done finish the form by clicking "Add endpoint".
-5. Your webhook is now created and you should see that it has generated a secret key. You will need this to add to your heroku config vars.
-6. Head over to your app in heroku and navigate to the config vars section under settings. You will need the secret key you just generated for your webhook, in addition to your Publishable key and secret key that you can find in the API keys section back in stripe.
-7. Add these values under these keys:
-   
-    ```
-    STRIPE_PUBLIC_KEY = 'insert your stripe publishable key'
-    STRIPE_SECRET_KEY = 'insert your secret key'
-    STRIPE_WH_SECRET = 'insert your webhooks secret key'
+```
+https://your-app-name.herokuapp.com/checkout/wh/
+```
 
-    ```
-8. Finally, back in your settings.py file in django, insert the following near the bottom of the file:  
-    ```
-    STRIPE_PUBLIC_KEY = os.getenv('STRIPE_PUBLIC_KEY', '')
-    STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY', '')
-    STRIPE_WH_SECRET = os.getenv('STRIPE_WH_SECRET', '')
-    ```
-- Below is a screenshot of the Watches & Clocks - Stripe dashboard.
+- Then click "+ Select events" and check the "Select all events" checkbox at the top before clicking "Add events" at the bottom. Once this is done finish the form by clicking "Add endpoint".
+- Your webhook is now created and you should see that it has generated a secret key. You will need this to add to your heroku config vars.
+- Head over to your app in heroku and navigate to the config vars section under settings. You will need the secret key you just generated for your webhook, in addition to your Publishable key and secret key that you can find in the API keys section back in stripe.
+- Add these values under these keys:
 
-![ Stripe Payments]()<br>
+```
+STRIPE_PUBLIC_KEY = 'insert your stripe publishable key'
+STRIPE_SECRET_KEY = 'insert your secret key'
+STRIPE_WH_SECRET = 'insert your webhooks secret key'
+```
+
+- Finally, back in your settings.py file in django, insert the following near the bottom of the file:  
+
+```
+STRIPE_PUBLIC_KEY = os.getenv('STRIPE_PUBLIC_KEY', '')
+STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY', '')
+STRIPE_WH_SECRET = os.getenv('STRIPE_WH_SECRET', '')
+```
+
+Below is a screenshot of the My Books store - Stripe dashboard.
+
+![ Stripe Payments]()
 
 ## Technologies Used
 
@@ -529,7 +517,7 @@ You will need a stripe account which you can sign up for [here](https://stripe.c
 - [CSS 3](https://en.wikipedia.org/wiki/CSS)
 - [JavaScript](https://www.javascript.com/)
 - [Django](https://www.python.org/)
-- [Python](https://www.djangoproject.com/)<br>
+- [Python](https://www.djangoproject.com/)
 
 ### Django Packages
 
@@ -539,39 +527,25 @@ You will need a stripe account which you can sign up for [here](https://stripe.c
 - [Allauth](https://django-allauth.readthedocs.io/en/latest/installation.html) for authentication, registration and account management
 - [Stripe](https://pypi.org/project/stripe/) for processing all online and credit card purchases on the website
 - [Crispy Forms](https://django-crispy-forms.readthedocs.io/en/latest/) to style the forms
-- [Pillow](https://pypi.org/project/Pillow/) to process and save all the images downloaded through the database<br>
+- [Pillow](https://pypi.org/project/Pillow/) to process and save all the images downloaded through the database
 
 ### Frameworks - Libraries - Programs Used
 
 - [Bootstrap](https://getbootstrap.com/)
-- Was used to style the website, add responsiveness and interactivity
-- [Jquery](https://jquery.com/)
-- All the scripts were written using jquery library
-- [Git](https://git-scm.com/)
-- Git was used for version control by utilizing the Gitpod terminal to commit to Git and push to GitHub
-- [GitHub](https://github.com/)
-- GitHub is used to store the project's code after being pushed from Git
-- [Heroku](https://id.heroku.com)
-- Heroku was used to deploy the live project
-- [PostgreSQL](https://www.postgresql.org/)
-- Database used through Heroku.
-- [Drawio](https://www.drawio.com/)
-- Drawio was used to create the database diagram, flowchart and bussiness model.
-- [W3C - HTML](https://validator.w3.org/)
-- W3C- HTML was used to validate all the HTML code
-- [W3C - CSS](https://jigsaw.w3.org/css-validator/)
-- W3C - CSS was used to validate the CSS code
-- [Fontawesome](https://fontawesome.com/)
-- Was used to add icons to the website
-- [Google Chrome Dev Tools](https://developer.chrome.com/docs/devtools/)
-- To check App responsiveness and debugging
-- [Google Fonts](https://fonts.google.com/)
-- To add the 2 fonts that were used throughout the project
-- [Balsamiq](https://balsamiq.com/)
-- To build the wireframes for the project
-- [AWS](https://aws.amazon.com/)
-- was used to host the static files and media<br>
-
+was used to style the website, add responsiveness and interactivity
+- [Jquery](https://jquery.com/) - all the scripts were written using jquery library
+- [Git](https://git-scm.com/) was used for version control by utilizing the Gitpod terminal to commit to Git and push to GitHub
+- [GitHub](https://github.com/) was used to store the project's code after being pushed from Git
+- [Heroku](https://id.heroku.com) was used to deploy the live project
+- [PostgreSQL](https://www.postgresql.org/) Database used through Heroku
+- [Drawio](https://www.drawio.com/) was used to create the database diagram, flowchart and bussiness model
+- [W3C - HTML](https://validator.w3.org/) was used to validate all the HTML code
+- [W3C - CSS](https://jigsaw.w3.org/css-validator/) was used to validate the CSS code
+- [Fontawesome](https://fontawesome.com/) was used to add icons to the website
+- [Google Chrome Dev Tools](https://developer.chrome.com/docs/devtools/) was used to check App responsiveness and debugging
+- [Google Fonts](https://fonts.google.com/) was used to add the 2 fonts that were used throughout the project
+- [Balsamiq](https://balsamiq.com/) was used to build the wireframes for the project
+- [AWS](https://aws.amazon.com/) was used to host the static files and media
 
 ## Creating the Django app
 
@@ -586,82 +560,82 @@ You will need a stripe account which you can sign up for [here](https://stripe.c
 9. Create app: in the terminal window type python3 manage.py startapp your_app_name
 10. Add app to the list of installed apps in settings.py file: you_app_name
 11. Migrate changes: in the terminal window type python3 manage.py migrate
-12. Run the server to test if the app is installed, in the terminal "The install worked successfully! Congratulations!"<br>
+12. Run the server to test if the app is installed, in the terminal "The install worked successfully! Congratulations!"
 
 ## Deployment of This Project
 
-- This site was deployed by completing the following steps:
+This site was deployed by completing the following steps:
 
-1. Log in to [Heroku](https://id.heroku.com) or create an account
-2. On the main page click the button labelled New in the top right corner and from the drop-down menu select Create New
-   App
-3. You must enter a unique app name
-4. Next select your region
-5. Click on the Create App button
-6. Click in resources and select Heroku Postgres database
-7. Click Reveal Config Vars and add:
- 
-- A new record with SECRET_KEY
-- A new record with the AWS_ACCESS_KEY_ID
-- A new record with the AWS_SECRET_ACCESS_KEY
-- A new record with the EMAIL_HOST_PASS
-- A new record with the EMAIL_HOST_USER 
-- A new record with the STRIPE_PUBLIC_KEY
-- A new record with the STRIPE_SECRET_KEY
-- A new record with the STRIPE_WH_SECRET
-- A new record with the DISABLE_COLLECTSTATIC = 1
+- Log in to [Heroku](https://id.heroku.com) or create an account.
+- On the main page click the button labelled New in the top right corner and from the drop-down menu select Create New App.
+- You must enter a unique app name
+- Next select your region
+- Click on the Create App button
+- Click in resources and select Heroku Postgres database
+- Click Reveal Config Vars and add:
 
-8. The next page is the project’s Deploy Tab. Click on the Settings Tab and scroll down to Config Vars
-9. Next, scroll down to the Buildpack section click Add Buildpack select python and click Save Changes.
-10. Scroll to the top of the page and choose the Deploy tab
-11. Select Github as the deployment method
-12. Confirm you want to connect to GitHub
-13. Search for the repository name and click the connect button
-14. Scroll to the bottom of the deploy page and select the preferred deployment type
-15. Click Enable Automatic Deploys for automatic deployment when you push updates to Github<br>
+  - A new record with SECRET_KEY
+  - A new record with the AWS_ACCESS_KEY_ID
+  - A new record with the AWS_SECRET_ACCESS_KEY
+  - A new record with the EMAIL_HOST_PASS
+  - A new record with the EMAIL_HOST_USER
+  - A new record with the STRIPE_PUBLIC_KEY
+  - A new record with the STRIPE_SECRET_KEY
+  - A new record with the STRIPE_WH_SECRET
+  - A new record with the DISABLE_COLLECTSTATIC = 1
+
+- The next page is the projects Deploy Tab. Click on the Settings Tab and scroll down to Config Vars
+- Next, scroll down to the Buildpack section click Add Buildpack select python and click Save Changes.
+- Scroll to the top of the page and choose the Deploy tab.
+- Select Github as the deployment method.
+- Confirm you want to connect to GitHub.
+- Search for the repository name and click the connect button
+- Scroll to the bottom of the deploy page and select the preferred deployment type
+- Click Enable Automatic Deploys for automatic deployment when you push updates to Github
 
 ## Deployment
 
 ### Deploy on Heroku
 
-1. Create Pipfile 
- 
-- In the terminal enter the command ` pip3 freeze > requirements.txt`, and a file with all the requirements will be created. 
- 
-2. Setting up Heroku
+- Create Pipfile
+- In the terminal enter the command `pip3 freeze > requirements.txt`, and a file with all the requirements will be created.
 
-- Go to the Heroku website (https://www.heroku.com/) 
-- Login to Heroku and choose *Create App* 
-- Click *New* and *Create a new app*
-- Choose a name and select your location
-- Go to the *Resources* tab 
-- From the Resources list select *Heroku Postgres*
-- Navigate to the *Deploy* tab
-- Click on *Connect to Github* and search for your repository
-- Navigate to the *Settings* tab
-- Reveal Config Vars and add your Cloudinary, Database URL (from Heroku-Postgres) and Secret key.
+- Setting up Heroku
 
-3. Deployment on Heroku
+  - Go to [Heroku website](https://www.heroku.com)
+  - Login to Heroku and choose *Create App*
+  - Click *New* and *Create a new app*
+  - Choose a name and select your location
+  - Go to the *Resources* tab
+  - From the Resources list select *Heroku Postgres*
+  - Navigate to the *Deploy* tab
+  - Click on *Connect to Github* and search for your repository
+  - Navigate to the *Settings* tab
+  - Reveal Config Vars and add your Cloudinary, Database URL (from Heroku-Postgres) and Secret key.
 
-- Go to the Deploy tab.
-- Choose the main branch for deploying and enable automatic deployment 
-- Select manual deploy for building the App 
-    
+- Deployment on Heroku
+
+  - Go to the Deploy tab.
+  - Choose the main branch for deploying and enable automatic deployment
+  - Select manual deploy for building the App
+
 ### Fork the repository
 
-For creating a copy of the repository on your account and change it without affecting the original project, use<b>Fork</b> directly from GitHub:
-- On [My Repository Page](https://github.com/useriasminna/italianissimo-booking-website), press <i>Fork</i> in the top right of the page
-- A forked version of my project will appear in your repository<br></br>
+For creating a copy of the repository on your account and change it without affecting the original project, use fork directly from GitHub:
+
+- On [My Repository Page](https://github.com/Dhvani-intwala/My-Books-Store), press fork in the top right of the page
+
+- A forked version of my project will appear in your repository
 
 ### Clone the repository
 
-For creating a clone of the repository on your local machine, use<b>Clone</b>:
-- On [My Repository Page](https://github.com/useriasminna/italianissimo-booking-website), click the <i>Code</i> green button, right above the code window
-- Chose from <i>HTTPS, SSH and GitClub CLI</i> format and copy (preferably <i>HTTPS</i>)
-- In your <i>IDE</i> open <i>Git Bash</i>
-- Enter the command <code>git clone</code> followed by the copied URL
+For creating a clone of the repository on your local machine, use clone:
+
+- On [My Repository Page](https://github.com/Dhvani-intwala/My-Books-Store), click the code green button, right above the code window
+- Chose from HTTPS, SSH and GitClub CLI format and copy (preferably HTTPS)
+- In your IDE, open Git Bash
+- Enter the command git clone followed by the copied URL
 - Your clone was created
-<hr>
 
 ## Credits
 
@@ -677,9 +651,8 @@ For creating a clone of the repository on your local machine, use<b>Clone</b>:
 
 ### Media
 
-- Most of the pictures for the project was taken from [Pexels] (https://www.pexels.com/) and [Pixabay] (https://pixabay.com)
-- All products images used on the site were taken from [Google](https://www.google.com/)
-
+- Most of the pictures for the project was taken from [Pexels](https://www.pexels.com) and [Pixabay](https://pixabay.com)
+- All products images used on the site were taken from [Google](https://www.google.com)
 
 ### Acknowledgements
 
