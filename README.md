@@ -25,8 +25,9 @@
   - [Product Checkout](#product-checkout)
   - [Product Checkout Success](#product-checkout-success)
   - [Wishlist](#wishlist)
+  - [Products Management](#products-management)
   - [User Profile](#user-profile)
-  - [Admin](#admin)
+  - [Admin panel / Superuser](#admin-panel--superuser)
   - [Messages and Interaction with Users](#messages-and-interaction-with-users)
   - [Footer](#footer)
 - [Future Feature Considerations](#future-feature-considerations)
@@ -256,6 +257,10 @@ The website is designed to be welcoming and easy to use. It features a nav bar a
 - On the *Product Details* page there is an interactive feature that is only available for logged-in users that are not staff members. A user can add a product to the wishlist by clicking on add to wishlist button. This feature is also accessible on the *Bag* page.
 - In the *Wishlist* page there are listed all the favourite items of the user with a design similar to the one created for the *Products* pages. A filtering and sorting section is also available and every element is linked to a *Product Details* page.
 - An additional feature would be that every item includes a representation of the number of times it has been added to the wishlist by all the users.
+
+### Products Management
+
+- When the website admin is logged in on this page, they can add a new product to the website without going to the admin panel.
   
 ### User Profile
 
@@ -265,12 +270,18 @@ The *User Profile* page gives the user access to individual and private features
 
 - Another important feature is the **Orders history** which is represented by a table with all the orders created by the user. Any order element has a details page that can be accessed by clicking on the order number value.
 
-### Admin
+### Admin panel / Superuser
 
-The admin account was created as a superuser account from the terminal and also has access to the admin panel.
+- The admin account was created as a superuser account from the terminal and also has access to the admin panel.
+- Here the Admin / superuser can view, create, edit and delete the following apps:
+  
+1. Banner
+2. Checkout
+3. Products
+4. Profiles
+5. Ratings
 
 - There is a page created especially for staff members to keep better track of all the orders placed on the website.
-- An admin user have access to features for *adding a new product*, *edit a product's details* and *delete product*. The last two implementations are available on the *Product Details* page and only for staff accounts.
 
 ### Messages and Interaction with Users
 

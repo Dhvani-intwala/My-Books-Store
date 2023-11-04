@@ -30,6 +30,7 @@ class StripeWH_Handler:
         )
 
         send_mail(subject, body, settings.DEFAULT_FROM_EMAIL, [cust_email])
+        print(cust_email)
 
     def handle_event(self, event):
         """
