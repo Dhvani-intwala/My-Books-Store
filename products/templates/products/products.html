@@ -73,7 +73,7 @@
                                     <h6 class="mb-0 mb-lg-1 mb-0 text-left ml-3 font-weight-bold text-black">{{product.name}}</h6>
                                     <div class="card-footer bg-white pt-0 border-0 text-left">
                                         <div class="row">
-                                            <div class="col">
+                                            <div class="col-12">
                                                 <p class="lead mb-0 text-left font-weight-bold text-black">€{{ product.price }}</p>
                                                 {% if product.category %}
                                                 <p class="small mt-1 mb-0">
@@ -87,13 +87,39 @@
                                                 {% else %}
                                                     <small class="text-muted">No Rating</small>
                                                 {% endif %}
+                                                <div class="ml-3">
+                                                    <input type="submit" class="btn btn-black rounded-0 text-uppercase ml-4" value="Add to Bag">
+                                                </div>
                                                 {% if request.user.is_superuser %}
-                                                    <small class="ml-3">
-                                                        <a href="{% url 'edit_product' product.id %}">Edit</a> | 
-                                                        <a class="text-danger" href="{% url 'delete_product' product.id %}">Delete</a>
-                                                    </small>
+                                                    <div >
+                                                        <hr>
+                                                        <small class="ml-5">
+                                                            <a href="{% url 'edit_product' product.id %}" class="btn p-2 border mt-2 bg-dark text-white">Edit</a>
+                                                            <a class="text-white btn p-2 border mt-2 btns-red " href="{% url 'delete_product' product.id %}" data-toggle="modal" data-target="#deleteModal">Delete</a>
+                                                        </small>
+                                                        <div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="deleteModalLabel" aria-hidden="true">
+                                                            <div class="modal-dialog" role="document">
+                                                                <div class="modal-content bg-color-model">
+                                                                   
+                                                                    <div class="modal-body">
+                                                                        <h5>Are you sure you want to delete {{product.name}} product?</h5>
+                                                                    </div>
+                                                                    <div class="modal-footer">
+                                                                        <form method="post" action="{% url 'account_logout' %}">
+                                                                            {% csrf_token %} {% if redirect_field_value %}
+                                                                            <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
+                                                                            {% endif %}
+                                                                            <button type="button" class="btns-red" id="btn-cancel" data-bs-dismiss="modal">Close</button>
+                                                                            <button type="submit" class="btns-green" id="btn-submit">delete</button>
+                                                                        </form>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
                                                 {% endif %}
                                             </div>
+                                                
                                         </div>
                                     </div>
                                 </div>

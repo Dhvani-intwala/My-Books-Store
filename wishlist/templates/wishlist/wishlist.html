@@ -54,31 +54,21 @@
                         
                             <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
                                 
-                                <div class="card border-0 position-relative">
+                                <div class="card border-0 mt-2">
                                     {% if product.image %}
                                         <a href="{% url 'product_detail' product.id %}">
                                             <img class="card-img-top product-img" src="{{ product.image.url }}" alt="{{ product.name }}">
                                         </a>
-                                        {% if user.is_authenticated and not user.is_superuser %}
-                                           <div class="align-items-center justify-content-center position-absolute bg-opacity-10">
-                                                <form action="{% url 'removefromwishlist' product.id %}" method="POST">
-                                                    {% csrf_token %}
-                                                    <button type="submit" class="btn bg-white bg-opacity-10 ml-4 p-2 d-flex border-0 justify-content-center align-items-center border text-black "><i class="fa fa-heart"></i></button> 
-                                                </form>
-                                            </div>
-                                        {% endif %} 
     
                                     {% else %}
                                         <a href="{% url 'product_detail' product.id %}">
                                             <img class="card-img-top product-img" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
                                         </a>
                                     {% endif %}
-                                    <div class="card-body pb-0 h-100">
-                                        <p class="mb-0 text-black">{{ product.name }}</p>
-                                    </div>
+                                    <h6 class="mb-0 ml-3 mb-lg-1 mb-0 text-left ml-3 font-weight-bold text-black">{{product.name}}</h6>
                                     <div class="card-footer bg-white pt-0 border-0 text-left">
                                         <div class="row">
-                                            <div class="col">
+                                            <div class="col-12 ml-3">
                                                 <p class="lead mb-0 text-left font-weight-bold text-black">${{ product.price }}</p>
                                                 {% if product.category %}
                                                 <p class="small mt-1 mb-0">
@@ -98,6 +88,16 @@
                                                         <a class="text-danger" href="{% url 'delete_product' product.id %}">Delete</a>
                                                     </small>
                                                 {% endif %}
+
+                                                <!-- remove wishlist product -->
+                                                {% if user.is_authenticated and not user.is_superuser %}
+                                                    <div class="align-items-center justify-content-center">
+                                                        <form action="{% url 'removefromwishlist' product.id %}" method="POST">
+                                                            {% csrf_token %}
+                                                            <button type="submit" class="text-black btn border pt-2 bg-none mt-2 ml-4"><i class="fa fa-heart mr-1"></i>Remove Wishlist</button> 
+                                                        </form>
+                                                    </div>
+                                                {% endif %} 
                                             </div>
                                         </div>
                                     </div>

@@ -1,7 +1,7 @@
 <div class="collapse navbar-collapse" id="main-nav">
     <ul class="navbar-nav">
-        <li class="nav-item">
-            <a class="active logo-font font-weight-bold nav-link text-light mr-5 navbar-link" href="{% url 'home' %}" id="Home-link">
+        <li class="nav-item nav-tabs">
+            <a class="logo-font font-weight-bold nav-link text-light mr-5 navbar-link" href="{% url 'home' %}" id="Home-link">
                 Home
             </a>
         </li>
@@ -33,7 +33,7 @@
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="specials-link">
                 <a href="{% url 'products' %}?category=New Arrivals" class="dropdown-item">New Arrivals</a>
-                <a href="{% url 'discounts' %}?category=New Arrivals" class="dropdown-item">All Specials</a>
+                <a href="{% url 'products' %}?category=New Arrivals" class="dropdown-item">All Specials</a>
             </div>
         </li>
         <li class="nav-item">

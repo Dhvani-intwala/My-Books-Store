@@ -128,8 +128,7 @@
                 </div>          
             </div>
         </header>
-      
-
+        <div id="preloader"></div>
         {% if messages %}
             <div class="message-container">
                 {% for message in messages %}
@@ -148,7 +147,6 @@
             </div>
         {% endif %}
 
-        
         {% block page_header %}
         {% endblock %}
 
@@ -166,9 +164,8 @@
         <script>
             setTimeout(function () {
                 let toast = document.getElementById("toast-msg");
-               
                 toast.style.display = "none";
-            }, 3000);
+            }, 5000);
         </script>
         
         
@@ -223,6 +220,7 @@
                 </div>
             </footer> 
         </div>
+        
         <!-- Logout Modal -->
         <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="logoutModalLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">
@@ -245,5 +243,6 @@
                 </div>
             </div>
         </div>
+        
    </body>
 </html>
