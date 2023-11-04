@@ -13,7 +13,6 @@
 - [User Stories](#user-stories)
   - [Strategy](#strategy)
   - [Scope](#scope)
-  - [Structure](#structure)
   - [Skeleton](#skeleton)
 - [Agile Methodology](#agile-methodology)
 - [Features](#features)
@@ -154,27 +153,6 @@ The website is developed using Python (Django), HTML, CSS and JavaScript. Data w
 
 Create a responsive design for desktop, tablet and mobile devices.
 
-### Structure
-
-The site structure is divided into several pages, displaying content according to the authentication of the client/Staff member user.
-
-- **Register/Login** pages give the user the possibility to create an account and authenticate for accessing different features.
-- **Logout** feature is a modal that helps user exit their current account.
-- The **Home** page is visible for both types of users and includes relevant information about the websites' purpose and details about the book store, location and contact.
-- The **All products** page displays a list with all the products available for selling.
-- The **Books** navigation link gives the user the possibility to access the list of products grouped by category.
-- The **Product details** page displays full specifications for a product. It also includes a feature for updating the shopping bag for users that are not admins. Staff members have access to the feature for editing/removing current product.
-- The **Profile** page is available for authenticated users and gives access to personal delivery details and orders' history.
-- The **Profile order details** page gives access to the user to full specifications only for orders placed by him.
-- The **Wishlist** page contains a list with all the products added by the user and cannot be accessed by guest or admin users.
-- The **Bag** page displays all the items added in the shopping bag with associated features.
-- The **Checkout page** includes an order summary and a form for personal, delivery and payment details.
-- The **Checkout success** page displays full specification for the successful order.
-- The **Orders** page gives access only to staff members and displays all the bookings registered.
-- In **Password reset** page, users can use this page to reset their login password. The user adds their email address in the input field and clicks on the button "Reset Password".
-- In **Change Password** page, users will get a link to reset their password and after clicking on the link it will redirect the user to this page where they can set a new password.
-- In **Page 404 - Page Not Found** user will see this feature when the page that the user is looking for, does not exist or for any typing URL error.
-
 ### Skeleton
 
 <h4> Flowchart</h4>
@@ -296,6 +274,8 @@ The *User Profile* page gives the user access to individual and private features
 - Users can use this page to reset their login password. The user adds their email address in the input field and clicks on the button "Reset Password".
 
 ### Change Password page
+
+- Users will get a link to reset their password and after clicking on the link it will redirect the user to this page where they can set a new password.
 
 ### Admin panel / Superuser
 
