@@ -22,8 +22,9 @@
   - [All Products page](#all-products-page)
   - [Product details page](#product-details-page)
   - [Product Shopping Bag](#product-shopping-bag)
+  - [Product Checkout](#product-checkout)
+  - [Product Checkout Success](#product-checkout-success)
   - [Wishlist](#wishlist)
-  - [Checkout](#checkout)
   - [User Profile](#user-profile)
   - [Admin](#admin)
   - [Messages and Interaction with Users](#messages-and-interaction-with-users)
@@ -239,19 +240,23 @@ The website is designed to be welcoming and easy to use. It features a nav bar a
 
 - This feature is called the Shopping bag. Here, users can add products and quantities. Check the total price, and delivery costs and go to the secure checkout to finish the order. Before secure checkout. the user can also change the quantity and remove unwanted products. The user can also leave this page by pressing the button "Keep Shopping".
 
-### Wishlist
-
-- On the *Product Details* page there is an interactive feature that is only available for logged-in users that are not staff members. A user can add a product to the wishlist by clicking on add to wishlist button. This feature is also accessible on the *Bag* page.
-- In the *Wishlist* page there are listed all the favourite items of the user with a design similar to the one created for the *Products* pages. A filtering and sorting section is also available and every element is linked to a *Product Details* page.
-- An additional feature would be that every item includes a representation of the number of times it has been added to the wishlist by all the users.
-
-### Checkout
+### Product Checkout
 
 - The *Checkout* page represents the final step in completing the order.
 - A form for personal, delivery and payment details is displayed for the user to fill in with valid data. Additionally, a validation has been implemented to not allow other values to be submitted. The payment input has its own Stripe-implemented validation.
 - An order summary is displayed with details about the products and cost.
 - After the order is completed, the user is sent to a *Checkout Success* page with full specifications and details.
 
+### Product Checkout Success
+
+- Here the user can see the thank you page with information like order number, order date, billing info, and delivery address. At the bottom the user click on check out on new arrivals then the user can see new arrivals books.
+
+### Wishlist
+
+- On the *Product Details* page there is an interactive feature that is only available for logged-in users that are not staff members. A user can add a product to the wishlist by clicking on add to wishlist button. This feature is also accessible on the *Bag* page.
+- In the *Wishlist* page there are listed all the favourite items of the user with a design similar to the one created for the *Products* pages. A filtering and sorting section is also available and every element is linked to a *Product Details* page.
+- An additional feature would be that every item includes a representation of the number of times it has been added to the wishlist by all the users.
+  
 ### User Profile
 
 The *User Profile* page gives the user access to individual and private features.
