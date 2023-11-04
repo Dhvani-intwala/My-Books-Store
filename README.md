@@ -19,7 +19,9 @@
 - [Features](#features)
   - [Home Page](#home-page)
   - [Navigation bar](#navigation-bar)
-  - [Products](#products)
+  - [All Products page](#all-products-page)
+  - [Product details page](#product-details-page)
+  - [Product Shopping Bag](#product-shopping-bag)
   - [Wishlist](#wishlist)
   - [Checkout](#checkout)
   - [User Profile](#user-profile)
@@ -224,12 +226,18 @@ The website is designed to be welcoming and easy to use. It features a nav bar a
 - The navigation bar also has a search field.
 - The navbar is fully responsive. It collapses into a hamburger menu when the screen size decreases.
 
-### Products
+### All Products page
 
-- Every user can access the page with the product catalogue. The items are listed attractively and their design is adapted to all devices.
-- The sorting feature is available for the user by selecting a value from the available options that will update the products' list accordingly.
-- All the products are listed as hoverable elements which include relevant information for the users. The items with low stock have a banner to announce the user about their availability.
+- On this page, users will see all the products available on the website such as product details. For example, if the user is interested in the watch they can press the button "Buy Now". They can also sort products by price, name, rating and category. Furthermore, when the site admin is logged in, it can edit or delete products.
+
+### Product details page
+
+- Here users can see the product image and product information such as price, category and rating. If the user is interested in the book they can choose the product quantity and add the product to their shopping bag. Also, the user can leave the page by pressing the button "Keep Shopping".Also the user can add that product to whislist if the user has login.The items with low stock have a banner to announce the user about their availability.
 - Every products has a *details page* that includes full specifications.
+
+### Product Shopping Bag
+
+- This feature is called the Shopping bag. Here, users can add products and quantities. Check the total price, and delivery costs and go to the secure checkout to finish the order. Before secure checkout. the user can also change the quantity and remove unwanted products. The user can also leave this page by pressing the button "Keep Shopping".
 
 ### Wishlist
 
@@ -391,16 +399,16 @@ The deployed site uses AWS S3 Buckets to store the webpages static and media fil
 
 ```
 
-- Ensure that the policy has been given a name and a short description,then click on "Create Policy"
-- Click "User groups", and then the group you created earlier. Under permissions click "Add Permission" and from the dropdown click "Attach Policies".
-- Select "Users" from the sidebar and click "Add User".
-- Provide a username and check "Programmatic Access", then click 'Next: Permissions'.
-- Ensure your policy is selected and navigate through until you click "Add User".
 - Download the "CSV file", which contains the user's access key and seret access key.
 
 ### Connecting AWS to the Project
 
 - Within your terminal install the following packages by typing
+
+```
+  pip3 install boto3
+  pip3 install django-storages 
+```  
 
 ```
   pip3 install boto3
