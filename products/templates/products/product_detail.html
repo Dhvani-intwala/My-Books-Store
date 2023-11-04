@@ -13,17 +13,30 @@
     <div class="overlay"></div>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-12 col-md-6 col-lg-4 offset-lg-2">
-                <div class="image-container my-5">
+            <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 offset-lg-2"> 
+                <div class=" card h-100 border-0 image-container my-5">
                     {% if product.image %}
-                        <a href="{{ product.image.url }}" target="_blank">
-                            <img class="card-img-top product-img" src="{{ product.image.url }}" alt="{{ product.name }}">
-                        </a>
-                        {% else %}
-                        <a href="">
+                    <a href="{% url 'product_detail' product.id %}">
+                        <img class="card-img-top product-img " src="{{ product.image.url }}" alt="{{ product.name }}">
+                    </a>
+                    {% else %}
+                        <a href="{% url 'product_detail' product.id %}">
                             <img class="card-img-top product-img" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
                         </a>
                     {% endif %}
+                    {% if product.stock == 0 %}
+                    <div class="ribbon red">
+                        <span class="font-size-smaller p-1">Out of stock</span>
+                    </div>
+                    {% elif product.stock == 1 %}
+                    <div class="ribbon blue w-100">
+                        <span class="font-size-smaller p-1">Last item</span>
+                    </div>
+                    {% elif product.stock <= 15 %}
+                    <div class="ribbon">
+                        <span class="font-size-smaller p-1">Last {{product.stock}} item</span>
+                    </div>   
+                    {% endif %}                                         
                 </div>
             </div>
             <div class="col-12 col-md-6 col-lg-4 ml-5">

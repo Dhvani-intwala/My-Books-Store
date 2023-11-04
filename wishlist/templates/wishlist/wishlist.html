@@ -51,19 +51,30 @@
                     <hr class="d-none d-lg-block mb-1 mt-0">
                     <div class="row">
                         {% for product in wishlist %}
-                        
                             <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
-                                
-                                <div class="card border-0 mt-2">
+                                <div class="card h-100 border-0 mt-2">
+                                    <!-- ADD PRODUCT COVER -->
                                     {% if product.image %}
-                                        <a href="{% url 'product_detail' product.id %}">
-                                            <img class="card-img-top product-img" src="{{ product.image.url }}" alt="{{ product.name }}">
-                                        </a>
-    
+                                    <a href="{% url 'product_detail' product.id %}">
+                                        <img class="card-img-top product-img " src="{{ product.image.url }}" alt="{{ product.name }}">
+                                    </a>
                                     {% else %}
                                         <a href="{% url 'product_detail' product.id %}">
                                             <img class="card-img-top product-img" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
                                         </a>
+                                    {% endif %}
+                                    {% if product.stock == 0 %}
+                                    <div class="ribbon red">
+                                        <span class="font-size-smaller p-1">Out of stock</span>
+                                    </div>
+                                    {% elif product.stock == 1 %}
+                                    <div class="ribbon blue">
+                                        <span class="font-size-smaller p-1">Last item</span>
+                                    </div>
+                                    {% elif product.stock <= 15 %}
+                                    <div class="ribbon">
+                                        <span class="font-size-smaller bg-dark text-white p-1">Last {{product.stock}} item</span>
+                                    </div>
                                     {% endif %}
                                     <h6 class="mb-0 ml-3 mb-lg-1 mb-0 text-left ml-3 font-weight-bold text-black">{{product.name}}</h6>
                                     <div class="card-footer bg-white pt-0 border-0 text-left">

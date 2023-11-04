@@ -54,7 +54,7 @@
                 <div class="row">
                         {% for product in products %}
                             <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
-                                <div class="card h-100 border-0 mt-2">
+                                <div class="card h-100 border-0 mt-2 label">
                                     <!-- ADD PRODUCT COVER -->
                                         {% if product.image %}
                                         <a href="{% url 'product_detail' product.id %}">
@@ -66,8 +66,16 @@
                                             </a>
                                         {% endif %}
                                         {% if product.stock == 0 %}
-                                        <div class="banner-text text-center text-red">
-                                            <span class="font-size-smaller text-white">Out of stock</span>
+                                        <div class="ribbon red">
+                                            <span class="font-size-smaller p-1">Out of stock</span>
+                                        </div>
+                                        {% elif product.stock == 1 %}
+                                        <div class="ribbon blue">
+                                            <span class="font-size-smaller p-1">Last item</span>
+                                        </div>
+                                        {% elif product.stock <= 15 %}
+                                        <div class="ribbon">
+                                            <span class="font-size-smaller p-1">Last {{product.stock}} item</span>
                                         </div>
                                         {% endif %}
                                     <h6 class="mb-0 mb-lg-1 mb-0 text-left ml-3 font-weight-bold text-black">{{product.name}}</h6>
@@ -91,7 +99,7 @@
                                                     <input type="submit" class="btn btn-black rounded-0 text-uppercase ml-4" value="Add to Bag">
                                                 </div>
                                                 {% if request.user.is_superuser %}
-                                                    <div >
+                                                    <div>
                                                         <hr>
                                                         <small class="ml-5">
                                                             <a href="{% url 'edit_product' product.id %}" class="btn p-2 border mt-2 bg-dark text-white">Edit</a>

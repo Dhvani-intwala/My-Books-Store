@@ -15,14 +15,24 @@
     - [Scope](#scope)
     - [Structure](#structure)
     - [Skeleton](#skeleton)
-    - [Surface](#surface)
 - [Agile Methodology](#agile-methodology)
 - [Features](#features)
-    - [Home page](#home-page)
+  - [Home Page](#home-page)
+  - [Navigation bar](#navigation-bar)
+  - [Products](#products)
+  - [Wishlist](#wishlist)
+  - [Checkout](#checkout)
+  - [User Profile](#user-profile)
+  - [Admin](#admin)
+  - [Messages and Interaction with Users](#messages-and-interaction-with-users)
+  - [Footer](#footer)
+- [Future Feature Considerations](#future-feature-considerations)
+- [Business Model](#business-model)
+- [Marketing](#marketing)
 - [Responsive Layout and Design](#responsive-layout-and-design)
 - [Testing](#testing)
 - [AWS Setup Process](#aws-setup-process)
-  - [AWS S3 Bucket](#aws-s3-bucket)
+  - [AWS S3 Bucke](#aws-s3-bucke)
   - [IAM Set Up](#iam-set-up)
   - [Connecting AWS to the Project](#connecting-aws-to-the-project)
 - [Stripe Payments](#stripe-payments)
@@ -43,13 +53,13 @@
   - [Media](#media)
   - [Acknowledgements](#acknowledgements)
 
-
 ## Overview
 
-My Books Store is an E-commerce website created for a fictive books shop located in Schelklingen, Germany. The main purpose of the project was to implement a fully functional online store that will make the process of selecting and purchasing books products much easier for customers.
-The users are given the possibility to see every product's detail, create a Wishlist, add items to the shopping bag, purchase with online payment method and access order history.
-The website was developed using Python (Django), HTML, CSS and JavaScript. The data was stored in a PostgreSQL database using ElephantSql for manipulation.
+My Bookstore is an online store created for a fictional bookstore in Schelklingen, Germany. The main goal of the project was to implement a fully functional online store that makes it easy for customers to choose and buy book products.
 
+Users have the opportunity to view each product and its details, create a wish list, add products to the cart, purchase using an online payment method and view order history.
+
+The website is developed using Python (Django), HTML, CSS and JavaScript. Data was stored in a PostgreSQL database using ElephantSql for processing.
 
 ## User Experience (UX)
 
@@ -60,14 +70,15 @@ The website was developed using Python (Django), HTML, CSS and JavaScript. The d
 ### Project Objectives:
 
 - To create a website with a simple and intuitive User Experience;
-- To add content that is relevant and helps create a better image of the books shop.
+- To add content that is relevant and helps create a better image of the bookstore.
 - To differentiate between client and staff member accounts.
-- To implement fully functional features that will ease upgrade clients' experience with the books store services.
+- To implements fully functional features that make it easy for customers and upgrade client experience with bookstore service. 
 - To make the website available and functional on every device.
 
 ## User Stories
 
 #### Strategy
+
 <hr>
 
 - As a website user, I can:
@@ -81,7 +92,7 @@ The website was developed using Python (Django), HTML, CSS and JavaScript. The d
 
 - As a logged in website user, I can:
 
-1. make wishlist products page in which I can edit or/and buy books at any time
+1. Make wishlist products page in which I can edit or/and buy books at any time
 2. Subscribe to a newsletter, so I can always be up to date with the latest promotions
 3. Save my data under my personal profile.
 4. Manage my profile by updating my details.
@@ -93,96 +104,101 @@ The website was developed using Python (Django), HTML, CSS and JavaScript. The d
 1. Create and publish a new product.
 2. Create a new user, products, and categories.
 3. Delete user, products, categories and Ratings.
-4. Change a user’s permissions on the website
+4. Change a users permissions on the website
 5. Upload new banners to be displayed on the website.
 
 
 #### Scope
+
 <hr>
 
 <h4> Simple and intuitive User Experience</h4>
-- Ensure the navigation menu is visible and functional at every step;
-- Ensure every page has a suggestive name that fits its content;
-- Ensure the users will get visual feedback when navigating through pages;
-- Create a design that matches the requirements of an e-commerce website.
+
+- Ensure the navigation menu is visible and functional at every step
+- Ensure every page has a suggestive name that fits its content
+- Ensure the users will get visual feedback when navigating through pages
+- Create a design that matches the requirements of an e-commerce website
 
 <h4> Relevant content</h4>
-- Add a representative cover image;
-- Add the website title and details about its purpose;
-- Add a section that includes information about the shop's name, description, location and contact data;
-- Make a clear and beautiful designed presentation of the menu elements;
+
+- Add a representative cover image
+- Add the website title and details about its purpose
+- Add a section that includes information about the shop name, description, location and contact data
+- Make a clear and beautiful designed presentation of the menu elements
 
 <h4> Features for upgraded experience</h4>
-- Create a list with all the products and group them by category;
-- Create a Bag feature that allows the user to add, update and remove products from the shopping bag;
-- Create a Wishlist feature that gives the user the possibility to add and remove items from the wishlist;
-- Create a Checkout feature for giving the user the possibility to complete an order on the website;
-- Create a Profile page for the user to add/update his delivery details and see his orders' history;
-- Create a Newsletter feature that allows the user to subscribe with his email;
-- Create a page for the staff members to manage all the orders for all the users;
-- Create a feature for the staff members to add/edit products on the website;
 
-<h4> Different client and staff member Accounts</h4>
-- Allow the clients to add/edit reviews and the staff members only the option to read them;
-- Give the client permission to add/remove products from wishlist and remove the feature for staff members;
-- Only guest and client users to access the shopping bag and its features;
-- Only guest and client users can make an order on the website;
-- Give permission only for staff members to add/edit products; 
-- Allow access to Profile page only for clients users;
-- Allow access to Wishlist page only for clients users;
-- Allow access to Orders page only for staff member users;
+- Created a list with all the products and group them by category
+- Created a Bag feature that allows the user to add, update and remove products from the shopping bag
+- Created a Wishlist feature that gives the user the possibility to add and remove items from the wishlist
+- Created a Checkout feature for giving the user the possibility to complete an order on the website
+- Created a Profile page for the user to add/update his delivery details and see his orders' history
+- Created a Newsletter feature that allows the user to subscribe with his email
+- Created a page for the staff members to manage all the orders for all the users
+- Created a feature for the staff members to add/edit products on the website
+
+<h4> Difference between client user and staff member Accounts</h4>
+
+- Client User can add/remove products from wishlist but this feature is not available for staff members
+- Only guest and client users can access the shopping bag and its features
+- Only guest and client users can make an order on the website
+- Only staff members can add/edit products
+- Profile page are only available for guest &client users
+- Orders page only available for staff member users
 
 <h4> Responsiveness</h4>
-- Create a responsive design for desktop, tablet and mobile devices.<br><br>
+
+Create a responsive design for desktop, tablet and mobile devices.
 
 #### Structure
-<hr>
 
-The structure of the website is divided into multiple pages and the content is displayed depending on authentication and client/admin type of user. <br>
-- **Register/Login** pages give the user the possibility to create an account and authenticate for accessing different features.<br>
-- **Logout** feature is a modal that helps user exit their current account;<br>
-- The **Home** page is visible for both types of users and includes relevant information about the websites' purpose and details about the book store, location and contact;<br>
--The **All products** page displays a list with all the products available for selling;<br>
-- The **Books** navigation link gives the user the possibility to access the list of products grouped by category, <b>Action and Adventure</b>, <b>Classics</b>, <b>Comic Book or Graphic Novel</b>, <b>Detective and Mystery</b> <b>Fantasy</b> <b>Historical Fiction</b>, <b>Horror</b>, <b>Literary Fiction</b> and <b>Suspense and Thrillers</b>;<br>
-- The **Product details** page displays full specifications for a product. It also includes a feature for updating the shopping bag for users that are not admins. Staff members have access to the feature for editing/removing current product;<br>
-- The **Profile** page is available for authenticated users and gives access to personal delivery details and orders' history;<br>
-- The **Profile order details** page gives access to the user to full specifications only for orders placed by him.<br>
-- The **Wishlist** page contains a list with all the products added by the user and cannot be accessed by guest or admin users;<br>
-- The **Bag** page displays all the items added in the shopping bag with associated features;<br>
-- The **Checkout page** includes an order summary and a form for personal, delivery and payment details;<br>
-- The **Checkout success** page displays full specification for the successful order;<br>
-- The **Orders** page gives access only to staff members and displays all the bookings registered.<br>
+The site structure is divided into several pages, displaying content according to the authentication of the client/Staff member user.
 
-* FLOWCHARTS<br>
-The Flowchart for my program was created using <b>LucidChart</b> and it visually represents how the system works.<br>
+- **Register/Login** pages give the user the possibility to create an account and authenticate for accessing different features.
+- **Logout** feature is a modal that helps user exit their current account.
+- The **Home** page is visible for both types of users and includes relevant information about the websites' purpose and details about the book store, location and contact.
+- The **All products** page displays a list with all the products available for selling.
+- The **Books** navigation link gives the user the possibility to access the list of products grouped by category.
+- The **Product details** page displays full specifications for a product. It also includes a feature for updating the shopping bag for users that are not admins. Staff members have access to the feature for editing/removing current product.
+- The **Profile** page is available for authenticated users and gives access to personal delivery details and orders' history.
+- The **Profile order details** page gives access to the user to full specifications only for orders placed by him.
+- The **Wishlist** page contains a list with all the products added by the user and cannot be accessed by guest or admin users.
+- The **Bag** page displays all the items added in the shopping bag with associated features.
+- The **Checkout page** includes an order summary and a form for personal, delivery and payment details.
+- The **Checkout success** page displays full specification for the successful order.
+- The **Orders** page gives access only to staff members and displays all the bookings registered.
+- In **Password reset** page, users can use this page to reset their login password. The user adds their email address in the input field and clicks on the button "Reset Password".
+- In **Change Password** page, users will get a link to reset their password and after clicking on the link it will redirect the user to this page where they can set a new password.
+- In **Page 404 - Page Not Found** user will see this feature when the page that the user is looking for, does not exist or for any typing URL error.
+
+<h4> Flowchart</h4>
+
+The Flowchart for my program was created using <b>Draw.io</b> and it visually represents how the system works.
 
 #### Skeleton
-<hr>
 
-**Wireframes**<br>
-The wireframes for mobile and desktop were created with [Balsamiq](https://balsamiq.com/) tool and can be viewed [here]()<br>
+<h4> Wireframes </h4>
 
-**Database**<br>
+The wireframes for mobile and desktop were created with [Balsamiq](https://balsamiq.com/) tool and can be viewed [here]()
+
+<h4> Database </h4>
+
 The project uses the relational database PostgreSQL to store the data. Two diagrams were created to show the relationships between the tables.
 
-
 <details>
+
   <summary>Final Schema</summary>
+  
+</details>  
+  
+<h4> Design </h4>
 
-![]()
-</details><br>
+The website is designed in a minimalist style to align with the
+site's objectives. The simple design allows users to easily navigate the site and find what they are looking for.
 
-#### Surface
-<hr>
+<h4> Color scheme </h4>
 
-Design
-
-The website was designed with a minimalistic style to align with the site's objectives. The simple design allows users to easily navigate through the site and find what they are looking for.
-
-Colour Scheme
-
-The design is quite simple. The colour scheme is used to ensure that there is a good contrast with the text and to create a clean and visually appealing look across the site. The scheme establishes a strong contrast between the background colors and text and, at the same time, ensures that the site meets accessibility requirements.
-
+The design is quite simple. The color scheme is used to ensure good contrast with the text and create a clear and visually appealing look for the website. The scheme establishes a strong contrast between background colors and text, ensuring that the site meets accessibility standards.
 
 | Color         |Hex    |
 | ---------- | ------ |
@@ -195,12 +211,83 @@ The design is quite simple. The colour scheme is used to ensure that there is a 
 | Light gray | ![#dadadf](media/dadadf.png) #dadadf |
 
 ## Agile Methodology
+
 This project was developed using the agile methodology. All progress in implementing Epics and User Stories was captured using Trello. Necessary goals and priorities were well defined throughout the project. In addition, labels were used to define the priority of each user story on the Kanban board. As user stories were completed, they were moved from the To Do, Progress, and Done lists in the Trello board.
 
 ## Features
 
-#### Home page
-![Home-page](media/home-page.png)
+### Home Page
+
+The website is designed to be welcoming and easy to use. It features a nav bar and nav links. It starts with the name of the website on the top left, search field in the right, my account and shopping bag to the top right, followed by a navigation menu links,free shipping threshold text and footer. All these appear on every page on the site. Also, found on home page is a hero image accompanied by a hero text, and a shop our products button beneath it.
+
+### Navigation bar
+
+- The navigation bar is located at the top of each page and contains all the links to  other pages.
+- The links at the bottom of the navigation bar are drop-down menus. They are used to filter products.
+- There is also a link to the all products page by clicking on "shop our products" on hero image.
+- Once the user is logged in, their choice of Register or Login will change to Log Out.
+- Once the user is logged in, there are other options in the navigation bar, such as a profile.
+- The navigation bar also has a search field.
+- The navbar is fully responsive. It collapses into a hamburger menu when the screen size decreases.
+
+### Products
+
+- Every user can access the page with the product catalogue. The items are listed attractively and their design is adapted to all devices.
+- The sorting feature is available for the user by selecting a value from the available options that will update the products' list accordingly.
+- All the products are listed as hoverable elements which include relevant information for the users. The items with low stock have a banner to announce the user about their availability.
+- Every products has a *details page* that includes full specifications.
+
+### Wishlist
+
+- On the *Product Details* page there is an interactive feature that is only available for logged-in users that are not staff members. A user can add a product to the wishlist by clicking on add to wishlist button. This feature is also accessible on the *Bag* page.
+- In the *Wishlist* page there are listed all the favourite items of the user with a design similar to the one created for the *Products* pages. A filtering and sorting section is also available and every element is linked to a *Product Details* page.
+- An additional feature would be that every item includes a representation of the number of times it has been added to the wishlist by all the users.
+
+### Checkout
+
+- The *Checkout* page represents the final step in completing the order.
+- A form for personal, delivery and payment details is displayed for the user to fill in with valid data. Additionally, a validation has been implemented to not allow other values to be submitted. The payment input has its own Stripe-implemented validation.
+- An order summary is displayed with details about the products and cost.
+- After the order is completed, the user is sent to a *Checkout Success* page with full specifications and details.
+
+### User Profile
+
+The *User Profile* page gives the user access to individual and private features.
+
+- The page includes a form for adding or updating the delivery details. These details are saved in the database and whenever the user is logged in and wants to make an order, the values will be automatically set in the checkout form.
+
+- Another important feature is the **Orders history** which is represented by a table with all the orders created by the user. Any order element has a details page that can be accessed by clicking on the order number value.
+
+### Admin
+
+The admin account was created as a superuser account from the terminal and also has access to the admin panel.
+
+- There is a page created especially for staff members to keep better track of all the orders placed on the website.
+- An admin user have access to features for *adding a new product*, *edit a product's details* and *delete product*. The last two implementations are available on the *Product Details* page and only for staff accounts.
+
+### Messages and Interaction with Users
+
+- Some interactive messages were added to the project to make the navigation on the website easier and to improve the user's experience.
+
+### Footer
+
+- On the website footer, users can see basic information about the My books store. The information includes contact, social media, copyright, and a form where they can subscribe to the newsletter.
+
+## Future Feature Considerations
+
+---
+
+- Implementing a chat feature for communication between customers and staff members.
+- Implementing vocher and discount features.
+- Customers can add a comment and review the product.
+
+## Business Model
+
+- The business model chosen for this project is **Businesgit stas to Customer**, as the main purpose of the website is to deliver final products to customers. This model was implemented using an interactive, attractive and intuitive interface that gives the clients an upgraded experience for shopping.
+
+## Marketing
+
+- The marketing strategy includes a Facebook business page that is intended to create a good image of the store by posting news and promotions available. By highly promoting the products and always adding new content, the page will increase its popularity and attract more and more customers to buy from the online store.
 
 ## Responsive Layout and Design
 
@@ -244,20 +331,20 @@ The testing documentation can be found at [TESTING.MD](TESTING.MD)
 
 ## AWS Setup Process
 
-### AWS S3 Bucket 
+### AWS S3 Bucke
 
 The deployed site uses AWS S3 Buckets to store the webpages static and media files. More information on how you can set up an AWS S3 Bucket can be found below:
 
-1. Create an AWS account [here](https://portal.aws.amazon.com/).
-2. Login to your account and within the search bar type in "S3".
-3. Within the S3 page click on the button that says "Create Bucket".
-4. Name the bucket and select the region which is closest to you.
-5. Underneath "Object Ownership" select "ACLs enabled".
-6. Uncheck "Block Public Access" and acknowledge that the bucket will be made public, then click "Create Bucket".
-7. Inside the created bucket click on the "Properties" tab. Below "Static Website Hosting" click "Edit" and change the Static website hosting option to "Enabled". Copy the default values for the index and error documents and click "Save Changes".
-8. Click on the "Permissions" tab, below "Cross-origin Resource Sharing (CORS)", click "Edit" and then paste in the following code:
+- Create an AWS account [here](https://portal.aws.amazon.com/).
+- Login to your account and within the search bar type in "S3"
+- Within the S3 page click on the button that says "Create Bucket"
+- Name the bucket and select the region which is closest to you
+- Underneath "Object Ownership" select "ACLs enabled".
+- Uncheck "Block Public Access" and acknowledge that the bucket will be made public, then click "Create Bucket".
+- Inside the created bucket click on the "Properties" tab. Below "Static Website Hosting" click "Edit" and change the Static website hosting option to "Enabled". Copy the default values for the index and error documents and click "Save Changes".
+- Click on the "Permissions" tab, below "Cross-origin Resource Sharing (CORS)", click "Edit" and then paste in the following code:
 
-  ```
+```
     [
         {
             "AllowedHeaders": [
@@ -272,26 +359,28 @@ The deployed site uses AWS S3 Buckets to store the webpages static and media fil
             "ExposeHeaders": []
         }
     ]
-  ```
+```
 
-9. Within the "Bucket Policy" section. Click "Edit" and then "Policy Generator". Click the "Select Type of Policy" dropdown and select "S3 Bucket Policy" and within "Principle" allow all principals by typing "*".
-10. Within the "Actions" dropdown menu select "Get Object" and in the previous tab copy the "Bucket ARN number". Paste this within the policy generator within the field labelled "Amazon Resource Name (ARN)".
-11. Click "Add statement > Generate Policy" and copy the policy that's been generated and paste this into the "Bucket Policy Editor".
-12. Before saving, add /* at the end of your "Resource Key", this will allow access to all resources within the bucket.
-13. Once saved, scroll down to the "Access Control List (ACL)" and click "Edit".
-14. Next to "Everyone (public access)", check the "list" checkbox and save your changes.
+- Within the "Bucket Policy" section. Click "Edit" and then "Policy Generator". Click the "Select Type of Policy" dropdown and select "S3 Bucket Policy" and within "Principle" allow all principals by typing "*".
+- Within the "Actions" dropdown menu select "Get Object" and in the previous tab copy the "Bucket ARN number". Paste this within the policy generator within the field labelled "Amazon Resource Name (ARN)".
+- Click "Add statement > Generate Policy" and copy the policy that's been generated and paste this into the "Bucket Policy Editor".
+- Before saving, add /* at the end of your "Resource Key", this will allow access to all resources within the bucket.
+- Once saved, scroll down to the "Access Control List (ACL)" and click "Edit".
+- Next to "Everyone (public access)", check the "list" checkbox and save your changes.
 
 ### IAM Set Up
 
-1. Search for IAM within the AWS navigation bar and select it.
-2. Click "User Groups" that can be seen in the side bar and then click "Create group" and name the group 'manage-your-project-name'.
-3. Click "Policies" and then "Create policy".
-4. Navigate to the JSON tab and click "Import Managed Policy", within here search "S3" and select "AmazonS3FullAccess" followed by "Import".
-5. Navigate back to the recently created S3 bucket and copy your "ARN Number". Go back to "This Policy" and update the "Resource Key" to include your ARN Number, and another line with your ARN followed by a "/*".
-   
-- Below is an example of what this should look like:
+- earch for IAM within the AWS navigation bar and select it.
 
-```
+- lick "User Groups" that can be seen in the side bar and then click "Create group" and name the group 'manage-your-project-name'.
+
+- lick "Policies" and then "Create policy".
+- avigate to the JSON tab and click "Import Managed 
+  Policy", within here search "S3" and select "AmazonS3FullAccess" followed by "Import".
+
+- Navigate back to the recently created S3 bucket and copy your "ARN Number". Go back to "This Policy" and update the "Resource Key" to include your ARN Number, and another line with your ARN followed by a "/*".
+   
+- Below is an example of what this should look like:```
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -306,28 +395,31 @@ The deployed site uses AWS S3 Buckets to store the webpages static and media fil
                 "YOUR-ARN-NO-HERE/*"
             ]
         }
-    ]
+   
 }
 
-```
+that on ```
 
-1. Ensure the policy has been given a name and a short description, then click "Create Policy".
-2. Click "User groups", and then the group you created earlier. Under permissions click "Add Permission" and from the dropdown click "Attach Policies".
-3. Select "Users" from the sidebar and click "Add User".
-4. Provide a username and check "Programmatic Access", then click 'Next: Permissions'.
-5. Ensure your policy is selected and navigate through until you click "Add User".
-6. Download the "CSV file", which contains the user's access key and secret access key.
+6. Ensure the policy has been given a name and a short description, then click "Create Policy".
+- Click "User groups", and then the group you created earlier. Under permissions click "Add Pe
+- Select "Users" from the sidebar and click "Add User".
+9. Provide a username and check "Programmatic Access", then click 'Next: Permissions'.
 
-### Connecting AWS to the Project
+- 10. Ensure your policy is selected and navigate throu
+- ntil you click "Add User".
+11. Download the "CSV file", which contains the user's 
+- ss key and secret access key.
 
-1. Within your terminal install the following packages by typing 
+
+- ### Connecting AWS to the Project
+
+- Within your terminal install the following packages by typing 
 
 ```
   pip3 install boto3
   pip3 install django-storages 
 ```  
-
-2. Freeze the requirements by typing:
+- - Freeze the requirements by typing:
 
 ```
 pip3 freeze > requirements.txt
@@ -336,16 +428,22 @@ pip3 freeze > requirements.txt
 3. Add "storages" to your installed apps within your settings.py file.
 4. At the bottom of the settings.py file add the following code:
 
-```
-if 'USE_AWS' in os.environ:
-    AWS_STORAGE_BUCKET_NAME = 'insert-bucket-name-here'
-    AWS_S3_REGION_NAME = 'insert-your-region-here'
-    AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
+
+- 
+1. 'USE_AWS' in os.environ:
+
+- 2.  AWS_STORAGE_BUCKET_NAME = 'insert-bucket-name-here'
+
+- 3.  AWS_S3_REGION_NAME = 'insert-your-region-here'
+
+-     AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
     AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
 ```
-5. Add the following keys within Heroku: "AWS_ACCESS_KEY_ID" and "AWS_SECRET_ACCESS_KEY". These can be found in your CSV file.
-6. Add the key "USE_AWS", and set the value to True within Heroku.
-6. Remove the "DISABLE_COLLECTSTAIC" variable from Heroku.
+5. 
+Add the following keys within Heroku: "AWS_ACCESS_KEY_ID" and "AWS_SECRET_ACCESS_KEY". These can be found in your CSV file.
+- Add the key "USE_AWS", and set the value to True within Heroku.
+
+- 6. Remove the "DISABLE_COLLECTSTAIC" variable from Heroku.
 7. Within your settings.py file inside the code just written add: 
 
 ```
@@ -360,8 +458,7 @@ MEDIAFILES_LOCATION = 'media'
 
 STATIC_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{STATICFILES_LOCATION}/'
 MEDIA_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{MEDIAFILES_LOCATION}/'
-
-AWS_S3_OBJECT_PARAMETERS = {
+- AWS_S3_OBJECT_PARAMETERS = {
     'Expires': 'Thu, 31 Dec 2099 20:00:00 GMT',
     'CacheControl': 'max-age=94608000',
 }
@@ -373,9 +470,10 @@ AWS_S3_OBJECT_PARAMETERS = {
   from django.conf import settings
   from storages.backends.s3boto3 import S3Boto3Storage
 
-  class StaticStorage(S3Boto3Storage):
-    location = settings.STATICFILES_LOCATION
+- ass StaticStorage(S3Boto3Storage):
+1.  location = settings.STATICFILES_LOCATION
 
+- 
   class MediaStorage(S3Boto3Storage):
     location = settings.MEDIAFILES_LOCATION
 ```
@@ -385,10 +483,10 @@ AWS_S3_OBJECT_PARAMETERS = {
 
 ## Stripe Payments
 
-- The Stripe payments system is set up as the online payment processing and credit card processing platform for the purchases. 
+- The Stripe payments system is set up as the online payment processing and credit card processing platform for the purchases.
 You will need a stripe account which you can sign up for [here](https://stripe.com/en-ie)
 
-### Payments 
+### Payments
 
 - To set up stripe payments you can follow their guid [here](https://stripe.com/docs/payments/accept-a-payment#web-collect-card-details)
 
@@ -457,7 +555,6 @@ You will need a stripe account which you can sign up for [here](https://stripe.c
 - Heroku was used to deploy the live project
 - [PostgreSQL](https://www.postgresql.org/)
 - Database used through Heroku.
-
 - [Drawio](https://www.drawio.com/)
 - Drawio was used to create the database diagram, flowchart and bussiness model.
 - [W3C - HTML](https://validator.w3.org/)
@@ -479,7 +576,7 @@ You will need a stripe account which you can sign up for [here](https://stripe.c
 ## Creating the Django app
 
 1. Go to the Code Institute Gitpod Full Template [Template](https://github.com/Code-Institute-Org/gitpod-full-template)
-2. Click on Use This Template
+2. Click on Use this Template
 3. Once the template is available in your repository click on Gitpod
 4. When the image for the template and the Gitpod are ready open a new terminal to start a new Django App
 5. Install Django and gunicorn: pip3 install django gunicorn
