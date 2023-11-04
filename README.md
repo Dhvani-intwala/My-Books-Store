@@ -26,10 +26,16 @@
   - [Product Checkout Success](#product-checkout-success)
   - [Wishlist](#wishlist)
   - [Products Management](#products-management)
-  - [User Profile](#user-profile)
-  - [Admin panel / Superuser](#admin-panel--superuser)
-  - [Messages and Interaction with Users](#messages-and-interaction-with-users)
   - [Footer](#footer)
+  - [User Profile](#user-profile)
+  - [Login Page](#login-page)
+  - [Signup Page](#signup-page)
+  - [Signout Page](#signout-page)
+  - [Reset Password page](#reset-password-page)
+  - [Change Password page](#change-password-page)
+  - [Admin panel / Superuser](#admin-panel--superuser)
+  - [Error 404 page not found](#error-404-page-not-found)
+  - [Messages and Interaction with Users](#messages-and-interaction-with-users)
 - [Future Feature Considerations](#future-feature-considerations)
 - [Business Model](#business-model)
 - [Marketing](#marketing)
@@ -222,7 +228,6 @@ The website is designed to be welcoming and easy to use. It features a nav bar a
 
 - The navigation bar is located at the top of each page and contains all the links to  other pages.
 - The links at the bottom of the navigation bar are drop-down menus. They are used to filter products.
-- There is also a link to the all products page by clicking on "shop our products" on hero image.
 - Once the user is logged in, their choice of Register or Login will change to Log Out.
 - Once the user is logged in, there are other options in the navigation bar, such as a profile.
 - The navigation bar also has a search field.
@@ -261,6 +266,10 @@ The website is designed to be welcoming and easy to use. It features a nav bar a
 ### Products Management
 
 - When the website admin is logged in on this page, they can add a new product to the website without going to the admin panel.
+
+### Footer
+
+- On the website footer, users can see basic information about the My books store. The information includes contact, social media, copyright, and a form where they can subscribe to the newsletter.
   
 ### User Profile
 
@@ -269,6 +278,24 @@ The *User Profile* page gives the user access to individual and private features
 - The page includes a form for adding or updating the delivery details. These details are saved in the database and whenever the user is logged in and wants to make an order, the values will be automatically set in the checkout form.
 
 - Another important feature is the **Orders history** which is represented by a table with all the orders created by the user. Any order element has a details page that can be accessed by clicking on the order number value.
+
+### Login Page
+
+- On the Login Page, users can log in to the website by inputting their username and password. The user is now registered and will have access to the Registered User website services.
+
+### Signup Page
+
+- On the Signup page , new user can create there profile by filling the signup form.
+
+### Signout Page
+
+- On the Signout Page, users can confirm that they wish to exit the website.
+
+### Reset Password page
+
+- Users can use this page to reset their login password. The user adds their email address in the input field and clicks on the button "Reset Password".
+
+### Change Password page
 
 ### Admin panel / Superuser
 
@@ -283,13 +310,13 @@ The *User Profile* page gives the user access to individual and private features
 
 - There is a page created especially for staff members to keep better track of all the orders placed on the website.
 
+### Error 404 page not found
+
+- The user will see this feature when the page that the user is looking for, does not exist or for any typing URL error.
+
 ### Messages and Interaction with Users
 
 - Some interactive messages were added to the project to make the navigation on the website easier and to improve the user's experience.
-
-### Footer
-
-- On the website footer, users can see basic information about the My books store. The information includes contact, social media, copyright, and a form where they can subscribe to the newsletter.
 
 ## Future Feature Considerations
 
@@ -521,7 +548,7 @@ STRIPE_SECRET_KEY = 'insert your secret key'
 STRIPE_WH_SECRET = 'insert your webhooks secret key'
 ```
 
-- Finally, back in your settings.py file in django, insert the following near the bottom of the file:  
+- Finally, back in your settings.py file in django, insert the following near the bottom of the file:
 
 ```
 STRIPE_PUBLIC_KEY = os.getenv('STRIPE_PUBLIC_KEY', '')
