@@ -191,6 +191,8 @@ The project uses the relational database PostgreSQL to store the data. Two diagr
 
   <summary> Final Schema</summary>
   
+  ![Database](/media/database.webp)
+  
 </details>  
   
 <h4> Design </h4>
