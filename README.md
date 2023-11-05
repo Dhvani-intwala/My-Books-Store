@@ -32,6 +32,9 @@
   - [Signout Page](#signout-page)
   - [Reset Password page](#reset-password-page)
   - [Change Password page](#change-password-page)
+  - [FAQ's page](#faqs-page)
+  - [Privacy and policy Page](#privacy-and-policy-page)
+  - [Terms and Conditions page](#terms-and-conditions-page)
   - [Admin panel / Superuser](#admin-panel--superuser)
   - [Error 404 page not found](#error-404-page-not-found)
   - [Messages and Interaction with Users](#messages-and-interaction-with-users)
@@ -291,6 +294,18 @@ The *User Profile* page gives the user access to individual and private features
 ### Change Password page
 
 - Users will get a link to reset their password and after clicking on the link it will redirect the user to this page where they can set a new password.
+
+### FAQ's page
+
+- If the users has any question related to Shopping , they might find here. In FAQ's there are answers for the most frequently asked question.
+
+### Privacy and policy Page
+
+- Here the Users can go though our privacy policies.
+
+### Terms and Conditions page
+
+- User can go through Terms and condition regarding shopping in this page.
 
 ### Admin panel / Superuser
 
