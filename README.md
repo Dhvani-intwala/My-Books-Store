@@ -224,6 +224,8 @@ This project was developed using the agile methodology. All progress in implemen
 
 The website is designed to be welcoming and easy to use. It features a nav bar and nav links. It starts with the name of the website on the top left, search field in the right, my account and shopping bag to the top right, followed by a navigation menu links,free shipping threshold text and footer. All these appear on every page on the site. Also, found on home page is a hero image accompanied by a hero text, and a shop our products button beneath it.
 
+
+
 ### Navigation bar
 
 - The navigation bar is located at the top of each page and contains all the links to  other pages.
