@@ -222,11 +222,14 @@ This project was developed using the agile methodology. All progress in implemen
 
 ### Home Page
 
+![Home-page](/media/home-page.png)
+
 The website is designed to be welcoming and easy to use. It features a nav bar and nav links. It starts with the name of the website on the top left, search field in the right, my account and shopping bag to the top right, followed by a navigation menu links,free shipping threshold text and footer. All these appear on every page on the site. Also, found on home page is a hero image accompanied by a hero text, and a shop our products button beneath it.
 
 
-
 ### Navigation bar
+
+![navbar](/media/nav-bar.png)
 
 - The navigation bar is located at the top of each page and contains all the links to  other pages.
 - The links at the bottom of the navigation bar are drop-down menus. They are used to filter products.
@@ -237,18 +240,26 @@ The website is designed to be welcoming and easy to use. It features a nav bar a
 
 ### All Products page
 
+![All products page](/media/products-page.png)
+
 - On this page, users will see all the products available on the website such as product details. For example, if the user is interested in the watch they can press the button "Buy Now". They can also sort products by price, name, rating and category. Furthermore, when the site admin is logged in, it can edit or delete products.
 
 ### Product details page
+
+![products detail page](/media/poroducts-details-page.png)
 
 - Here users can see the product image and product information such as price, category and rating. If the user is interested in the book they can choose the product quantity and add the product to their shopping bag. Also, the user can leave the page by pressing the button "Keep Shopping".Also the user can add that product to whislist if the user has login.The items with low stock have a banner to announce the user about their availability.
 - Every products has a *details page* that includes full specifications.
 
 ### Product Shopping Bag
 
+![products shopping pag](/media/product-shopping-bag.png)
+
 - This feature is called the Shopping bag. Here, users can add products and quantities. Check the total price, and delivery costs and go to the secure checkout to finish the order. Before secure checkout. the user can also change the quantity and remove unwanted products. The user can also leave this page by pressing the button "Keep Shopping".
 
 ### Product Checkout
+
+![products checkout page](/media/products-checkout-page.png)
 
 - The *Checkout* page represents the final step in completing the order.
 - A form for personal, delivery and payment details is displayed for the user to fill in with valid data. Additionally, a validation has been implemented to not allow other values to be submitted. The payment input has its own Stripe-implemented validation.
@@ -257,9 +268,13 @@ The website is designed to be welcoming and easy to use. It features a nav bar a
 
 ### Product Checkout Success
 
+![products checkout success page](/media/checkout-page.png)
+
 - Here the user can see the thank you page with information like order number, order date, billing info, and delivery address. At the bottom the user click on check out on new arrivals then the user can see new arrivals books.
 
 ### Wishlist
+
+![wishlist page](/media/wishlist.png)
 
 - On the *Product Details* page there is an interactive feature that is only available for logged-in users that are not staff members. A user can add a product to the wishlist by clicking on add to wishlist button. This feature is also accessible on the *Bag* page.
 - In the *Wishlist* page there are listed all the favourite items of the user with a design similar to the one created for the *Products* pages. A filtering and sorting section is also available and every element is linked to a *Product Details* page.
@@ -267,13 +282,19 @@ The website is designed to be welcoming and easy to use. It features a nav bar a
 
 ### Products Management
 
+![Products management](/media/productmanagement.png)
+
 - When the website admin is logged in on this page, they can add a new product to the website without going to the admin panel.
 
 ### Footer
 
+![Products management](/media/footer.png)
+
 - On the website footer, users can see basic information about the My books store. The information includes contact, social media, copyright, and a form where they can subscribe to the newsletter.
   
 ### User Profile
+
+![Profile page](/media/profilepage.png)
 
 The *User Profile* page gives the user access to individual and private features.
 
@@ -283,17 +304,28 @@ The *User Profile* page gives the user access to individual and private features
 
 ### Login Page
 
+![login page](/media/singinpage.png)
+
 - On the Login Page, users can log in to the website by inputting their username and password. The user is now registered and will have access to the Registered User website services.
 
 ### Signup Page
+
+![signup page](/media/singuppage.png)
 
 - On the Signup page , new user can create there profile by filling the signup form.
 
 ### Signout Page
 
+![signout page](/media/logout.png)
+
 - On the Signout Page, users can confirm that they wish to exit the website.
 
 ### Reset Password page
+
+![reset password page](/media)
+
+![Rest password page]()
+
 
 - Users can use this page to reset their login password. The user adds their email address in the input field and clicks on the button "Reset Password".
 

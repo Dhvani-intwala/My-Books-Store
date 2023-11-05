@@ -141,7 +141,7 @@
         "fields": {
             "category": 3,
             "sku": "bcgh0319",
-            "name": "The Boy, the Mole, the Fox and the Horse",
+            "name": "The Boy, Mole, Fox and Horse",
             "auth_name": "Charlie Mackesy",
             "books_type": "Comic Book or Graphic Novel",
             "description": "The Boy, the Mole, the Fox and the Horse is a 2019 illustrated book by Charlie Mackesy. It follows the developing friendship between the four protagonists of the title.",
@@ -447,7 +447,7 @@
         "fields": {
             "category": 9,
             "sku": "bros0319",
-            "name": "The savior's book the black dagger brotherhood",
+            "name": "The savior's book",
             "auth_name": "J.R. Ward",
             "books_type": "Romance",
             "description": "The Savior is about Murhder, a vampire and ex-member of the Black Dagger Brotherhood turned recluse due to insanity.",
