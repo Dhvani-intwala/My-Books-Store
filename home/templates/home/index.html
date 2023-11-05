@@ -1,67 +1,59 @@
-{% extends "base.html" %}
-{% load static %}
-  
-{% block page_header %}
+{% extends "base.html" %} {% load static %} {% block page_header %}
 <div class="container header-container">
     <div class="row">
         <div class="col"></div>
     </div>
 </div>
 
-{% endblock %}
+{% endblock %} {% block content %}
 
-
-{% block content %}
-
-<div class=" container-fluid home-cover">
-   <div class="h-100 ">
+<div class="container-fluid home-cover">
+    <div class="h-100">
         <div class="col-md-10 pl-5 pr-5 pb-5 booksstore-title">
             <h1 class="display-4 logo-font text-black">Books Store</h1>
             <h3 class="text-black">HAPPINESS IS</h3>
-            <h5 class="text-black"> Losing yourself in a good book.</h5>
+            <h5 class="text-black">Losing yourself in a good book.</h5>
             <div class="my-5 shop-products">
                 <h4>
                     <a href="{% url 'products' %}" class="shop-button btn btn-lg rounded-pill text-uppercase py-3 text-white">Shop Our Products</a>
                 </h4>
             </div>
         </div>
-   </div>
+    </div>
 </div>
-{% endblock %}
-
-{% block info %}
+{% endblock %} {% block info %}
 <!-- Books store shop info container  -->
 <div class="bg-dark text-white">
-    <div class="main-container col-lg-11 mx-auto pt-4 pb-4 ">
+    <div class="main-container col-lg-11 mx-auto pt-4 pb-4">
         <h4 class="mb-4 text-center decorated col-11 col-md-4 mx-auto"><span>My Books Store</span></h4>
         <div class="pt-lg-3">
             <div class="col-12 mb-4 mb-lg-3">
                 <div class="col-12 col-md-9 col-lg-12 col-xl-10 p-0 mx-auto">
                     <div class="d-lg-flex justify-content-between text-center mx-auto home-container">
                         <div class="col-12 col-md-10 col-lg-5 p-0 mb-3 mx-auto m-lg-0 animate__zoomIn animate__animated">
-                            <img class="img-fluid img-shadow" src="{{ MEDIA_URL }}bookshop1.webp" alt="book shop image">
+                            <img class="img-fluid img-shadow" src="{{ MEDIA_URL }}bookshop1.webp" alt="book shop image" />
                         </div>
                         <div class="col-12 col-lg-6 p-0 text-left animate__fadeInRight animate__animated">
-                            <p>At My Book Store we're more than just a place to buy books; we're a haven for readers, a sanctuary for book lovers, and a community of passionate storytellers.
-                            Nestled in the heart of Schelklingen, we've been serving literary enthusiasts since 2000. Our journey began with a simple dream - to create a place where people could discover, savor,
-                            and share the joy of reading. Over the years, we've grown from a modest bookstore to a thriving hub for bookworms of all ages. We've been privileged to witness countless stories unfold within our walls,
-                            both in the pages of books and in the lives of our beloved customers. Our mission is clear: to connect people with the world of literature, one book at a time. We believe in the power of books to inspire,
-                            educate, and entertain, and we're dedicated to providing a carefully curated selection that caters to diverse tastes and interests.</p>
+                            <p>
+                                At My Book Store we're more than just a place to buy books; we're a haven for readers, a sanctuary for book lovers, and a community of passionate storytellers. Nestled in the heart of Schelklingen, we've been
+                                serving literary enthusiasts since 2000. Our journey began with a simple dream - to create a place where people could discover, savor, and share the joy of reading. Over the years, we've grown from a modest
+                                bookstore to a thriving hub for bookworms of all ages. We've been privileged to witness countless stories unfold within our walls, both in the pages of books and in the lives of our beloved customers. Our
+                                mission is clear: to connect people with the world of literature, one book at a time. We believe in the power of books to inspire, educate, and entertain, and we're dedicated to providing a carefully curated
+                                selection that caters to diverse tastes and interests.
+                            </p>
                             <div class="col-8 p-0 d-flex flex-column flex-sm-row justify-content-between align-items-md-end">
                                 <p><i class="fas fa-map-marker-alt"></i> Location:</p>
-                                <p><em>15 Route,
-                                Rhode Island, 87949,
-                                Germany</em> </p>
+                                <p><em>15 Route, Rhode Island, 87949, Germany</em></p>
                             </div>
-                            <div class="col-8 p-0 d-flex flex-column flex-sm-row  justify-content-between align-items-md-end">
+                            <div class="col-8 p-0 d-flex flex-column flex-sm-row justify-content-between align-items-md-end">
                                 <p><i class="fas fa-address-book"></i> Contact Email:</p>
-                                <p><em>mybooksstore4@gmail.com</em> </p>
+                                <p><em>mybooksstore4@gmail.com</em></p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>            
-    </div>    
+        </div>
+    </div>
 </div>
 {% endblock %}
