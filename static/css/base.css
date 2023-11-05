@@ -112,7 +112,7 @@ body {
 }
 
 .home-cover {
-    background-image:url('/media/main-booksstore-image.jpg');
+    background-image:url('/media/main-booksstore-image.webp');
     background-size: cover;
     height: 75vh;
     width: 100vw;
@@ -233,6 +233,57 @@ body {
 .blue span::before {border-left-color: #d89829; border-top-color: #d89829;}
 .blue span::after {border-right-color: #d89829; border-top-color: #d89829;}
 
+.details-ribbon{
+    position: absolute;
+    right: 65px;
+    top: -4px;
+    z-index: 1;
+    overflow: hidden;
+    width: 100px;
+    height: 75px; 
+    text-align: right;
+    padding: 2px;
+}
+.details-ribbon span {
+    font-size: 10px;
+    color: #fff; 
+    text-transform: uppercase; 
+    text-align: center;
+    font-weight: bold;
+    line-height: 20px;
+    transform: rotate(45deg);
+    width: 150px;
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: -45px;
+}
+
+.wishlist-ribbon{
+    position: absolute;
+    right: 25px;
+    top: -5px;
+    z-index: 1;
+    overflow: hidden;
+    width: 120px;
+    height: 75px; 
+    text-align: right;
+    padding: 2px;
+}
+.wishlist-ribbon span {
+    font-size: 10px;
+    color: #fff; 
+    text-transform: uppercase; 
+    text-align: center;
+    font-weight: bold;
+    line-height: 20px;
+    transform: rotate(45deg);
+    width: 150px;
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: -45px;
+}
 
 /* logout model  */
 
@@ -722,7 +773,7 @@ input[name='q']::placeholder {
 @media (max-width: 380px) {
 
     .home-cover {
-        height: 40vh;
+        height: 45vh;
         object-fit: contain;
     }
     .logo-font{
@@ -749,6 +800,14 @@ input[name='q']::placeholder {
     .Copyright{
         font-size: small;
     }
-
+    .shop-button{
+        width:50%;
+        height:30%;
+        margin-left: 20px;
+        padding: 2px 2px;
+    }
+    .subscribe{
+        width:40%;
+    }
 
 }

@@ -35,6 +35,21 @@
   - [Admin panel / Superuser](#admin-panel--superuser)
   - [Error 404 page not found](#error-404-page-not-found)
   - [Messages and Interaction with Users](#messages-and-interaction-with-users)
+    - [Signup](#signup)
+    - [Login](#login)
+    - [Signout](#signout)
+    - [Profile Update](#profile-update)
+    - [Add Product](#add-product)
+    - [Edit Product 1](#edit-product-1)
+    - [Edit Product 2](#edit-product-2)
+    - [Edit Product 3](#edit-product-3)
+    - [Delete Product 1](#delete-product-1)
+    - [Delete Product 2](#delete-product-2)
+    - [Delete Product 3](#delete-product-3)
+    - [Add Product to Bag](#add-product-to-bag)
+    - [Update Bag](#update-bag)
+    - [Remove Product from Bag](#remove-product-from-bag)
+    - [Purchase Success](#purchase-success)
 - [Future Feature Considerations](#future-feature-considerations)
 - [Business Model](#business-model)
 - [Marketing](#marketing)
@@ -297,6 +312,66 @@ The *User Profile* page gives the user access to individual and private features
 ### Messages and Interaction with Users
 
 - Some interactive messages were added to the project to make the navigation on the website easier and to improve the user's experience.
+
+#### Signup
+
+- When users sign up to the website they will see a message at the top right of the page saying ""
+
+#### Login
+
+- When users login to the website they will see a message at the top right of the page saying ""
+
+#### Signout
+
+- When users sign up to the website they will see a message at the top right of the page saying ""
+  
+#### Profile Update
+
+- When users sign up to the website they will see a message at the top right of the page saying ""
+  
+#### Add Product
+
+- When the website admin is logged in, they can add new products through the website front-end. When submitted successfully the following message "" pops up at the top right of the page.
+
+#### Edit Product 1
+
+- When the website admin is logged in, they can edit products already added through the website's front-end by clicking on the "Edit" button.
+
+#### Edit Product 2
+
+- Once the button is clicked the website admin will see the following alert "" at the top right of the screen.
+
+#### Edit Product 3
+
+- After the "Update Product" button is pressed and the product is edited successfully, the website admin will see the message "" at the top right of the page.
+
+#### Delete Product 1
+
+- When the website admin is logged in, they can delete products already added through the website’s front-end by clicking the "Delete" button.
+
+#### Delete Product 2
+
+- After pressing the "Delete" button the Bootstrap box model will pop up with a message ""at the in the ''page.
+
+#### Delete Product 3
+
+- When the user presses the "Delete" button again within the Bootstrap box model they will see the message "Product deleted" at the top right of the page.
+
+#### Add Product to Bag
+
+- When users choose a product and add it to the bag they will see a success message at the top right of the screen.
+
+#### Update Bag
+
+- When users update the bag they will see a success message at the top right of the screen.
+
+#### Remove Product from Bag
+
+- When users remove the products from the bag they will see a success message at the top right of the screen.
+
+#### Purchase Success
+
+- When users fill out the check-out form and complete the purchase they will see a success message with the order details at the top right of the screen.
 
 ## Future Feature Considerations
 

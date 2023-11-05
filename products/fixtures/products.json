@@ -12,7 +12,7 @@
             "year": " 2002",
             "price": 15.99,
             "rating": 4.4,
-            "image": "Action-and-Adventure1.jpg",
+            "image": "Action-and-Adventure1.webp",
             "stock": 1
         }
     },
@@ -29,7 +29,7 @@
             "year": "1844",
             "price": 15.70,
             "rating": 2.4,
-            "image": "Action-and-Adventure2.jpg",
+            "image": "Action-and-Adventure2.webp",
             "stock": 1000
         }
     },
@@ -46,7 +46,7 @@
             "year": "1903",
             "price": 15.90,
             "rating": 4.5,
-            "image": "Action-and-Adventure3.jpg",
+            "image": "Action-and-Adventure3.webp",
             "stock": 10
         }
     },
@@ -63,7 +63,7 @@
             "year": "1960",
             "price": 15.00,
             "rating": 4.4,
-            "image": "Classics1.jpg",
+            "image": "Classics1.webp",
             "stock": 0
         }
     },
@@ -80,7 +80,7 @@
             "year": "1869",
             "price": 15.00,
             "rating": 4.5,
-            "image": "Classics2.jpg",
+            "image": "Classics2.webp",
             "stock": 1000
         }
     },
@@ -97,7 +97,7 @@
             "year": "1987",
             "price": 15.50,
             "rating": 4.5,
-            "image": "Classics3.jpg",
+            "image": "Classics3.webp",
             "stock": 1000
         }
     },
@@ -114,7 +114,7 @@
             "year": "1986",
             "price": 15.50,
             "rating": 1.4,
-            "image": "Comic-Book-or-Graphic-Novel1.jpg",
+            "image": "Comic-Book-or-Graphic-Novel1.webp",
             "stock": 1000
         }
     },
@@ -131,7 +131,7 @@
             "year": "2019",
             "price": 15.50,
             "rating": 4.4,
-            "image": "Comic-Book-or-Graphic-Novel2.jpg",
+            "image": "Comic-Book-or-Graphic-Novel2.webp",
             "stock": 1000
         }
     },
@@ -148,7 +148,7 @@
             "year": "2019",
             "price": 16.50,
             "rating": 4.4,
-            "image": "Comic-Book-or-Graphic-Novel3.jpg",
+            "image": "Comic-Book-or-Graphic-Novel3.webp",
             "stock": 1000
         }
     },
@@ -165,7 +165,7 @@
             "year": "2019",
             "price": 16.50,
             "rating": 2.4,
-            "image": "Detective-and-Mystery1.jpg",
+            "image": "Detective-and-Mystery1.webp",
             "stock": 1000
         }
     },
@@ -182,7 +182,7 @@
             "year": "1892",
             "price": 16.50,
             "rating": 2.4,
-            "image": "Detective-and-Mystery2.jpg",
+            "image": "Detective-and-Mystery2.webp",
             "stock": 1000
         }
     },
@@ -199,7 +199,7 @@
             "year": "1939",
             "price": 16.50,
             "rating": 4.5,
-            "image": "Detective-and-Mystery3.jpg",
+            "image": "Detective-and-Mystery3.webp",
             "stock": 1000
         }
     },
@@ -216,7 +216,7 @@
             "year": "2019",
             "price": 16.50,
             "rating": 4.5,
-            "image": "Fantasy1.jpg",
+            "image": "Fantasy1.webp",
             "stock": 1000
         }
     },
@@ -233,7 +233,7 @@
             "year": "2018",
             "price": 16.50,
             "rating": 3.4,
-            "image": "Fantasy2.jpg",
+            "image": "Fantasy2.webp",
             "stock": 1000
         }
     },
@@ -250,7 +250,7 @@
             "year": "2019",
             "price": 16.50,
             "rating": 4.1,
-            "image": "Fantasy3.jpg",
+            "image": "Fantasy3.webp",
             "stock": 1
         }
     },
@@ -267,7 +267,7 @@
             "year": "2009",
             "price": 16.50,
             "rating": 4.0,
-            "image": "Historical-Fiction1.jpg",
+            "image": "Historical-Fiction1.webp",
             "stock": 1000
         }
     },
@@ -284,7 +284,7 @@
             "year": "1967",
             "price": 16.50,
             "rating": 4.1,
-            "image": "Historical-Fiction2.jpg",
+            "image": "Historical-Fiction2.webp",
             "stock": 1000
         }
     },
@@ -301,7 +301,7 @@
             "year": "1997",
             "price": 16.50,
             "rating": 4.0,
-            "image": "Historical-Fiction3.jpg",
+            "image": "Historical-Fiction3.webp",
             "stock": 1000
         }
     },
@@ -318,7 +318,7 @@
             "year": "1974",
             "price": 16.50,
             "rating": 4.4,
-            "image": "Horror1.jpg",
+            "image": "Horror1.webp",
             "stock": 1000
         }
     },
@@ -335,7 +335,7 @@
             "year": "1959",
             "price": 16.50,
             "rating": 4.0,
-            "image": "Horror2.jpg",
+            "image": "Horror2.webp",
             "stock": 1000
         }
     },
@@ -352,7 +352,7 @@
             "year": "2014",
             "price": 16.50,
             "rating": 4.1,
-            "image": "Horror3.jpg",
+            "image": "Horror3.webp",
             "stock": 1000
         }
     },
@@ -369,7 +369,7 @@
             "year": "2018",
             "price": 16.70,
             "rating": 3.4,
-            "image": "Literary-Fiction1.jpg",
+            "image": "Literary-Fiction1.webp",
             "stock": 1000
         }
     },
@@ -386,7 +386,7 @@
             "year": "2019",
             "price": 16.70,
             "rating": 5.0,
-            "image": "Literary-Fiction2.jpg",
+            "image": "Literary-Fiction2.webp",
             "stock": 1000
         }
     },
@@ -403,7 +403,7 @@
             "year": "2019",
             "price": 16.70,
             "rating": 4.4,
-            "image": "Literary-Fiction3.jpg",
+            "image": "Literary-Fiction3.webp",
             "stock": 1000
         }
     },
@@ -420,7 +420,7 @@
             "year": "2019",
             "price": 16.90,
             "rating": 5.0,
-            "image": "Romance1.jpg",
+            "image": "Romance1.webp",
             "stock": 1000
         }
     },
@@ -437,7 +437,7 @@
             "year": "2019",
             "price": 16.90,
             "rating": 4.5,
-            "image": "Romance2.jpg",
+            "image": "Romance2.webp",
             "stock": 1000
         }
     },
@@ -454,7 +454,7 @@
             "year": "2019",
             "price": 16.90,
             "rating": 4.5,
-            "image": "Romance3.jpg",
+            "image": "Romance3.webp",
             "stock": 1000
         }
     },
@@ -471,7 +471,7 @@
             "year": "2012",
             "price": 17.90,
             "rating": 4.2,
-            "image": "SuspenseandThrillers1.jpg",
+            "image": "SuspenseandThrillers1.webp",
             "stock": 1000
         }
     },
@@ -488,7 +488,7 @@
             "year": "2019",
             "price": 17.90,
             "rating": 4.4,
-            "image": "SuspenseandThrillers2.jpg",
+            "image": "SuspenseandThrillers2.webp",
             "stock": 1000
         }
     },
@@ -505,7 +505,7 @@
             "year": "1821",
             "price": 17.90,
             "rating": 4.4,
-            "image": "SuspenseandThrillers3.jpg",
+            "image": "SuspenseandThrillers3.webp",
             "stock": 1000
         }
     },
@@ -522,7 +522,7 @@
             "year": "1937",
             "price": 17.90,
             "rating": 5.0,
-            "image": "Action-and-Adventure4.jpg",
+            "image": "Action-and-Adventure4.webp",
             "stock": 1000
         }
     },
@@ -539,7 +539,7 @@
             "year": "1960",
             "price": 17.90,
             "rating": 4.5,
-            "image": "Action-and-Adventure5.jpg",
+            "image": "Action-and-Adventure5.webp",
             "stock": 1000
         }
     },
@@ -556,7 +556,7 @@
             "year": "1945",
             "price": 15.90,
             "rating": 4.5,
-            "image": "Classics4.jpg",
+            "image": "Classics4.webp",
             "stock": 1000
         }
     },
@@ -573,7 +573,7 @@
             "year": "1847",
             "price": 25.90,
             "rating": 4.5,
-            "image": "Classics5.jpg",
+            "image": "Classics5.webp",
             "stock": 1000
         }
     },
@@ -590,7 +590,7 @@
             "year": "1988",
             "price": 15.90,
             "rating": 5.0,
-            "image": "Detective-and-Mystery4.jpg",
+            "image": "Detective-and-Mystery4.webp",
             "stock": 1000
         }
     },
@@ -607,7 +607,7 @@
             "year": "1990",
             "price": 15.90,
             "rating": 4.3,
-            "image": "Fantasy4.jpg",
+            "image": "Fantasy4.webp",
             "stock": 1000
         }
     },
@@ -624,7 +624,7 @@
             "year": "1977",
             "price": 15.90,
             "rating": 4.0,
-            "image": "Horror4.jpg",
+            "image": "Horror4.webp",
             "stock": 1000
         }
     },
@@ -641,7 +641,7 @@
             "year": "1992",
             "price": 17.90,
             "rating": 4.5,
-            "image": "Literary-Fiction4.jpg",
+            "image": "Literary-Fiction4.webp",
             "stock": 1000
         }
     },
@@ -658,7 +658,7 @@
             "year": "2018",
             "price": 17.90,
             "rating": 4.2,
-            "image": "SuspenseandThrillers4.jpg",
+            "image": "SuspenseandThrillers4.webp",
             "stock": 1000
         }
     },
@@ -675,7 +675,7 @@
             "year": "2016",
             "price": 17.90,
             "rating": 4.0,
-            "image": "Romance4.jpg",
+            "image": "Romance4.webp",
             "stock": 1000
         }
     },
@@ -692,7 +692,7 @@
             "year": "2023",
             "price": 18.90,
             "rating": 4.4,
-            "image": "new-arrivals.jpg",
+            "image": "new-arrivals.webp",
             "stock": 1000
         }
     },
@@ -709,7 +709,7 @@
             "year": "2023",
             "price": 18.90,
             "rating": 4.4,
-            "image": "new-arrivals2.jpg",
+            "image": "new-arrivals2.webp",
             "stock": 1000
         }
     },
@@ -726,7 +726,7 @@
             "year": "2023",
             "price": 18.90,
             "rating": 4.5,
-            "image": "new-arrivals3.jpg",
+            "image": "new-arrivals3.webp",
             "stock": 1000
         }
     },
@@ -743,7 +743,7 @@
             "year": "2023",
             "price": 18.90,
             "rating": 4.4,
-            "image": "new-arrivals4.jpg",
+            "image": "new-arrivals4.webp",
             "stock": 1000
         }
     },
@@ -760,7 +760,7 @@
             "year": "2023",
             "price": 18.90,
             "rating": 4.4,
-            "image": "new-arrivals5.jpg",
+            "image": "new-arrivals5.webp",
             "stock": 1000
         }
     }

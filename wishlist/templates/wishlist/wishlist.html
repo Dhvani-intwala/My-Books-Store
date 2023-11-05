@@ -60,19 +60,19 @@
                                     </a>
                                     {% else %}
                                         <a href="{% url 'product_detail' product.id %}">
-                                            <img class="card-img-top product-img" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
+                                            <img class="card-img-top product-img" src="{{ MEDIA_URL }}noimage.webp" alt="{{ product.name }}">
                                         </a>
                                     {% endif %}
                                     {% if product.stock == 0 %}
-                                    <div class="ribbon red">
+                                    <div class="red wishlist-ribbon">
                                         <span class="font-size-smaller p-1">Out of stock</span>
                                     </div>
                                     {% elif product.stock == 1 %}
-                                    <div class="ribbon blue">
+                                    <div class="blue wishlist-ribbon">
                                         <span class="font-size-smaller p-1">Last item</span>
                                     </div>
                                     {% elif product.stock <= 15 %}
-                                    <div class="ribbon">
+                                    <div class="ribbon wishlist-ribbon">
                                         <span class="font-size-smaller bg-dark text-white p-1">Last {{product.stock}} item</span>
                                     </div>
                                     {% endif %}
