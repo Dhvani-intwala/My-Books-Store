@@ -177,6 +177,8 @@ Create a responsive design for desktop, tablet and mobile devices.
 
 The Flowchart for my program was created using Draw.io and it visually represents how the system works.
 
+![flowchart](/media/Flowchart.webp)
+
 <h4> Wireframes </h4>
 
 The wireframes for mobile and desktop were created with [Balsamiq](https://balsamiq.com/) tool and can be viewed [here](/static/wireframes/Wireframes.pdf)
