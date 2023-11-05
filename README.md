@@ -322,30 +322,40 @@ The *User Profile* page gives the user access to individual and private features
 
 ### Reset Password page
 
-![reset password page](/media)
+![reset password page](/media/reset-password-page.png)
 
-![Rest password page]()
+![Rest password page](/media/passwordreset.png)
 
 
 - Users can use this page to reset their login password. The user adds their email address in the input field and clicks on the button "Reset Password".
 
 ### Change Password page
 
+![change password page](/media/changepassword.png)
+
 - Users will get a link to reset their password and after clicking on the link it will redirect the user to this page where they can set a new password.
 
 ### FAQ's page
+
+![faqs page](/media/faqs.png)
 
 - If the users has any question related to Shopping , they might find here. In FAQ's there are answers for the most frequently asked question.
 
 ### Privacy and policy Page
 
+![Privacy and policy Page](/media/PrivacyPolicy.png)
+
 - Here the Users can go though our privacy policies.
 
 ### Terms and Conditions page
 
+![Terms and Conditions page](/media/Termsandconditions.png)
+
 - User can go through Terms and condition regarding shopping in this page.
 
 ### Admin panel / Superuser
+
+![Admin panel / Superuser page](/media/admin.png)
 
 - The admin account was created as a superuser account from the terminal and also has access to the admin panel.
 - Here the Admin / superuser can view, create, edit and delete the following apps:
@@ -359,6 +369,8 @@ The *User Profile* page gives the user access to individual and private features
 - There is a page created especially for staff members to keep better track of all the orders placed on the website.
 
 ### Error 404 page not found
+
+![Error 404 page not found](/media/404.png)
 
 - The user will see this feature when the page that the user is looking for, does not exist or for any typing URL error.
 
@@ -436,9 +448,13 @@ The *User Profile* page gives the user access to individual and private features
 
 ## Business Model
 
+![Business Model](/media/bussinessmodel.webp)
+
 - The business model chosen for this project is **Businesgit stas to Customer**, as the main purpose of the website is to deliver final products to customers. This model was implemented using an interactive, attractive and intuitive interface that gives the clients an upgraded experience for shopping.
 
 ## Marketing
+
+![facebook page](/media/facebook.png)
 
 - The marketing strategy includes a Facebook business page that is intended to create a good image of the store by posting news and promotions available. By highly promoting the products and always adding new content, the page will increase its popularity and attract more and more customers to buy from the online store.
 
