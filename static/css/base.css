@@ -35,6 +35,10 @@ body {
     color:#333;
 }
 
+.navbar-toggler-icon{
+    color: #fff;
+}
+
 .shop-button {
     background: black;
     min-width: 260px;

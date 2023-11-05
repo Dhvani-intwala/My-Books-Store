@@ -359,13 +359,13 @@ The *User Profile* page gives the user access to individual and private features
 
 - The admin account was created as a superuser account from the terminal and also has access to the admin panel.
 - Here the Admin / superuser can view, create, edit and delete the following apps:
-  
-1. Banner
-2. Checkout
-3. Products
-4. Profiles
-5. Ratings
+  ut
+1. Products
+2. Profiles
+3. Ratings
+4. Faqs
 
+5. Faqs
 - There is a page created especially for staff members to keep better track of all the orders placed on the website.
 
 ### Error 404 page not found
@@ -380,63 +380,93 @@ The *User Profile* page gives the user access to individual and private features
 
 #### Signup
 
-- When users sign up to the website they will see a message at the top right of the page saying ""
+- When users sign up to the website they will see a message at the top right of the page saying "Successfully signed in as (username)"
+
+![signup](/media/Signin_Message.png)
 
 #### Login
 
-- When users login to the website they will see a message at the top right of the page saying ""
+- When users login to the website they will see a message at the top right of the page saying "Successfully signed in as  (username)".
+
+![Login](/media/Signup_Message.png)
 
 #### Signout
 
-- When users sign up to the website they will see a message at the top right of the page saying ""
+- When users sign up to the website they will see a message at the top right of the page saying "you have signed out"
+
+![signout](/media/Signout_Message.png)
   
 #### Profile Update
 
-- When users sign up to the website they will see a message at the top right of the page saying ""
+- When users sign up to the website they will see a message at the top right of the page saying "profile updated successfully"
+
+![Profile Update](/media/Profile_Update_Message.png)
   
 #### Add Product
 
-- When the website admin is logged in, they can add new products through the website front-end. When submitted successfully the following message "" pops up at the top right of the page.
+- When the website admin is logged in, they can add new products through the website front-end. When submitted successfully the following message "the (books name) added to your shooping bag" pops up at the top right of the page.
+
+![Add Product](/media/Add_Product_to__Bag_Message2.png)
 
 #### Edit Product 1
 
 - When the website admin is logged in, they can edit products already added through the website's front-end by clicking on the "Edit" button.
 
+![Edit Product 1]()
+
 #### Edit Product 2
 
 - Once the button is clicked the website admin will see the following alert "" at the top right of the screen.
+
+![Edit Product 2]()
 
 #### Edit Product 3
 
 - After the "Update Product" button is pressed and the product is edited successfully, the website admin will see the message "" at the top right of the page.
 
+![Edit Product 3]()
+
 #### Delete Product 1
 
 - When the website admin is logged in, they can delete products already added through the website’s front-end by clicking the "Delete" button.
+
+![Delete Product 1](/media/Delete_Product1.png)
 
 #### Delete Product 2
 
 - After pressing the "Delete" button the Bootstrap box model will pop up with a message ""at the in the ''page.
 
+![Delete Product 2](/media/Delete_Product2.png)
+
 #### Delete Product 3
 
 - When the user presses the "Delete" button again within the Bootstrap box model they will see the message "Product deleted" at the top right of the page.
+
+![Delete Product 3]()
 
 #### Add Product to Bag
 
 - When users choose a product and add it to the bag they will see a success message at the top right of the screen.
 
+![Add Product to Bag]()
+
 #### Update Bag
 
 - When users update the bag they will see a success message at the top right of the screen.
+
+![Update Bag](/media/Update_Bag_Message3.png)
 
 #### Remove Product from Bag
 
 - When users remove the products from the bag they will see a success message at the top right of the screen.
 
+![Remove Product from Ba](/media/Remove_Product_from_Bag_Message1.png)
+
 #### Purchase Success
 
 - When users fill out the check-out form and complete the purchase they will see a success message with the order details at the top right of the screen.
+
+![Purchase Success](/media/Purchase_Success_Message.png)
 
 ## Future Feature Considerations
 
