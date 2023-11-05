@@ -82,7 +82,7 @@
 
 ## Overview
 
-My Bookstore is an online store created for a fictional bookstore in Schelklingen, Germany. The main goal of the project was to implement a fully functional online store that makes it easy for customers to choose and buy book products.
+My Bookstore is an online store created for a fictional bookstore in 15 Route, Rhode Island, 87949,Germany. The main goal of the project was to implement a fully functional online store that makes it easy for customers to choose and buy book products.
 
 Users have the opportunity to view each product and its details, create a wish list, add products to the cart, purchase using an online payment method and view order history.
 
@@ -179,7 +179,7 @@ The Flowchart for my program was created using Draw.io and it visually represent
 
 <h4> Wireframes </h4>
 
-The wireframes for mobile and desktop were created with [Balsamiq](https://balsamiq.com/) tool and can be viewed [here]()
+The wireframes for mobile and desktop were created with [Balsamiq](https://balsamiq.com/) tool and can be viewed [here](/static/wireframes/Wireframes.pdf)
 
 <h4> Database </h4>
 
