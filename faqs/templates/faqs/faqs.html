@@ -38,7 +38,7 @@
 
     for (i = 0; i < que.length; i++) {
     que[i].addEventListener("click", function() {
-        this.classList.toggle("active");
+        this.classList.toggle("actives");
         var faqsbody = this.nextElementSibling;
         if (faqsbody.style.display === "block") {
             faqsbody.style.display = "none";
@@ -49,7 +49,6 @@
     }
 
 </script>
-
-
+<script type="text/javascript" src="/static/js/script.js"></script>
 
 {% endblock%}

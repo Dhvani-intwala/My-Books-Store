@@ -95,8 +95,8 @@
                                                 {% else %}
                                                     <small class="text-muted">No Rating</small>
                                                 {% endif %}
-                                                <div class="ml-3 mt-2">
-                                                    <input type="submit" class="btn btn-black rounded-0 text-uppercase ml-4" value="Add to Bag">
+                                                <div class="ml-3 mt-4">
+                                                    <a class="btn btn-outline-black rounded-0" href="{% url 'product_detail' product.id %}"> Buy Now </a>
                                                 </div>
                                                 {% if request.user.is_superuser %}
                                                     <div>

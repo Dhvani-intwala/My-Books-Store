@@ -1,18 +1,18 @@
 <div class="collapse navbar-collapse" id="main-nav">
     <ul class="navbar-nav">
-        <li class="nav-item nav-tabs">
-            <a class="logo-font font-weight-bold nav-link text-light mr-5 navbar-link" href="{% url 'home' %}" id="Home-link">
+        <li class="nav-item " id="home">
+            <a class="logo-font font-weight-bold nav-link text-light mr-5 navbar-link active" href="{% url 'home' %}" id="Home-link">
                 Home
             </a>
         </li>
-        <li class="nav-item">
-            <a class="logo-font font-weight-bold nav-link mr-5 text-light navbar-link" href="{% url 'products' %}" id="all-products-link">
+        <li class="nav-item" id="productslink">
+            <a class="logo-font font-weight-bold nav-link text-light mr-5 navbar-link" href="{% url 'products' %}" id="all-products-link">
                 All Products
             </a>
            
         </li>
-        <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link mr-5 text-light navbar-link" href="#" id="all-products-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <li class="nav-item dropdown" id="books-link">
+            <a class="logo-font font-weight-bold nav-link text-light mr-5 navbar-link" href="#" id="all-products-links" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Books</a>
                  <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
                     <a href="{% url 'products' %}?category=Action and Adventure" class="dropdown-item">Action and Adventure</a>
@@ -27,8 +27,8 @@
                     <a href="{% url 'products' %}?category=Suspense and Thrillers" class="dropdown-item">Suspense and Thrillers</a>
                 </div>
         </li>
-        <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link mr-5 text-light navbar-link" href="#" id="specials-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <li class="nav-item dropdown" id="special-offer-link">
+            <a class="logo-font font-weight-bold nav-link text-light mr-5 navbar-link" href="#" id="specials-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Special Offers
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="specials-link">
@@ -36,7 +36,7 @@
                 <a href="{% url 'products' %}?category=New Arrivals" class="dropdown-item">All Specials</a>
             </div>
         </li>
-        <li class="nav-item">
+        <li class="nav-item" id="contactus-link">
             <a class="logo-font font-weight-bold nav-link text-light navbar-link " href="{% url 'contact_us' %}" id="contactus">
                 Contact Us
             </a>
