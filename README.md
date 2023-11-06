@@ -98,7 +98,7 @@ The website is developed using Python (Django), HTML, CSS and JavaScript. Data w
 
 ### Project Objectives
 
-- To create a website with a simple and intuitive User Experience;
+- To create a website with a simple and intuitive User Experience.
 - To add content that is relevant and helps create a better image of the bookstore.
 - To differentiate between client and staff member accounts.
 - To implements fully functional features that make it easy for customers and upgrade client experience with bookstore service.
@@ -118,8 +118,8 @@ The website is developed using Python (Django), HTML, CSS and JavaScript. Data w
 
 <h4> As a logged in website user, I can</h4>
 
-1. Make wishlist products page in which I can edit or/and buy books at any time
-2. Subscribe to a newsletter, so I can always be up to date with the latest promotions
+1. Make wishlist products page in which I can edit or/and buy books at any time.
+2. Subscribe to a newsletter, so I can always be up to date with the latest promotions.
 3. Save my data under my personal profile.
 4. Manage my profile by updating my details.
 5. Logout of the website.
@@ -128,46 +128,46 @@ The website is developed using Python (Django), HTML, CSS and JavaScript. Data w
 <h4> As a website Superuser, I can</h4>
 
 1. Create and publish a new product.
-2. Create a new user, products, and categories.
-3. Delete user, products, categories and Ratings.
-4. Change a users permissions on the website
+2. Create new user, products, categories and product ratings.
+3. Delete user, products, categories and product ratings.
+4. Change users permissions on the website
 5. Upload new banners to be displayed on the website.
 
 ### Scope
 
 <h4> Simple and intuitive User Experience</h4>
 
-- Ensure the navigation menu is visible and functional at every step
-- Ensure every page has a suggestive name that fits its content
-- Ensure the users will get visual feedback when navigating through pages
-- Create a design that matches the requirements of an e-commerce website
+- Ensure the navigation menu is visible and functional at every step.
+- Ensure every page has a suggestive name that fits its content.
+- Ensure the users will get visual feedback when navigating through pages.
+- Create a design that matches the requirements of an e-commerce website.
 
 <h4> Relevant content</h4>
 
-- Add a representative cover image
-- Add the website title and details about its purpose
-- Add a section that includes information about the shop name, description, location and contact data
-- Make a clear and beautiful designed presentation of the menu elements
+- Add a representative cover image.
+- Add the website title and details about its purpose.
+- Add a section that includes information about the shop name, description, location and contact data.
+- Make a clear and beautiful designed presentation of the menu elements.
 
 <h4> Features for upgraded experience</h4>
 
-- Created a list with all the products and group them by category
-- Created a Bag feature that allows the user to add, update and remove products from the shopping bag
-- Created a Wishlist feature that gives the user the possibility to add and remove items from the wishlist
-- Created a Checkout feature for giving the user the possibility to complete an order on the website
-- Created a Profile page for the user to add/update his delivery details and see his orders' history
-- Created a Newsletter feature that allows the user to subscribe with his email
-- Created a page for the staff members to manage all the orders for all the users
-- Created a feature for the staff members to add/edit products on the website
+- Created a list with all the products and group them by category.
+- Created a Bag feature that allows the user to add, update and remove products from the shopping bag.
+- Created a Wishlist feature that gives the user the possibility to add and remove items from the wishlist.
+- Created a Checkout feature for giving the user the possibility to complete an order on the website.
+- Created a Profile page for the user to add/update his delivery details and see his orders' history.
+- Created a Newsletter feature that allows the user to subscribe with his email.
+- Created a page for the staff members to manage all the orders for all the users.
+- Created a feature for the staff members to add,edit & delete products on the website.
 
 <h4> Difference between client user and staff member Accounts</h4>
 
-- Client User can add/remove products from wishlist but this feature is not available for staff members
-- Only guest and client users can access the shopping bag and its features
-- Only guest and client users can make an order on the website
-- Only staff members can add/edit products
-- Profile page are only available for guest &client users
-- Orders page only available for staff member users
+- Client User can add/remove products from wishlist but this feature is not available for staff members.
+- Only guest and client users can access the shopping bag and its features.
+- Only guest and client users can make an order on the website.
+- Only staff members can add, edit & delete products.
+- Profile page are only available for guest & client users.
+- Orders page only available for staff member users.
 
 <h4> Responsiveness</h4>
 
@@ -208,17 +208,17 @@ The design is quite simple. The color scheme is used to ensure good contrast wit
 
 | Color         |Hex    |
 | ---------- | ------ |
-| Blue | ![#444646](/media/0f0e0e.png) #444646 |
+| Black | ![#000000](/media/0f0e0e.png) #000000 |
 | Green | ![#c6c0c4](media/018031.png) #018031|
 | Red | ![#FF0000](media/ff0000.png) #FF0000 |
 | White | ![#ffffff](media/ffffff.png) #ffffff |
 | Dark gray | ![#0f0e0e](media/0f0e0e.png) #0f0e0e |
-| dark | ![#2c313c](media/2c313c.png) #2c313c|
+| Dark | ![#2c313c](media/2c313c.png) #2c313c|
 | Light gray | ![#dadadf](media/dadadf.png) #dadadf |
 
 ## Agile Methodology
 
-This project was developed using the agile methodology. All progress in implementing Epics and User Stories was captured using Trello. Necessary goals and priorities were well defined throughout the project. In addition, labels were used to define the priority of each user story on the Kanban board. As user stories were completed, they were moved from the To Do, Progress, and Done lists in the Trello board.
+This project was developed using the agile methodology. All progress in implementing epics and user stories was captured using Trello. Necessary goals and priorities were well defined throughout the project. In addition, labels were used to define the priority of each user story on the Kanban board. As user stories were completed, they were moved from the To Do, Progress, and Done lists in the Trello board.
 
 ## Features
 
@@ -235,7 +235,7 @@ The website is designed to be welcoming and easy to use. It features a nav bar a
 
 - The navigation bar is located at the top of each page and contains all the links to  other pages.
 - The links at the bottom of the navigation bar are drop-down menus. They are used to filter products.
-- Once the user is logged in, their choice of Register or Login will change to Log Out.
+- Once the user is logged in, their choice to Register or Login will change to Log Out.
 - Once the user is logged in, there are other options in the navigation bar, such as a profile.
 - The navigation bar also has a search field.
 - The navbar is fully responsive. It collapses into a hamburger menu when the screen size decreases.
@@ -244,14 +244,14 @@ The website is designed to be welcoming and easy to use. It features a nav bar a
 
 ![All products page](/media/products-page.png)
 
-- On this page, users will see all the products available on the website such as product details. For example, if the user is interested in the watch they can press the button "Buy Now". They can also sort products by price, name, rating and category. Furthermore, when the site admin is logged in, it can edit or delete products.
+- On this page, users will see all the products available on the website such as product details. For example, if the user is interested in book they can press the button "Buy Now". They can also sort products by price, name, rating and category. Furthermore, when the site admin is logged in, they can add, edit or delete products.
 
 ### Product details page
 
 ![products detail page](/media/poroducts-details-page.png)
 
 - Here users can see the product image and product information such as price, category and rating. If the user is interested in the book they can choose the product quantity and add the product to their shopping bag. Also, the user can leave the page by pressing the button "Keep Shopping".Also the user can add that product to whislist if the user has login.The items with low stock have a banner to announce the user about their availability.
-- Every products has a *details page* that includes full specifications.
+- Every products has a *details page* that includes full description of book.
 
 ### Product Shopping Bag
 
@@ -267,6 +267,9 @@ The website is designed to be welcoming and easy to use. It features a nav bar a
 - A form for personal, delivery and payment details is displayed for the user to fill in with valid data. Additionally, a validation has been implemented to not allow other values to be submitted. The payment input has its own Stripe-implemented validation.
 - An order summary is displayed with details about the products and cost.
 - After the order is completed, the user is sent to a *Checkout Success* page with full specifications and details.
+- After completing the order , the user will receive an email with order details and the user will be redirected to Product Checkout Success page.
+
+![products checkout success email](/media/email.png)
 
 ### Product Checkout Success
 
@@ -278,7 +281,7 @@ The website is designed to be welcoming and easy to use. It features a nav bar a
 
 ![wishlist page](/media/wishlist.png)
 
-- On the *Product Details* page there is an interactive feature that is only available for logged-in users that are not staff members. A user can add a product to the wishlist by clicking on add to wishlist button. This feature is also accessible on the *Bag* page.
+- On the *Product Details* page there is an interactive feature that is only available for logged-in users that are not staff members. A user can add a product to the wishlist by clicking on add to wishlist button.
 - In the *Wishlist* page there are listed all the favourite items of the user with a design similar to the one created for the *Products* pages. A filtering and sorting section is also available and every element is linked to a *Product Details* page.
 - An additional feature would be that every item includes a representation of the number of times it has been added to the wishlist by all the users.
 
@@ -292,7 +295,7 @@ The website is designed to be welcoming and easy to use. It features a nav bar a
 
 ![Products management](/media/footer.png)
 
-- On the website footer, users can see basic information about the My books store. The information includes contact, social media, copyright, and a form where they can subscribe to the newsletter.
+- On the website footer, users can see basic information about the My books store. The information includes links to all products, privacy and policy , terms & conditions, FAQ's, social media, copyright, and a form where they can subscribe to the newsletter.
   
 ### User Profile
 
@@ -308,7 +311,7 @@ The *User Profile* page gives the user access to individual and private features
 
 ![login page](/media/singinpage.png)
 
-- On the Login Page, users can log in to the website by inputting their username and password. The user is now registered and will have access to the Registered User website services.
+- On the Login Page, users can log in to the website by putting their username and password. The user is now registered and will have access to the Registered User website services.
 
 ### Signup Page
 
@@ -328,20 +331,20 @@ The *User Profile* page gives the user access to individual and private features
 
 ![Rest password page](/media/passwordreset.png)
 
-
 - Users can use this page to reset their login password. The user adds their email address in the input field and clicks on the button "Reset Password".
 
 ### Change Password page
 
 ![change password page](/media/changepassword.png)
 
-- Users will get a link to reset their password and after clicking on the link it will redirect the user to this page where they can set a new password.
+- Users will get a link on Email to reset their password and after clicking on the link it will redirect the user to this page where they can set a new password.
 
 ### FAQ's page
 
 ![faqs page](/media/faqs.png)
 
 - If the users has any question related to Shopping , they might find here. In FAQ's there are answers for the most frequently asked question.
+- By clicking on the question, answer to the follwing question appear.
 
 ### Newsletter (Mail-Messages)
 
@@ -394,7 +397,7 @@ The *User Profile* page gives the user access to individual and private features
 
 #### Login
 
-- When users login to the website they will see a message at the top right of the page saying "Successfully signed in as  (username)".
+- When users login to the website they will see a message at the top right of the page saying "Successfully signed in as (username)".
 
 ![Login](/media/Signup_Message.png)
 
@@ -853,7 +856,7 @@ For creating a clone of the repository on your local machine, use clone:
 - [Django Documenation](https://www.djangoproject.com/) was used to provide examples of code solutions and Django functionality.
 - [Bootstrap Documenation](https://getbootstrap.com/) was used to provide examples of Bootstrap functionality and building blocks.
 - [Code Institute walkthrough](https://codeinstitute.net/) as inspiration and code examples, the code institute walkthroughs "Hello Django" and "I Think Therefore I Blog" was used.
-- [newsletter reference](https://www.youtube.com/watch?v=hWtlskOaFNI)
+- [newsletter reference](https://www.youtube.com/watch?v=hWtlskOaFNI). Some youtube videos was watched to see how newsletter features can be implemented.
 - The wiggle animation was taken and adapted from [codepen](https://codepen.io/beben-koben/pen/PZYjwX)
 
 ### Media
