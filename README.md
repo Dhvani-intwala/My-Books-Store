@@ -33,6 +33,7 @@
   - [Reset Password page](#reset-password-page)
   - [Change Password page](#change-password-page)
   - [FAQ's page](#faqs-page)
+  - [newsletter(Mailmessages)](#newslettermailmessages)
   - [Privacy and policy Page](#privacy-and-policy-page)
   - [Terms and Conditions page](#terms-and-conditions-page)
   - [Admin panel / Superuser](#admin-panel--superuser)
@@ -341,6 +342,10 @@ The *User Profile* page gives the user access to individual and private features
 
 - If the users has any question related to Shopping , they might find here. In FAQ's there are answers for the most frequently asked question.
 
+### newsletter(Mailmessages)
+
+![newsletter page](/media/newsletter.png)
+
 ### Privacy and policy Page
 
 ![Privacy and policy Page](/media/PrivacyPolicy.png)
@@ -359,13 +364,13 @@ The *User Profile* page gives the user access to individual and private features
 
 - The admin account was created as a superuser account from the terminal and also has access to the admin panel.
 - Here the Admin / superuser can view, create, edit and delete the following apps:
-  ut
-1. Products
-2. Profiles
-3. Ratings
-4. Faqs
-
+  
+1. Checkout
+2. Products
+3. Profiles
+4. Ratings
 5. Faqs
+
 - There is a page created especially for staff members to keep better track of all the orders placed on the website.
 
 ### Error 404 page not found
