@@ -4,7 +4,7 @@ Back to the [README](README.md)
 
 - Testing has taken place continuously throughout the development of the project. Each view was tested regularly.When the outcome was not as expected, debugging took place at that point.  
 
-### Python Validation - Pycodestyle
+#### Python Validation - Pycodestyle
 
 - Python testing was done using the Pycodestyle to ensure there were no syntax errors in the project. All python files
 were entered into the checker and no errors were found in any of the custom codes.
@@ -92,7 +92,6 @@ At the time of deployment the validation for *script.js* has the following outco
 
 </details>
 
-
 - The warnings listed are caused of the EventListeners added to elements in a loop.<br>
 I tried to solve the issue but no successful method has been found, so I chose to ignore the warning as it is not affecting the way my code works in any way.
 
@@ -158,3 +157,9 @@ Lighthouse was used to test Performance, Best Practices, Accessibility and SEO o
 
 
 ## Bugs
+
+- In mobile and ipad device nav troggle icon is not apper then I added class navbar-dark and bg dark. 
+
+- Header padding Because the header is implemented with position: fixed, I had to set a padding-top for the main container so it appears as if it is positioned below the header's content. In order to find the padding-top value that matches the header's height for every device, I used javascript to dynamically adjust it. This is why when testing the website for responsiveness using dev tools, the padding only changes its value on page reload. This bug is not visible when testing on real devices.
+
+- In ProductForm class, the issue with the "category" field arises because it's defined as a forms.ChoiceField, but it should be a ModelChoiceField instead. The ModelChoiceField is specifically designed to handle foreign key relationships between models, like the "category" field in your Product model.
