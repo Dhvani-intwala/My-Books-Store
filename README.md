@@ -35,7 +35,7 @@
   - [Reset Password page](#reset-password-page)
   - [Change Password page](#change-password-page)
   - [FAQ's page](#faqs-page)
-  - [newsletter(Mailmessages)](#newslettermailmessages)
+  - [Newsletter (Mail-Messages)](#newsletter-mail-messages)
   - [Privacy and policy Page](#privacy-and-policy-page)
   - [Terms and Conditions page](#terms-and-conditions-page)
   - [Admin panel / Superuser](#admin-panel--superuser)
@@ -343,7 +343,9 @@ The *User Profile* page gives the user access to individual and private features
 
 - If the users has any question related to Shopping , they might find here. In FAQ's there are answers for the most frequently asked question.
 
-### newsletter(Mailmessages)
+### Newsletter (Mail-Messages)
+
+- All Users who has subscribed to our newsletter will receive offers, discount, news arrivals books , etc. Emails. When the Admin send the message by filling the below form.
 
 ![newsletter page](/media/newsletter.png)
 

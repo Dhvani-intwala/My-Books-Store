@@ -62,8 +62,9 @@ were entered into the checker and no errors were found in any of the custom code
 
 ### Javascript
 
-The Javascript code was validated using using [JsHint](https://jshint.com/)<br>
-At the time of deployment the validation for *script.js* has the following outcome:<br><br>
+The Javascript code was validated using using [JsHint](https://jshint.com/)
+At the time of deployment the validation for *script.js* has the following outcome:
+
 
 <details>
 
@@ -155,11 +156,10 @@ Lighthouse was used to test Performance, Best Practices, Accessibility and SEO o
 | Logout | message shown | Logging out message shown |  Pass |
 | Newsletter | Subscribe to newsletter|  successfully showed subscribed|  Pass |
 
-
 ## Bugs
 
-- In mobile and ipad device nav troggle icon is not apper then I added class navbar-dark and bg dark. 
+- In mobile and ipad device navbar toggler icon was not appering, then I have added class navbar dark and bg dark and the bug was fixed.
 
-- Header padding Because the header is implemented with position: fixed, I had to set a padding-top for the main container so it appears as if it is positioned below the header's content. In order to find the padding-top value that matches the header's height for every device, I used javascript to dynamically adjust it. This is why when testing the website for responsiveness using dev tools, the padding only changes its value on page reload. This bug is not visible when testing on real devices.
+- There was a Problem with Header padding, because the header is implemented with position: fixed, I had to set a padding-top for the main container so it appears as if it is positioned below the header's content. In order to find the padding-top value that matches the header's height for every device, I used javascript to dynamically adjust it. This is why when testing the website for responsiveness using dev tools, the padding only changes its value on page reload. This bug is not visible when testing on real devices.
 
-- In ProductForm class, the issue with the "category" field arises because it's defined as a forms.ChoiceField, but it should be a ModelChoiceField instead. The ModelChoiceField is specifically designed to handle foreign key relationships between models, like the "category" field in your Product model.
+- Admin user was not able to edit the product details. Because in ProductForm class, the issue with the "category" field arises because it's defined as a forms.ChoiceField, but it should be a ModelChoiceField instead. The ModelChoiceField is specifically designed to handle foreign key relationships between models, like the "category" field in your Product model.
