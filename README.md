@@ -4,6 +4,8 @@
 
 <h3> Developer: Dhvani Intwala</h3>
 
+[Live Project Here](https://my-books-store-6b01a57c6bd1.herokuapp.com/)
+
 ## [TABLE OF CONTENTS](#table-of-contents)<!-- omit in toc -->
 
 - [Overview](#overview)
@@ -420,13 +422,13 @@ The *User Profile* page gives the user access to individual and private features
 
 #### Edit Product 2
 
-- Once the button is clicked the website admin will see the following alert "" at the top right of the screen.
+- Once the button is clicked the website admin will see the following alert "you are editing (book name)" at the top right of the screen.
 
 ![Edit Product 2](/media/edit-product2.png)
 
 #### Edit Product 3
 
-- After the "Update Product" button is pressed and the product is edited successfully, the website admin will see the message "" at the top right of the page.
+- After the "Update Product" button is pressed and the product is edited successfully, the website admin will see the message "successfully updated product" at the top right of the page.
 
 ![Edit Product 3](/media/edit-product3.png)
 
@@ -438,7 +440,7 @@ The *User Profile* page gives the user access to individual and private features
 
 #### Delete Product 2
 
-- After pressing the "Delete" button the Bootstrap box model will pop up with a message ""at the in the ''page.
+- After pressing the "Delete" button the Bootstrap box model will pop up with a message "are you sure you want to delete (book name) product"at the in the ''page.
 
 ![Delete Product 2](/media/Delete_Product2.png)
 

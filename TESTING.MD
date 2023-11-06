@@ -68,6 +68,7 @@ At the time of deployment the validation for *script.js* has the following outco
 <details>
 
 <summary>script.js</summary>
+
 ![script.js](/media/script.js.png)
 
 </details>
