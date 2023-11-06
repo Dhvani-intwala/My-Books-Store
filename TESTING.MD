@@ -6,10 +6,10 @@ Back to the [README](README.md)
 
 ### Python Validation - Pycodestyle
 
--Python testing was done using the Pycodestyle to ensure there were no syntax errors in the project. All python files
+- Python testing was done using the Pycodestyle to ensure there were no syntax errors in the project. All python files
 were entered into the checker and no errors were found in any of the custom codes.
 
-![Pycodestyle results]().
+![Pycodestyle results](/media/pythontesting.png).
 
 #### Checked Python Files
 

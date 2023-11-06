@@ -63,4 +63,4 @@ def mail_letter(request):
     else:
         mailMessage_form = MailMessageForm()
     return render(request, 'newsletter/mailmessage.html',
-                            {'add_mailmeassage': mailMessage_form, })
+                    {'add_mailmeassage': mailMessage_form, })
