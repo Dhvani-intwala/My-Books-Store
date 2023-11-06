@@ -50,7 +50,6 @@
     - [Delete Product 1](#delete-product-1)
     - [Delete Product 2](#delete-product-2)
     - [Delete Product 3](#delete-product-3)
-    - [Add Product to Bag](#add-product-to-bag)
     - [Update Bag](#update-bag)
     - [Remove Product from Bag](#remove-product-from-bag)
     - [Purchase Success](#purchase-success)
@@ -417,19 +416,19 @@ The *User Profile* page gives the user access to individual and private features
 
 - When the website admin is logged in, they can edit products already added through the website's front-end by clicking on the "Edit" button.
 
-![Edit Product 1]()
+![Edit Product 1](/media/edit-product1.png)
 
 #### Edit Product 2
 
 - Once the button is clicked the website admin will see the following alert "" at the top right of the screen.
 
-![Edit Product 2]()
+![Edit Product 2](/media/edit-product2.png)
 
 #### Edit Product 3
 
 - After the "Update Product" button is pressed and the product is edited successfully, the website admin will see the message "" at the top right of the page.
 
-![Edit Product 3]()
+![Edit Product 3](/media/edit-product3.png)
 
 #### Delete Product 1
 
@@ -447,13 +446,7 @@ The *User Profile* page gives the user access to individual and private features
 
 - When the user presses the "Delete" button again within the Bootstrap box model they will see the message "Product deleted" at the top right of the page.
 
-![Delete Product 3]()
-
-#### Add Product to Bag
-
-- When users choose a product and add it to the bag they will see a success message at the top right of the screen.
-
-![Add Product to Bag]()
+![Delete Product 3](/media/delete_product.png)
 
 #### Update Bag
 

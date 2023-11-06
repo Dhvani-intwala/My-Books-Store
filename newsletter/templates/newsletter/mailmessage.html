@@ -22,7 +22,7 @@
                     <form method="POST" action="{% url 'mail-letter' %}" class="d-block">
                         {% csrf_token %}
                         {{ add_mailmeassage }}
-                        <input class="btn btn-info btn-block w-25" type="submit" value="Send Message">
+                        <input class="btn btn-outline-black rounded-0 w-25" type="submit" value="Send Message">
                     </form>
                 </div>
 
