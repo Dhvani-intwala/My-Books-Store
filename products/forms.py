@@ -10,7 +10,13 @@ class ProductForm(forms.ModelForm):
         model = Product
         fields = '__all__'
     
-    category = forms.ChoiceField()
+    # category = forms.ChoiceField()
+    category = forms.ModelChoiceField(
+        queryset=Category.objects.all(),
+        empty_label="Choose Category",
+        label='Category'
+    )
+
     image = forms.ImageField(label='Image', required=False, widget=CustomClearableFileInput)
     year = forms.IntegerField(min_value=0,
                               max_value=datetime.datetime.now().year)

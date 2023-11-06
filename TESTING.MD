@@ -115,3 +115,45 @@ Lighthouse was used to test Performance, Best Practices, Accessibility and SEO o
   these are related to Google Fonts and vendor extension prefixes which will not affect the CSS performance.
 
 ## Manual Testing
+
+| Feature | Test  | Expected Result | Actual Result |
+| -------------| ----- | ----- | :----: |
+| My Books Store  | Selecting logo on homepage |  directs user back to homepage |  Pass |
+| Search | Using the search box | Entering a search returns expected result  |  Pass |
+| Search no results | No search | Entering a no results search returns error message and shows all products  |  Pass |
+| Navigation Links  | Selecting navigation links |  directs user to relevant pages |  Pass |
+| All products  | Selecting all products |  directs user to all products |  Pass |
+| Back to top | Back to top arrow | Select the arrow box on the products page brings the user back to the top of the page  |  Pass |
+| Sort By  | Selecting the filter Sort |  successfully sort by price, name and category options |  Pass |
+| Shop our button  | Selecting Shop our button |  directs user to all  products page |  Pass |
+| Adjust quantity | Plus or minus button |  adjust the quantity of product |  Pass |
+| Add to bag | Adding to bag | successfully add products to bag| Pass |
+| Keep Shopping | Keep shopping button |  directs user back to all products page  |  Pass |
+| Delete from bag | deleting products from bag | successfully delete products from bag| Pass |
+| Shopping bag  | Shows the added products and total |  directs user to checkout page |  Pass |
+| Secure Checkout button  | Using the secure checkout button |  directs user to checkout form and payment details |  Pass |
+| Sign up for our newsletter | selecting Sign up for our newsletter |  directs user Sign up for our newsletter page |  Pass |
+| Privacy policy | Selecting privacy policy |  directs user to privacy policy|  Pass |
+| facebook icon | Selecting  facebook icon |  directs user to facebook page |  Pass |
+| Special offers | Selecting all specials |  directs user to all special offers |  Pass |
+| Leave a Comment when signed in | Submitting comment|  successfully submit and display comment |  Pass |
+| Edit a Comment when signed in | Editing comment|  successfully submit and edit comment |  Pass |
+| Delete a Comment when signed in | Deleting comment|  successfully deleted comment |  Pass |
+| As Admin Delete Comment | Deleting comment|  successfully remove comment |  Pass |
+| Contact | Selecting Contact | directs user to contact page  |  Pass |
+| Contact form submission | submitting contact form | successfully sends submit form and can seen be in admin |  Pass |
+| My account | Selecting my account as admin | displays dropdown menu unique to admin apart from profile and logout  |  Pass |
+| Add product | Adding a new product| successfully add new product to products page  |  Pass |
+| Add Product | no image is selected | default image is used |  Pass |
+| As Admin edit product | editing product |  successfully edited the product |  Pass |
+| As Admin Delete product | Deleting product|  successfully remove product |  Pass |
+| Register | Register for an account | selecting Register in my account directs user signup page |  Pass |
+| Register | Registering as a new user | Registering as a new user form works |  Pass |
+| Login | Login to an account | selecting Login in my account directs user to Login page |  Pass |
+| Login | Login to an account | login-in as a new user form works |  Pass |
+| Login as admin| Login to as admin gives access to blog/product management | login-in as a new user form works |  Pass |
+| Logout | message shown | Logging out message shown |  Pass |
+| Newsletter | Subscribe to newsletter|  successfully showed subscribed|  Pass |
+
+
+## Bugs
