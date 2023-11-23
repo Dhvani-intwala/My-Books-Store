@@ -13,7 +13,6 @@ def contactUs(request):
     a view to display the contactform
     and handle form submission
     """
-
     if request.method == 'POST':
         form = ContactForm(request.POST)
         if form.is_valid:

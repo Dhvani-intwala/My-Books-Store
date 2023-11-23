@@ -131,6 +131,13 @@
         {% block content %}
         {% endblock %}
 
+        {% block info %}
+        {% endblock %}
+
+        <!-- Footer -->
+        {% include "includes/footer.html" %}
+        <!-- End of footer -->
+
         {% block postloadjs %}
         <script type="text/javascript">
             $(".toast").toast("show");
@@ -144,73 +151,5 @@
             }, 5000);
         </script>
         {% endblock %} 
-
-        {% block info %}
-        {% endblock %}
-
-        <!-- footer -->
-        <div class="text-center footer">
-            <footer class="bg-dark-black text-white pt-md-4 pb-4">
-                <div class="col-12 col-xl-11 mx-auto">
-                    <div class="d-md-flex flex-row-reverse text-white">
-                        <div class="col-12 pb-4 pb-md-0 col-md-6 text-center">
-                            <div class="col-10 pt-4 p-0 pt-md-0 mx-auto">
-                                <p class="mb-4 subscriber h4 text-white" id="subscriber">
-                                    Subscribe To Our Newsletter
-                                </p>
-
-                                <form method="POST" action="{% url 'newsletter' %}">
-                                    {% csrf_token %} {{ add_subscriber_form.as_p }}
-                                    <span id="text"></span>
-                                    <button class="btn btn-info btn-block subscribe" type="submit">Subscribe</button>
-                                </form>
-                            </div>
-                        </div>
-                        <div class="col-6 pt-4 pt-md-0 col-md-6 mx-auto">
-                            <div class="d-lg-flex justify-content-between col-md-10 p-0 mx-auto">
-                                <div class="d-flex flex-column mb-3 mb-lg-0 text-center">
-                                    <a class="hover-underline text-white mb-3" href="{% url 'products' %}">All Products</a>
-                                    <a class="hover-underline text-white mb-3" rel="noopener nofollow" href="https://www.privacypolicygenerator.info/live.php?token=rlJmAGo5kIcZEoDAtB1KmHiffKujAXJT" target="_blank">Privacy And Policy</a>
-                                    <a class="hover-underline text-white mb-3" rel="noopener nofollow" href="https://www.termsandcondiitionssample.com/live.php?token=Nu5YeuMRMCdqYwgoauI8TksgZJtiJS4T" target="_blank">Terms & Conditions</a>
-                                    <a class="hover-underline text-white mb-3" href="{% url 'faqsview' %}">FAQ's</a>
-                                </div>
-                                <div class="text-center">
-                                    <p class="mb-2">Follow us on social media:</p>
-                                    <div class="d-flex justify-content-between text-center mb-2 wrap">
-                                        <a href="https://www.facebook.com/profile.php?id=61552702647225" target="_blank" rel="" aria-label="Link to facebook page" class="hover-fx">
-                                            <i class="fab fa-facebook-square ms-3 h3 text-light"></i>
-                                        </a>
-                                        <a href="https://www.twitter.com" target="_blank" rel="" aria-label="Link to twitter page" class="hover-fx"><i class="fab fa-twitter-square ms-3 h3 text-light"></i></a>
-                                        <a href="https://www.instagram.com" target="_blank" rel="" aria-label="Link to instagram page" class="hover-fx"><i class="fab fa-instagram-square ms-3 h3 text-light"></i></a>
-                                        <a href="https://www.youtube.com" target="_blank" rel="" aria-label="Link to youtube page" class="hover-fx"><i class="fab fa-youtube-square ms-3 h3 text-light"></i></a>
-                                    </div>
-                                    <p class="mb-0 Copyright">Copyright &copy;My Books Store 2023</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </footer>
-        </div>
-        <!-- Logout Modal -->
-        <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="logoutModalLabel" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content bg-color-model">
-                    <div class="modal-body">
-                        <h5>Are you sure you want to sign out?</h5>
-                    </div>
-                    <div class="modal-footer">
-                        <form method="post" action="{% url 'account_logout' %}">
-                            {% csrf_token %}
-                            {% if redirect_field_value %}
-                                <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
-                            {% endif %}
-                            <button type="button" class="btns-red" id="btn-cancel" data-bs-dismiss="modal">No</button>
-                            <button type="submit" class="btns-green" id="btn-submit">Yes</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
     </body>
 </html>
