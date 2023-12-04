@@ -77,12 +77,9 @@ body {
     position: absolute;
     left: calc(7% - 3em);
     top: calc(100% - 2em);
-
     height: 3em;
     width: 15em;
-
     background: #444;
-    background: linear-gradient(top, #555, #333);
     border: none;
     border-top: 3px solid rgb(231, 229, 226);
     border-radius: 0 0 0.2em 0.2em;
