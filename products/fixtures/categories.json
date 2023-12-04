@@ -3,7 +3,7 @@
         "pk": 1,
         "model": "products.category",
         "fields": {
-            "name": "Action and Adventure",
+            "name": "ActionandAdventure",
             "friendly_name": "Action and Adventure"
         }
     },
@@ -19,7 +19,7 @@
         "pk": 3,
         "model": "products.category",
         "fields": {
-            "name": "Comic Book or Graphic Novel",
+            "name": "ComicBookorGraphicNovel",
             "friendly_name": "Comic Book or Graphic Novel"
         }
     },
@@ -27,7 +27,7 @@
         "pk": 4,
         "model": "products.category",
         "fields": {
-            "name": "Detective and Mystery",
+            "name": "DetectiveandMystery",
             "friendly_name": "Detective and Mystery"
         }
     },
@@ -43,7 +43,7 @@
         "pk": 6,
         "model": "products.category",
         "fields": {
-            "name": "Historical Fiction",
+            "name": "HistoricalFiction",
             "friendly_name": "Historical Fiction"
         }
     },
@@ -59,7 +59,7 @@
         "pk": 8,
         "model": "products.category",
         "fields": {
-            "name": "Literary Fiction",
+            "name": "LiteraryFiction",
             "friendly_name": "Literary Fiction"
         }
     },
@@ -75,7 +75,7 @@
         "pk": 10,
         "model": "products.category",
         "fields": {
-            "name": "Suspense and Thrillers",
+            "name": "SuspenseandThrillers",
             "friendly_name": "Suspense and Thrillers"
         }
     },
@@ -83,7 +83,7 @@
         "pk": 11,
         "model": "products.category",
         "fields": {
-            "name": "New Arrivals",
+            "name": "NewArrivals",
             "friendly_name": "New Arrivals"
         }
     }
