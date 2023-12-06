@@ -3,6 +3,7 @@ jQuery(document).ready(function($) {
     if ($("#preloader")) {
         $("#preloader").remove();
     }
+    
     var pathname = window.location.pathname;
     var searchQuery = window.location.search;
     var pathnameArr = pathname.split('/');
