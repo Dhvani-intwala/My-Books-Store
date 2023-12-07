@@ -21,3 +21,8 @@ class ContactUsViewTest(TestCase):
         }
         response = self.client.post(reverse('contact_us'), data)
         self.assertEqual(response.status_code, 302)
+
+    def test_invalid_contact_us_form_submission(self):
+        invalid_data = {}
+        response = self.client.post(reverse('contact_us'), invalid_data)
+        self.assertEqual(response.status_code, 200)
