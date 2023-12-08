@@ -2,10 +2,12 @@
 
 {% block corejs %}
 
+<!-- Show alert toasts on the top -->
 <script type="text/javascript">
     $(".toast").toast("show");
 </script>
 
+<!-- Settimeout to dismiss the toast alert box -->
 <script>
     setTimeout(function () {
     let toast = document.getElementById("toast-msg");

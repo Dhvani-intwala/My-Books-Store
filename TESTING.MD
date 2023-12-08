@@ -108,11 +108,31 @@ Lighthouse was used to test Performance, Best Practices, Accessibility and SEO o
 
 ![Lighthouse Mobile Result](/media/light-house-mobile.png)
 
+### HTML Validation
+
+![HTML Validation](/media/htmlvalidation.png)
+
+The following pages have been tested:
+
+- Home
+- Products
+- Product details
+- Bag
+- Checkout
+- User Profile
+- Newsletter
+- FAQs
+- Contactus
+- Wishlist
+- Login/Register
+- 403/404/500 custom pages
+
+
 ### CSS Validation
 
 ![CSS Validation](/media/cssvalidation.png)
 
-- Custom CSS was validated using W3C Jigsaw validation service. Fifty-three warnings were displayed, however, 
+- Custom CSS was validated using W3C Jigsaw validation service. Seventeen warnings were displayed, however,
   these are related to Google Fonts and vendor extension prefixes which will not affect the CSS performance.
 
 ## Manual Testing
