@@ -1,6 +1,7 @@
 from django import forms
 from .models import ContactMessage
 
+
 class ContactForm(forms.ModelForm):
     """
     Contact Us form
