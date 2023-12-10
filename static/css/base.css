@@ -42,7 +42,7 @@ body {
 .shop-button {
     background: black;
     min-width: 260px;
-    animation: wiggle 2s linear infinite;
+    animation: wiggle 10s linear infinite;
     cursor: pointer;
 }
 
@@ -53,13 +53,13 @@ body {
         transform: rotateZ(0);
     }
     15% {
-        transform: rotateZ(-15deg);
+        transform: rotateZ(-10deg);
     }
     20% {
-        transform: rotateZ(10deg);
+        transform: rotateZ(20deg);
     }
     25% {
-        transform: rotateZ(-10deg);
+        transform: rotateZ(-15deg);
     }
     30% {
         transform: rotateZ(6deg);

@@ -1,3 +1,16 @@
+$(document).ready(function() {
+    $(".toast").toast("show");
+});
+
+(function() {
+    setTimeout(() => {
+        const toast = document.getElementById('toast-msg');
+        if (toast) {
+            toast.style.display = 'none';
+        }
+    }, 5000);
+})();
+
 jQuery(document).ready(function($) {
     //---------------- PRELOADER -------------
     if ($("#preloader")) {
