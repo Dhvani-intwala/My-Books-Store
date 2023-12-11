@@ -717,7 +717,7 @@ STRIPE_WH_SECRET = os.getenv('STRIPE_WH_SECRET', '')
 
 Below is a screenshot of the My Books store - Stripe dashboard.
 
-![ Stripe Payments]()
+![ Stripe Payments](media/stripe-payment.png)
 
 ## Technologies Used
 

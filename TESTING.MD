@@ -136,10 +136,73 @@ The following pages have been tested:
   these are related to Google Fonts and vendor extension prefixes which will not affect the CSS performance.
 
 ## Browser Testing
+
 - The Website was tested on Firefox, Google Chrome, and Safari browsers with no issues noted.
 
 
 ## Manual Testing
+
+### Home
+
+- I confirmed logo acts as a redirect link to the home page.
+- I confirmed all the links on the nav bar are clickable and redirect the user to their related page i.e. login, logout, product categories, contact us, faqs,  wishlist, sales, and offers.
+- I confirmed search bar works effectively even on keywords such as 'oo'.
+- I confirmed user can select products based on category and it will show only those products based on that category.
+- I confirmed the page is responsive as per different screen sizes
+- I confirmed the links on the footer open on a new tab.
+
+### All Products
+
+- I confirmed all the products here are clickable and redirected the user to the product details page
+- I confirmed all the product categories and items on sale are visible here.
+- I confirmed products will also display relevant information such as image, name, and price.
+
+### Product with category
+
+- I confirmed only specific categories of products will be displayed here such as Books.
+- The items on sale are also visible but belong only to that specific category.
+- I confirmed products will also display relevant information such as image, name, and price.
+
+
+## Product Detail
+
+- I confirmed user can add/remove/update items from the cart while on the product details page.
+- I confirmed user can add products to the wishlist from here.
+- I confirmed user can checkout meaning redirect to the cart page from this page.
+- I confirmed user can view details of the product along with its description.
+
+### Cart
+
+- I confirmed user can remove items from the cart.
+- I confirmed user can view relevant details of the product from the cart.
+- I confirmed user can view the total from inside the card.
+- I confirmed user can go to shipping details from the cart.
+
+### Shipping Details
+
+- I confirmed the fields will be empty for every new user.
+- I confirmed All the fields here are editable except the Method dropdown which is set to COD.
+- I confirmed user can update the shipment data each time he/she places an order.
+- I confirmed that the fields can't be set empty.
+- I confirmed the button here completes the order process.
+
+### Order Complete
+
+- I confirmed user can see that the order was placed successfully.
+- I confirmed the user is shown the time duration when he/she will get the order.
+- I confirmed if the user goes back to shipping and clicks finish order, the user will be redirected to my orders as the order is already placed.
+- I confirmed user is given clickable options to redirect from this page.
+
+### My Orders
+
+- I confirmed user can see all the orders he/she had placed from my orders.
+- I confirm user can update the user details while being on my orders.
+
+## Wishlist
+
+- I confirmed that only items the user had added to the wishlist are displayed here.
+- I confirmed products will also display relevant information such as image, name, and price.
+
 
 
 ## Bugs
