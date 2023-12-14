@@ -110,7 +110,7 @@ Lighthouse was used to test Performance, Best Practices, Accessibility and SEO o
 
 ### HTML Validation
 
-![HTML Validation](/media/htmlvalidation.png)
+![HTML Validation](media/htmlvalidation.png)
 
 The following pages have been tested:
 
@@ -127,7 +127,6 @@ The following pages have been tested:
 - Login/Register
 - 403/404/500 custom pages
 
-
 ### CSS Validation
 
 ![CSS Validation](/media/cssvalidation.png)
@@ -139,13 +138,16 @@ The following pages have been tested:
 
 - The Website was tested on Firefox, Google Chrome, and Safari browsers with no issues noted.
 
+## Console result
+
+![consile result ](/media/consoleresult.png)
 
 ## Manual Testing
 
 ### Home
 
 - I confirmed logo acts as a redirect link to the home page.
-- I confirmed all the links on the nav bar are clickable and redirect the user to their related page i.e. login, logout, product categories, contact us, faqs,  wishlist, sales, and offers.
+- I confirmed all the links on the nav bar are clickable and redirect the user to their related page i.e. login, logout, product categories, contact us, faqs,  wishlist, product managment, newsletter-message.
 - I confirmed search bar works effectively even on keywords such as 'oo'.
 - I confirmed user can select products based on category and it will show only those products based on that category.
 - I confirmed the page is responsive as per different screen sizes
@@ -163,46 +165,59 @@ The following pages have been tested:
 - The items on sale are also visible but belong only to that specific category.
 - I confirmed products will also display relevant information such as image, name, and price.
 
-
 ## Product Detail
 
 - I confirmed user can add/remove/update items from the cart while on the product details page.
 - I confirmed user can add products to the wishlist from here.
-- I confirmed user can checkout meaning redirect to the cart page from this page.
+- I confirmed user can checkout, meaning redirect to the cart page from this page.
 - I confirmed user can view details of the product along with its description.
 
 ### Cart
 
 - I confirmed user can remove items from the cart.
 - I confirmed user can view relevant details of the product from the cart.
-- I confirmed user can view the total from inside the card.
+- I confirmed user can view the total price from inside the cart.
 - I confirmed user can go to shipping details from the cart.
 
 ### Shipping Details
 
 - I confirmed the fields will be empty for every new user.
 - I confirmed All the fields here are editable except the Method dropdown which is set to COD.
-- I confirmed user can update the shipment data each time he/she places an order.
+- I confirmed user can update the shipment data, each time when user places an order.
 - I confirmed that the fields can't be set empty.
 - I confirmed the button here completes the order process.
 
 ### Order Complete
 
 - I confirmed user can see that the order was placed successfully.
-- I confirmed the user is shown the time duration when he/she will get the order.
+- I confirmed the user is shown the time duration when they will receive the order.
 - I confirmed if the user goes back to shipping and clicks finish order, the user will be redirected to my orders as the order is already placed.
 - I confirmed user is given clickable options to redirect from this page.
 
+
 ### My Orders
 
-- I confirmed user can see all the orders he/she had placed from my orders.
-- I confirm user can update the user details while being on my orders.
+- I confirmed user can see all the orders they have placed from my orders page.
+- I confirm user can update their “user details” while being on my orders page.
 
 ## Wishlist
 
-- I confirmed that only items the user had added to the wishlist are displayed here.
+- I confirmed that only items the user had added to the Wishlist are displayed here.
 - I confirmed products will also display relevant information such as image, name, and price.
 
+
+### contact us
+
+- I confirmed
+
+### Newsletter
+
+- I confirmed that user can subscribe to newsletter.
+- I confirmed that admin can sent messages to all subscribers together.
+
+### faqs
+
+- I confirmed that only faqs the admin had added and displayed in faqs page.
 
 
 ## Bugs
