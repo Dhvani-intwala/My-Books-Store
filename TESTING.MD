@@ -62,7 +62,7 @@ were entered into the checker and no errors were found in any of the custom code
 
 ### Javascript
 
-The Javascript code was validated using using [JsHint](https://jshint.com/)
+The Javascript code was validated using using [JsHint](https://jshint.com/).
 At the time of deployment the validation for *script.js* has the following outcome:
 
 
@@ -150,14 +150,21 @@ The following pages have been tested:
 - I confirmed all the links on the nav bar are clickable and redirect the user to their related page i.e. login, logout, product categories, contact us, faqs,  wishlist, product managment, newsletter-message.
 - I confirmed search bar works effectively even on keywords such as 'oo'.
 - I confirmed user can select products based on category and it will show only those products based on that category.
-- I confirmed the page is responsive as per different screen sizes
+- I confirmed the page is responsive as per different screen sizes.
 - I confirmed that links to privacy & policy , Terms & Conditions and social media's Opens in a new tab. 
+
+### Product management 
+
+- I confirmed admin can add product.
+- I confirmed admin can add product details.
 
 ### All Products
 
 - I confirmed all the products here are clickable and redirected the user to the product details page.
 - I confirmed all the product categories and items on sale are visible here.
 - I confirmed products will also display relevant information such as image, name, description and price.
+- I confirmed admin can edit/delete products.
+- I confirmed admin can edit/delete product details.
 
 ### Product with category
 
@@ -199,22 +206,27 @@ The following pages have been tested:
 - I confirmed user can see all the orders they have placed from my Profile page.
 - I confirm user can update their “user details” while being on my Profile page.
 
-## Wishlist
+### Wishlist
 
 - I confirmed that only items, that user had added to the Wishlist are displayed here.
 - I confirmed products will also display relevant information such as image, name, description and price.
 
 
-### contact us
+### Contact us
 
 - I confirmed user can send their message from contact us page.
+
+### Special offer
+
+- I confirmed user can see new arrivals in this page.
+- I confirmed user can also check new arrivals directly after completing their order by clicking on "now checkout the new arrivals!"
 
 ### Newsletter
 
 - I confirmed that user can subscribe to newsletter.
 - I confirmed that admin can sent messages to all subscribers together.
 
-### faqs
+### FAQs
 
 - I confirmed that admin can add/remove/update faqs in FAQs page.
 - I confirmed that answer to faqs appears when clicked.
