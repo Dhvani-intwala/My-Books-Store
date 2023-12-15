@@ -152,6 +152,7 @@ The following pages have been tested:
 - I confirmed user can select products based on category and it will show only those products based on that category.
 - I confirmed the page is responsive as per different screen sizes.
 - I confirmed that links to privacy & policy , Terms & Conditions and social media's Opens in a new tab. 
+- I confirmed that all toast message appears as expected.
 
 ### Product management 
 
@@ -165,6 +166,7 @@ The following pages have been tested:
 - I confirmed products will also display relevant information such as image, name, description and price.
 - I confirmed admin can edit/delete products.
 - I confirmed admin can edit/delete product details.
+- I confirmed toast message appears when user/ admin make any changes.
 
 ### Product with category
 
@@ -186,6 +188,7 @@ The following pages have been tested:
 - I confirmed user can view relevant details of the product from the cart.
 - I confirmed user can view the total price from inside the cart.
 - I confirmed user can go to shipping details from the cart.
+- I confirmed toast message appears when user make any changes in the cart.
 
 ### Shipping Details
 
@@ -194,6 +197,7 @@ The following pages have been tested:
 - I confirmed user can update the shipment data, each time when user places an order.
 - I confirmed that the fields can't be set empty.
 - I confirmed the button here completes the order process.
+- I confirmed that toast message appears on top right when user places the order.
 
 ### Order Complete
 
@@ -206,7 +210,8 @@ The following pages have been tested:
 ### My Profile
 
 - I confirmed user can see all the orders they have placed from my Profile page.
-- I confirm user can update their “user details” while being on my Profile page.
+- I confirmed user can update their “user details” while being on my Profile page.
+- I confirmed when user update their profile a toast message appears.
 
 ### Wishlist
 
@@ -232,6 +237,26 @@ The following pages have been tested:
 
 - I confirmed that admin can add/remove/update faqs in FAQs page.
 - I confirmed that answer to faqs appears when clicked.
+
+### Register 
+
+- I confirmed that user can't register with an same email address if that email address is already been used.
+- I confrmed that user has complete all the field required in register page to make a new account.
+- I confirmed that toast message appears when a new user is register.
+
+### Signin
+
+- I confirmed that existing user can login by clicking on login page.
+- I confirmed if the user forget the password they will redirected to forget password page.
+- I confirmed that toast message appears when user signin.
+
+### Forget password
+
+- I confirmed that user receive an email with a link to change their password.
+
+### Signout
+
+- I confirmed that user can logout by clicking on logout button and a successfully signout message appears.
 
 ## Further testing
 
