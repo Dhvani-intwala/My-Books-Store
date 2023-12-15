@@ -151,30 +151,29 @@ The following pages have been tested:
 - I confirmed search bar works effectively even on keywords such as 'oo'.
 - I confirmed user can select products based on category and it will show only those products based on that category.
 - I confirmed the page is responsive as per different screen sizes
--I confirmed that link to privacy & police , Terms & Conditions and social media links Opens in a new tab. 
+- I confirmed that links to privacy & policy , Terms & Conditions and social media's Opens in a new tab. 
 
 ### All Products
 
-- I confirmed all the products here are clickable and redirected the user to the product details page
+- I confirmed all the products here are clickable and redirected the user to the product details page.
 - I confirmed all the product categories and items on sale are visible here.
-- I confirmed products will also display relevant information such as image, name, and price.
+- I confirmed products will also display relevant information such as image, name, description and price.
 
 ### Product with category
 
-- I confirmed only specific categories of products will be displayed here such as Books.
-- The items on sale are also visible but belong only to that specific category.
-- I confirmed products will also display relevant information such as image, name, and price.
+- I confirmed only specific categories of products will be displayed here.
+- I confirmed products will also display relevant information such as image, name, description and price.
 
-## Product Detail
+### Product Detail
 
-- I confirmed user can add/remove/update items from the cart while on the product details page.
+- I confirmed user can add/remove/update no. of quantity of that book in the cart while on the product details page.
 - I confirmed user can add products to the wishlist from here.
 - I confirmed user can checkout, meaning redirect to the cart page from this page.
 - I confirmed user can view details of the product along with its description.
 
 ### Cart
 
-- I confirmed user can remove items from the cart.
+- I confirmed user can add/remove/update items from the cart.
 - I confirmed user can view relevant details of the product from the cart.
 - I confirmed user can view the total price from inside the cart.
 - I confirmed user can go to shipping details from the cart.
@@ -190,25 +189,25 @@ The following pages have been tested:
 ### Order Complete
 
 - I confirmed user can see that the order was placed successfully.
-- I confirmed the user is shown the time duration when they will receive the order.
-- I confirmed if the user goes back to shipping and clicks finish order, the user will be redirected to my orders as the order is already placed.
+- I confirmed user receives an email with order details.
+- I confirmed if the user goes back to shipping and clicks finish order, the user will be redirected to order details page as the order is already placed.
 - I confirmed user is given clickable options to redirect from this page.
 
 
-### My Orders
+### My Profile
 
-- I confirmed user can see all the orders they have placed from my orders page.
-- I confirm user can update their “user details” while being on my orders page.
+- I confirmed user can see all the orders they have placed from my Profile page.
+- I confirm user can update their “user details” while being on my Profile page.
 
 ## Wishlist
 
-- I confirmed that only items the user had added to the Wishlist are displayed here.
-- I confirmed products will also display relevant information such as image, name, and price.
+- I confirmed that only items, that user had added to the Wishlist are displayed here.
+- I confirmed products will also display relevant information such as image, name, description and price.
 
 
 ### contact us
 
-- I confirmed
+- I confirmed user can send their message from contact us page.
 
 ### Newsletter
 
@@ -217,7 +216,8 @@ The following pages have been tested:
 
 ### faqs
 
-- I confirmed that only faqs the admin had added and displayed in faqs page.
+- I confirmed that admin can add/remove/update faqs in FAQs page.
+- I confirmed that answer to faqs appears when clicked.
 
 
 ## Bugs
