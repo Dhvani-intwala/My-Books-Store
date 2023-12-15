@@ -171,7 +171,7 @@ The following pages have been tested:
 ### Product with category
 
 - I confirmed user can filter the books according to product category.
-- I confirmed user can filter the products according to price,rating, name and category.
+- I confirmed user can filter the products according to price, rating, name and category.
 - I confirmed only specific categories of products will be displayed here.
 - I confirmed products will also display relevant information such as image, name, description and price.
 
@@ -217,6 +217,10 @@ The following pages have been tested:
 
 - I confirmed that only items, that user had added to the Wishlist are displayed here.
 - I confirmed products will also display relevant information such as image, name, description and price.
+- I confirmed that user can remove items from the wishlist.
+- I confirmed that only authenicated user can access wishlist page.
+- I confirmed that user can filter the wishlist page according to price, rating, name and category.
+- I confirmed toast message appears when item is added or remove from wishlist.
 
 
 ### Contact us

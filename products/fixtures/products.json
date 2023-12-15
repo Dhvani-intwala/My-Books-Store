@@ -13,7 +13,7 @@
             "price": 15.99,
             "rating": 4.4,
             "image": "Action-and-Adventure1.webp",
-            "stock": 1
+            "stock": 1000
         }
     },
     {
@@ -47,7 +47,7 @@
             "price": 15.90,
             "rating": 4.5,
             "image": "Action-and-Adventure3.webp",
-            "stock": 10
+            "stock": 1000
         }
     },
     {
@@ -64,7 +64,7 @@
             "price": 15.00,
             "rating": 4.4,
             "image": "Classics1.webp",
-            "stock": 0
+            "stock": 1000
         }
     },
     {
