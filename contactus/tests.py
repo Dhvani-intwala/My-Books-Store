@@ -1,7 +1,8 @@
 import unittest
 from django.test import TestCase, Client
 from django.urls import reverse
-from contactus.views import ContactUs
+from contactus.views import contactUs
+from contactus.forms import ContactForm
 
 
 class ContactUsViewTest(unittest.TestCase):
@@ -18,14 +19,23 @@ class ContactUsViewTest(unittest.TestCase):
             'name': 'User',
             'email': 'user@example.com',
             'phone': '017642454232',
+            'subject': 'subject',
             'message': 'Test message'
         }
-        response = self.client.post(reverse('contact_us'), data)
+        form_data = ContactForm(data = data)
+        response = self.client.post(reverse('contact_us'), form_data)
         self.assertEqual(response.status_code, 302)
 
     def test_invalid_contact_us_form_submission(self):
-        invalid_data = {}
-        response = self.client.post(reverse('contact_us'), invalid_data)
+        invalid_data = {
+             'name': '',
+            'email': '',
+            'phone': '',
+            'message': '',
+            'subject': '',
+        }
+        invalid_form_data = ContactForm(data = invalid_data)
+        response = self.client.post(reverse('contact_us'), invalid_form_data)
         self.assertEqual(response.status_code, 200)
 
 

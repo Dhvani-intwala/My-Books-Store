@@ -151,7 +151,7 @@ The following pages have been tested:
 - I confirmed search bar works effectively even on keywords such as 'oo'.
 - I confirmed user can select products based on category and it will show only those products based on that category.
 - I confirmed the page is responsive as per different screen sizes
-- I confirmed the links on the footer open on a new tab.
+-I confirmed that link to privacy & police , Terms & Conditions and social media links Opens in a new tab. 
 
 ### All Products
 
