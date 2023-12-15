@@ -168,6 +168,8 @@ The following pages have been tested:
 
 ### Product with category
 
+- I confirmed user can filter the books according to product category.
+- I confirmed user can filter the products according to price,rating, name and category.
 - I confirmed only specific categories of products will be displayed here.
 - I confirmed products will also display relevant information such as image, name, description and price.
 
@@ -231,6 +233,11 @@ The following pages have been tested:
 - I confirmed that admin can add/remove/update faqs in FAQs page.
 - I confirmed that answer to faqs appears when clicked.
 
+## Further testing
+
+<details><summary>Details</summary><br/>
+I asked friends and family to look at the application on their devices, browsers and report any issues they find. A few responsiveness and semantical issues were resolved as a result of this.
+</details>
 
 ## Bugs
 
